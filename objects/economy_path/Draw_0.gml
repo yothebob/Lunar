@@ -113,54 +113,97 @@ if ii == 2
 	
 if global.millitary == 3 and play_event == true
 {
-draw_text(x,y,";fldkgsdfl;kgdfjgdflkgdfjgldkgd")
+draw_text(x,y,"THere is disparacge about the Value of Earth currency... A conference is held to figure out a solution")
 
 if pick == -1
 	{
-	pick = irandom(2)
+	pick = irandom(3);
 	}
 	
-if ii == 2 and pick == 0
+if ii == 1
 	{
-	draw_text(x,y + 60, "We can almost see the movement on the moon from earth.. The Aliens refuse to return communication..");
+	switch(pick)
+		{
+		case 0:
+			draw_text(x,y + 60, "There was no luck in the conference, They see little use to goverment backed currency. \n Leaders leave bitter and worse for wear..." );
+		break;
+		case 1:
+			draw_text(x,y + 60, "The talks lead to trailing talks about goverment funding and policies, earths leaders feel new hope when fighting poverty health care issues..");
+		break;
+		case 2:
+			draw_text(x,y + 60, "A currency is made and there is a mutual resource that is used to back the dollars, Great strides towards an economy the world has never seen..");
+		break;
+		case 3:
+			draw_text(x,y + 60, "Talks devolve to yelling and screaming about differences in economic policy...");
+		break;
+		}
 	}
-if ii == 2 and pick == 1
+
+if ii == 2 
 	{
-	draw_text(x,y + 60, "With close montioring and use od descretion, The earth is allowed to covertly create "
-	 + "\n effective weapons and armor")
+	switch(pick)
+		{
+		case 0:
+			obj_moon.war += irandom_range(0,2);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over3 = true;
+			global.play_event = false;
+		break;
+		case 1:
+			obj_earth.economy += irandom(3);
+			obj_earth.diplomacy += irandom(2);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over3 = true;
+			global.play_event = false;
+		break;
+		case 2:
+			obj_earth.economy += irandom_range(2,4);
+			obj_earth.diplomacy += irandom_range(2,4);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over3 = true;
+			global.play_event = false;
+		break;
+		case 3:
+			obj_moon.war += irandom_range(1,3);
+			obj_earth.diplomacy -= irandom(2);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over3 = true;
+			global.play_event = false;
+		break;
+		}
 	}
-if ii == 2 and pick == 2 
+}
+if global.economy == 4 and play_event == true
+{
+draw_text(x,y,"People are finding it difficult traveling back and forth for business.. We need to Find a solution...");	
+if pick == -1
 	{
-	draw_text(x,y+ 60, " We pick up oncoming ships, Prepare for war..  " )
+	pick = irandom(3);
 	}
 	
-if ii == 3 and pick == 0 
+if ii == 1 
 	{
-	obj_moon.war -= irandom_range(2,5);
-	play_event = false;
-	ii = 0;
-	pick = -1;
-	over3 = true;
-	global.play_event = false;
-	}
-	
-if ii == 3 and pick == 1
-	{
-	obj_moon.war -= irandom_range(0,2);
-	play_event = false;
-	ii = 0;
-	pick = -1;
-	over3 = true;
-	global.play_event = false;
-	}
-	
-if ii = 3 and pick == 2 
-	{
-	obj_moon.war = 10;
-	play_event = false;
-	ii = 0;
-	pick = -1;
-	over3 = true;
-	global.play_event = false;
+	switch (pick)
+		{
+		case 0:
+			draw_text(x,y + 60, "We are able to adapt our internet resources and convince the Aliens to covert.. They are fascinated by internet culture and 'memes'. ")
+		break;
+		case 1:
+			draw_text(x,y + 60, "We adapt to The aliens networks, using a wormhole transfer technology to send data instantly.. anywhere..")
+		break;
+		case 2:
+		break;
+		case 3:
+		break;
+		
+		}
 	}
 }
