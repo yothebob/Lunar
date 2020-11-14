@@ -1,21 +1,46 @@
-if global.millitary == 1 and play_event == true 
+if global.economy == 1 and play_event == true 
 {
-draw_text(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have the Aliens Noticed?..")
-	if ii == 1 and pick == -1
+draw_text(x,y,"With a publicly shared meeting the powers of the Moon and Earth have agreed to start trade talks!")
+	if pick == -1
 	{
 	pick = irandom(1);
 	}
 	
-	if pick == 0 and ii == 2 
+	if ii == 1
+	{
+	switch(pick)
 		{
-		draw_text(x,y + 60," The Aliens have noticed");
-		}
-	else if pick == 1 and ii == 2
-		{
-		draw_text(x,y + 60,"The Aliens have not noticed");
-		}
+		case 0:
+		draw_text(x,y + 60,"The talks go well! the planets are excited for the bright future");
+		break;
 		
-	if ii == 3 and pick == 0
+		case 1:
+		draw_text(x,y + 60,"The talks did not go well, the Aliens felt offended at the proposed tax rates");
+		break;
+		}
+	}
+	if ii == 2 and pick == 0
+	{
+	switch(pick)
+		{
+		case 0:
+			obj_moon.war -= irandom_range(1,3);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over1 = true;
+			global.play_event = false;
+		break;
+		case 1:
+			obj_moon.war += irandom_range(1,3);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over1 = true;
+			global.play_event = false;
+		break;
+		}	
+	}
 	{
 	obj_moon.war += irandom_range(1,3);
 	play_event = false;

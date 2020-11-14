@@ -28,7 +28,24 @@ switch(global.millitary)
 		global.play_event = true;
 		}
 	break;
+	case 5:
+	if millitary_path.play_event != true and millitary_path.over5 == false and global.play_event == false
+		{
+		millitary_path.play_event = true;
+		global.play_event = true;
+		}
+	break;
+	
+	case 6:
+	if millitary_path.play_event != true and millitary_path.over6 == false and global.play_event == false
+		{
+		millitary_path.play_event = true;
+		global.play_event = true;
+		}
+	break;
 	}
+	
+	
 if keyboard_check_pressed(ord("R"))
 {game_restart();}
 

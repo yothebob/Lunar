@@ -179,7 +179,7 @@ if ii = 2 and pick == 2
 if global.millitary == 4 and play_event == true
 {
 draw_text(x,y,"We have the technology now to create Nucular arms that will destroy all tageted moon cities.. We need to start building them now...")
-if ii == 0 and pick == -1
+if pick == -1
 	{
 	pick = irandom(2);
 	}
@@ -242,11 +242,146 @@ if ii == 2 and pick == 2
 	{
 	obj_moon.millitary += 100;	
 	obj_earth.millitary += 10;	
-	obj_moon.war = irandom(2);
+	obj_moon.war = irandom(3);
 	play_event = false;
 	ii = 0;
 	pick = -1;
 	over4 = true;
 	global.play_event = false;
 	}
+}
+	
+if global.millitary == 5 and play_event == true
+{
+draw_text(x,y,"Missiles are being created and need to be transported.. and guarded for their use...")
+
+if pick == -1
+	{
+	pick = irandom(2);
+	}
+	
+if ii == 1 and pick == 0
+	{
+	draw_text(x,y + 60,"Countries are refusing to store missiles, they do not want to be targeted if a potential war breaks out...");
+	}
+	
+if ii == 1 and pick == 1
+	{
+	draw_text(x,y + 60, " While Transporting Missiles on cargo boats, one sinks leaving hundreds of missiles unaccounted for ...");
+	}
+
+if ii = 1 and pick == 2
+	{
+	draw_text(x,y + 60, "All nations have strategicly placed missils for maximium effectiveness...")
+	}
+
+if ii == 2 
+	{
+	switch (pick)
+		{
+		case 0:
+			obj_moon.millitary += 30;	
+			obj_earth.millitary += 10;
+			obj_moon.war = obj_moon.war + irandom(2);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over5 = true;
+			global.play_event = false;	
+		break;
+		
+		case 1:
+			obj_moon.millitary += 30;	
+			obj_earth.millitary += -80;
+			obj_moon.war = obj_moon.war + irandom(2);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over5 = true;
+			global.play_event = false;
+		break;	
+		
+		case 2:
+			obj_moon.millitary += 30;	
+			obj_earth.millitary += 100;
+			obj_moon.war = obj_moon.war + irandom(2);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over5 = true;
+			global.play_event = false;
+		break;
+		}
+	
+	
+	}
+}
+	
+if global.millitary == 6 and play_event == true
+{
+draw_text(x,y," Everything is coming together, The Aliens have called for a confrence...")
+
+if pick == -1
+	{
+	pick = irandom(2);
+	}
+	
+if ii == 1
+	{
+		switch (pick)
+		{
+			case 0:
+				draw_text(x,y + 60, "They Lay everything on the table, The war has started...");
+			break;
+			
+			case 1:
+				draw_text(x,y + 60, "They Bring up major concerns of potential war.. They look for a de-esculation plan...");
+			break;
+			
+			case 2:
+				draw_text(x,y+60, "The confrence was a setup, all of our leaders were killed.. prepare for vengance!");
+			break;
+		}
+	}
+if ii == 2 	
+	{
+		switch(pick)
+		{	
+			case 0:
+				obj_moon.millitary += 200;	
+				obj_earth.millitary += 150;
+				obj_moon.war = 10;
+				play_event = false;
+				ii = 0;
+				pick = -1;
+				over6 = true;
+				global.play_event = false;	
+			break;
+			
+			case 1:
+				obj_moon.millitary += 100;	
+				obj_earth.millitary += 120;
+				obj_moon.war += irandom_range(2,4);
+				play_event = false;
+				ii = 0;
+				pick = -1;
+				over6 = true;
+				global.play_event = false;	
+			break;
+			
+			case 2:
+				obj_moon.millitary += 200;	
+				obj_earth.millitary -= 150;
+				obj_moon.war = 10;
+				play_event = false;
+				ii = 0;
+				pick = -1;
+				over6 = true;
+				global.play_event = false;	
+			break;
+			
+			}
+	
+	}
+	
 }

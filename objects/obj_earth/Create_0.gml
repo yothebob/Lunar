@@ -1,8 +1,10 @@
 randomize();
 economy = 0;
+economyresearch = 0;
 millitary = 0;
 millitaryresearch = 0;
 diplomacy = 0;
+diplomacyresearch = 0;
 controlled = 100;
 destroyed = 0;
 people = 100;
