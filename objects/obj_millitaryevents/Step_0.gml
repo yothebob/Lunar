@@ -1,4 +1,7 @@
+if global.play_event == false
+{
 tick += 1;
+}
 
 if tick == 120
 {

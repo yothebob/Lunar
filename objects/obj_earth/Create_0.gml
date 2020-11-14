@@ -10,5 +10,6 @@ researchpoints = 20;
 global.diplomacy = 0;
 global.millitary = 0;
 global.economy = 0;
+global.play_event = false;
 
 play_event = false;
