@@ -1,3 +1,4 @@
+draw_set_halign(fa_center);
 if global.millitary == 1 and play_event == true 
 {
 draw_text(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have the Aliens Noticed?..")
@@ -202,27 +203,39 @@ if ii == 2 and pick == 0
 	
 		if pick == 3
 		{
+		if ii == 2
+			{
+			draw_text(x,y + 120,"The Leader wishes to work out a deal of interstellar citizenship");
+			}
+		else if ii == 3
+			{
 		obj_moon.millitary += 30;	
 		obj_earth.millitary += 100;	
-		draw_text(x,y + 120,"The Leader wishes to work out a deal of interstellar citizenship");
 		play_event = false;
 		ii = 0;
 		pick = -1;
 		over4 = true;
 		global.play_event = false;
+			}
 		}
 		
 		if pick == 4
 		{
+		if ii == 2 
+			{
+		draw_text(x,y + 120, "The Leader is demanding anwsers, showing captured intel.. The UN assures nothing is out of the normal.. I dont know if they will but it...");
+			}
+		else if ii == 3
+			{
 		obj_moon.millitary += 150;	
 		obj_earth.millitary += 100;
-		draw_text(x,y + 120, "The Leader is demanding anwsers, showing captured intel.. The UN assures nothing is out of the normal.. I dont know if they will but it...");
 		obj_moon.war = irandom_range(3,5);
 		play_event = false;
 		ii = 0;
 		pick = -1;
 		over4 = true;
 		global.play_event = false;
+			}
 		}
 	}
 
