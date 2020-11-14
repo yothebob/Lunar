@@ -31,3 +31,22 @@ switch(global.millitary)
 	}
 if keyboard_check_pressed(ord("R"))
 {game_restart();}
+
+if obj_moon.war >= 10
+	{
+	if millitary > 0
+		{
+		shoot -= 1; 
+		
+			if shoot <= 0
+				{
+				shoot = 120;
+				with (instance_create_depth(x+60,y,-10000,obj_missile))
+					{
+					earth = true;
+					speed = 3;
+					direction = 0;
+					}
+				}
+		}
+	}

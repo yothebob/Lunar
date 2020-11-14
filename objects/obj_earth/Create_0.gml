@@ -1,6 +1,7 @@
-//randomize();
+randomize();
 economy = 0;
 millitary = 0;
+millitaryresearch = 0;
 diplomacy = 0;
 controlled = 100;
 destroyed = 0;
@@ -13,3 +14,4 @@ global.economy = 0;
 global.play_event = false;
 
 play_event = false;
+shoot = 120;

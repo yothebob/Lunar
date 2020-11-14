@@ -1,11 +1,11 @@
-if global.play_event == false
+if global.play_event == false and obj_moon.war < 10
 {
 tick += 1;
 }
 
 if tick == 120
 {
-pick = irandom(100/obj_earth.millitary);
+pick = irandom(100/obj_earth.millitaryresearch);
 tick = 0;
 }
 

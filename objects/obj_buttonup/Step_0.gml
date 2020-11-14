@@ -13,7 +13,7 @@ if skill == 2 and mouse_check_button_pressed(mb_left) and place_meeting(x,y,obj_
 if obj_earth.researchpoints >= 1
 	{
 	obj_earth.researchpoints -= 1;
-	obj_earth.millitary += 1;
+	obj_earth.millitaryresearch += 1;
 	}
 	
 }

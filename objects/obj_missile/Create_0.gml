@@ -1,0 +1,2 @@
+earth = false;
+moon = false;
