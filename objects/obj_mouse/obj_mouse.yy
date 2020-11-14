@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite6",
-    "path": "sprites/Sprite6/Sprite6.yy",
+    "name": "spr_mouse",
+    "path": "sprites/spr_mouse/spr_mouse.yy",
   },
   "solid": false,
   "visible": true,

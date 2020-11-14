@@ -1,4 +1,4 @@
-
+//randomize();
 economy = 0;
 millitary = 0;
 diplomacy = 0;

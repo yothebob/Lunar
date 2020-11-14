@@ -158,9 +158,3 @@ if ii = 3 and pick == 2
 	global.play_event = false;
 	}
 }
-if global.millitary == 4 and play_event == true
-{
-
-
-
-}
