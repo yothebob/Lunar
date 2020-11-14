@@ -7,4 +7,5 @@ draw_text(x,y+30,string(pick))
 // Businesses start reverse engineering lunar advanced technology + millitary + economy
 // the first Alien/ human marrige takes place + economy + diplomacy
 // Aliens move to the earth after seeing forests for the first time + diplomacy 
-//
+// A goverment agent turns out to be a spy, gives away important intel to the Aliens.. + war
+// you send in a space special forces 
