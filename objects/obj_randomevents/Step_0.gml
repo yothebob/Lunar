@@ -1,4 +1,4 @@
-if global.play_event == false
+if global.play_event == false and global.pause == false
 {
 tick += 1;
 }

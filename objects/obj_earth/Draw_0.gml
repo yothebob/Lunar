@@ -12,4 +12,4 @@ draw_sprite(spr_economyicon,0,200,15);
 draw_text(230,20,string(economy));
 draw_sprite(spr_diplomacyicon,0,300,15);
 draw_text(330,20,string(diplomacy));
-draw_text(400,20,"Research Points: " + string(researchpoints));
+draw_text(560,20,"Research Points: " + string(researchpoints));

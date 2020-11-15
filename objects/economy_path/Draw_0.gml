@@ -1,3 +1,5 @@
+draw_set_halign(fa_center);
+
 if global.economy == 1 and play_event == true 
 {
 draw_text(x,y,"With a publicly shared meeting the powers of the Moon and Earth have agreed to start trade talks!")
@@ -18,7 +20,7 @@ draw_text(x,y,"With a publicly shared meeting the powers of the Moon and Earth h
 		break;
 		}
 	}
-	if ii == 2 and pick == 0
+	if ii == 2 
 	{
 	switch(pick)
 		{
@@ -46,7 +48,7 @@ draw_text(x,y,"With a publicly shared meeting the powers of the Moon and Earth h
 	}
 }
 
-if global.economy == 2 and play_event == true
+else if global.economy == 2 and play_event == true
 {
 draw_text(x,y, " The goverments need to set up a way for people to travel back and forth if we want any chance of this working..." );
 
@@ -119,9 +121,9 @@ if ii == 2
 	}	
 }
 	
-if global.millitary == 3 and play_event == true
+else if global.economy == 3 and play_event == true
 {
-draw_text(x,y,"THere is disparage about the Value of Earth currency... A conference is held to figure out a solution")
+draw_text(x,y,"There is disparage about the Value of Earth currency... A conference is held to figure out a solution")
 
 if pick == -1
 	{
@@ -193,7 +195,7 @@ if ii == 2
 		}
 	}
 }
-if global.economy == 4 and play_event == true
+else if global.economy == 4 and play_event == true
 {
 draw_text(x,y,"People are finding it difficult traveling back and forth for business.. We need to Find a solution...");	
 if pick == -1
@@ -266,9 +268,9 @@ if ii == 2
 	}
 }
 
-if global.economy == 5 and play_event == true
+else if global.economy == 5 and play_event == true
 {
-draw_text(x,y,"The Aliens are requesting a steady supply of oil, Earths leaders gather to discuss what to do.");
+	draw_text(x,y,"The Aliens are requesting a steady supply of oil, Earths leaders gather to discuss what to do.");
 if pick == -1
 	{
 	pick = irandom(3);
@@ -291,7 +293,7 @@ if ii == 1
 		break;
 		}
 	}
-if ii == 3
+if ii == 2
 	{
 	switch(pick)
 		{
@@ -339,8 +341,9 @@ if ii == 3
 	
 }
 
-if global.economy == 6 and play_event == true
+else if global.economy == 6 and play_event == true
 {
+
 draw_text(x,y,"The Aliens are complaining about certian countries reverse engineering and undercutting Lunar businesses.. They want solutions now...");
 
 if pick == -1
@@ -376,7 +379,7 @@ if ii == 2
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over5 = true;
+			over6 = true;
 			global.play_event = false;
 		break;
 		case 1:
@@ -384,7 +387,7 @@ if ii == 2
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over5 = true;
+			over6 = true;
 			global.play_event = false;
 		break;
 		case 2:
@@ -395,7 +398,7 @@ if ii == 2
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over5 = true;
+			over6 = true;
 			global.play_event = false;
 		break;
 		case 3:
@@ -406,14 +409,14 @@ if ii == 2
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over5 = true;
+			over6 = true;
 			global.play_event = false;
 		break;
 		}
 	}
 }
 
-if global.economy == 6 and play_event == true
+if global.economy == 7 and play_event == true
 {
 draw_text(x,y,"After many years of working on sharing a robust economy, The Lunians call for a interstellar meeting..");
 
@@ -450,7 +453,7 @@ if ii == 2
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over6 = true;
+			over7 = true;
 			global.play_event = false;
 		break;
 		case 1:
@@ -461,7 +464,7 @@ if ii == 2
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over6 = true;
+			over7 = true;
 			global.play_event = false;
 		break;
 		case 2:
@@ -471,7 +474,7 @@ if ii == 2
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over6 = true;
+			over7 = true;
 			global.play_event = false;
 		break;
 		case 3:
@@ -483,7 +486,7 @@ if ii == 2
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over6 = true;
+			over7 = true;
 			global.play_event = false;
 		break;
 		}

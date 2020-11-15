@@ -4,6 +4,7 @@ if obj_earth.researchpoints >= 1
 	{
 	obj_earth.researchpoints -= 1;
 	obj_earth.economyresearch += 1;
+	obj_earth.economy += 10;
 	}
 	
 }
@@ -14,6 +15,7 @@ if obj_earth.researchpoints >= 1
 	{
 	obj_earth.researchpoints -= 1;
 	obj_earth.millitaryresearch += 1;
+	obj_earth.millitary += 50;
 	}
 	
 }
@@ -24,6 +26,7 @@ if obj_earth.researchpoints >= 1
 	{
 	obj_earth.researchpoints -= 1;
 	obj_earth.diplomacyresearch += 1;
+	obj_earth. diplomacy += 10;
 	}
 	
 }

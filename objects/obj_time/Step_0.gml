@@ -1,4 +1,6 @@
-tick += 1;
+if global.pause == false
+{tick += 1;}
+
 if tick == 120
 	{
 	month += 1;

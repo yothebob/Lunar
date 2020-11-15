@@ -1,5 +1,6 @@
 if keyboard_check_pressed(vk_escape)and menuopen == false
 {
+global.pause = true;
 menuopen = true;
 y= y -200;
 if make_buttons <= 3
@@ -25,6 +26,7 @@ with(instance_create_depth(x,y+90,-10000,obj_buttonup))
 }
 else if keyboard_check_pressed(vk_escape) and menuopen == true
 {
+	global.pause = false;
 instance_destroy(obj_buttonup);
 menuopen = false;
 y=y+200;

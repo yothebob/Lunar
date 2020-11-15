@@ -1,9 +1,9 @@
-if global.play_event == false
+if global.play_event == false and global.pause == false
 {
 tick += 1;
 }
 
-if tick == 120
+if tick == 110
 {
 pick = irandom(100/obj_earth.diplomacy);
 tick = 0;

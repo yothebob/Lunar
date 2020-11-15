@@ -89,6 +89,13 @@ case 1:
 		global.play_event = true;
 		}
 	break;
+	case 7:
+	if economy_path.play_event != true and economy_path.over7 == false and global.play_event == false
+		{
+		economy_path.play_event = true;
+		global.play_event = true;
+		}
+	break;
 }
 
 if keyboard_check_pressed(ord("R"))
