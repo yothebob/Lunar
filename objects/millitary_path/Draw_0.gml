@@ -184,83 +184,80 @@ if pick == -1
 	{
 	pick = irandom(2);
 	}
-if ii == 1 and pick == 0
+if ii == 1
 	{
-	draw_text(x,y + 60, " The Leader of the Aliens are requesting a meeting with the UN right away...");
-	}
-if ii == 1 and pick == 1
-	{
-	draw_text(x,y + 60, " Production is easy and smooth... We are one step closer...");
-	}
-if ii == 1 and pick == 2
-	{
-	draw_text(x,y + 60, " Workers around the world question the ethics of the war, and are refusing to show up to work around the world to prepare for an emminent ending...");
-	}
-
-if ii == 2 and pick == 0
-	{
-	pick = irandom_range(3,4);
-	
-		if pick == 3
+	switch (pick)
 		{
-		if ii == 2
-			{
+		case 0:
+			draw_text(x,y + 60, " The Leader of the Aliens are requesting a meeting with the UN right away...");
+		break;
+		case 1:
+			draw_text(x,y + 60, " Production is easy and smooth... We are one step closer...");
+		break;
+		case 2:
+			draw_text(x,y + 60, " Workers around the world question the ethics of the war, and are refusing to show up to work around the world to prepare for an emminent ending...");
+		break;
+		}
+	}
+if ii == 2
+	{
+	switch(pick)
+		{
+		case 0:
+			pick = irandom_range(3,4);
+		break;
+		case 1:
+			obj_moon.millitary += 30;	
+			obj_earth.millitary += 100;
+			obj_moon.war = obj_moon.war + irandom(2);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over4 = true;
+			global.play_event = false;
+		break;
+		case 2:
+			obj_moon.millitary += 100;	
+			obj_earth.millitary += 10;	
+			obj_moon.war = obj_moon + irandom(3);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over4 = true;
+			global.play_event = false;
+		break;
+		case 3:
 			draw_text(x,y + 120,"The Leader wishes to work out a deal of interstellar citizenship");
-			}
-		else if ii == 3
-			{
-		obj_moon.millitary += 30;	
-		obj_earth.millitary += 100;	
-		play_event = false;
-		ii = 0;
-		pick = -1;
-		over4 = true;
-		global.play_event = false;
-			}
+		break;
+		case 4:
+			draw_text(x,y + 120, "The Leader is demanding anwsers, showing captured intel.. The UN assures nothing is out of the normal.. I dont know if they will but it...");
+		break;
 		}
-		
-		if pick == 4
+	}
+if ii == 3
+	{
+	switch (pick)
 		{
-		if ii == 2 
-			{
-		draw_text(x,y + 120, "The Leader is demanding anwsers, showing captured intel.. The UN assures nothing is out of the normal.. I dont know if they will but it...");
-			}
-		else if ii == 3
-			{
-		obj_moon.millitary += 150;	
-		obj_earth.millitary += 100;
-		obj_moon.war = irandom_range(3,5);
-		play_event = false;
-		ii = 0;
-		pick = -1;
-		over4 = true;
-		global.play_event = false;
-			}
+		case 3:
+			obj_moon.millitary += 30;	
+			obj_earth.millitary += 100;	
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over4 = true;
+			global.play_event = false;
+		break;
+		case 4:
+			obj_moon.millitary += 150;	
+			obj_earth.millitary += 100;
+			obj_moon.war += irandom_range(3,5);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over4 = true;
+			global.play_event = false;
+		break;
 		}
-	}
-
-if ii == 2 and pick == 1
-	{
-	obj_moon.millitary += 30;	
-	obj_earth.millitary += 100;
-	obj_moon.war = obj_moon.war + irandom(2);
-	play_event = false;
-	ii = 0;
-	pick = -1;
-	over4 = true;
-	global.play_event = false;
-	}
-	
-if ii == 2 and pick == 2
-	{
-	obj_moon.millitary += 100;	
-	obj_earth.millitary += 10;	
-	obj_moon.war = irandom(3);
-	play_event = false;
-	ii = 0;
-	pick = -1;
-	over4 = true;
-	global.play_event = false;
 	}
 }
 	
@@ -273,21 +270,21 @@ if pick == -1
 	pick = irandom(2);
 	}
 	
-if ii == 1 and pick == 0
+if ii == 1
 	{
-	draw_text(x,y + 60,"Countries are refusing to store missiles, they do not want to be targeted if a potential war breaks out...");
+	switch(pick)
+		{
+		case 0:
+			draw_text(x,y + 60,"Countries are refusing to store missiles, they do not want to be targeted if a potential war breaks out...");
+		break;
+		case 1:
+			draw_text(x,y + 60, " While Transporting Missiles on cargo boats, one sinks leaving hundreds of missiles unaccounted for ...");
+		break;
+		case 2:
+			draw_text(x,y + 60, "All nations have strategicly placed missils for maximium effectiveness...")
+		break
+		}
 	}
-	
-if ii == 1 and pick == 1
-	{
-	draw_text(x,y + 60, " While Transporting Missiles on cargo boats, one sinks leaving hundreds of missiles unaccounted for ...");
-	}
-
-if ii = 1 and pick == 2
-	{
-	draw_text(x,y + 60, "All nations have strategicly placed missils for maximium effectiveness...")
-	}
-
 if ii == 2 
 	{
 	switch (pick)
@@ -301,8 +298,7 @@ if ii == 2
 			pick = -1;
 			over5 = true;
 			global.play_event = false;	
-		break;
-		
+		break;	
 		case 1:
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += -80;
@@ -313,7 +309,6 @@ if ii == 2
 			over5 = true;
 			global.play_event = false;
 		break;	
-		
 		case 2:
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += 100;
@@ -325,8 +320,6 @@ if ii == 2
 			global.play_event = false;
 		break;
 		}
-	
-	
 	}
 }
 	
@@ -345,12 +338,10 @@ if ii == 1
 		{
 			case 0:
 				draw_text(x,y + 60, "They Lay everything on the table, The war has started...");
-			break;
-			
+			break;	
 			case 1:
 				draw_text(x,y + 60, "They Bring up major concerns of potential war.. They look for a de-esculation plan...");
 			break;
-			
 			case 2:
 				draw_text(x,y+60, "The confrence was a setup, all of our leaders were killed.. prepare for vengance!");
 			break;
@@ -370,7 +361,6 @@ if ii == 2
 				over6 = true;
 				global.play_event = false;	
 			break;
-			
 			case 1:
 				obj_moon.millitary += 100;	
 				obj_earth.millitary += 120;
@@ -381,7 +371,6 @@ if ii == 2
 				over6 = true;
 				global.play_event = false;	
 			break;
-			
 			case 2:
 				obj_moon.millitary += 200;	
 				obj_earth.millitary -= 150;
@@ -392,9 +381,6 @@ if ii == 2
 				over6 = true;
 				global.play_event = false;	
 			break;
-			
 			}
-	
 	}
-	
 }
