@@ -18,6 +18,7 @@ draw_text(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have
 		
 	if ii == 2 and pick == 0
 	{
+	obj_earth.researchpoints += 2;	
 	obj_earth.millitary += 100;
 	obj_moon.millitary += 100;
 	obj_moon.war += irandom_range(1,3);
@@ -30,6 +31,7 @@ draw_text(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have
 	
 	if ii == 2 and pick == 1
 	{
+	obj_earth.researchpoints += 2;	
 	obj_earth.millitary += 100;	
 	obj_moon.millitary += 30;
 	obj_moon.war -= irandom_range(0,2);
@@ -72,6 +74,7 @@ if ii = 1 and pick == 3
 	
 if ii == 2 and pick == 0
 	{
+	obj_earth.researchpoints += 2;	
 	obj_moon.millitary += 10;	
 	obj_earth.millitary += 100;	
 	play_event = false;
@@ -83,6 +86,7 @@ if ii == 2 and pick == 0
 	
 if ii == 2 and pick == 1
 	{
+	obj_earth.researchpoints += 2;	
 	obj_moon.millitary += 60;
 	obj_earth.millitary += 100;	
 	obj_moon.war += irandom_range(0,1);
@@ -95,6 +99,7 @@ if ii == 2 and pick == 1
 	
 if ii == 2 and pick == 2
 	{
+	obj_earth.researchpoints += 2;	
 	obj_moon.millitary += 120;	
 	obj_earth.millitary += 100;	
 	obj_moon.war += irandom_range(2,5);
@@ -107,6 +112,7 @@ if ii == 2 and pick == 2
 	
 if ii == 2 and pick == 3 
 	{
+	obj_earth.researchpoints += 2;	
 	obj_earth.millitary += 100;	
 	play_event = false;
 	ii = 0;
@@ -142,6 +148,7 @@ if ii == 1 and pick == 2
 	
 if ii == 2 and pick == 0 
 	{
+	obj_earth.researchpoints += 2;	
 	obj_moon.millitary += 200;	
 	obj_earth.millitary += 100;	
 	obj_moon.war -= irandom_range(2,5);
@@ -154,6 +161,7 @@ if ii == 2 and pick == 0
 	
 if ii == 2 and pick == 1
 	{
+	obj_earth.researchpoints += 2;	
 	obj_moon.millitary += 40;	
 	obj_earth.millitary += 100;	
 	obj_moon.war -= irandom_range(0,2);
@@ -166,6 +174,7 @@ if ii == 2 and pick == 1
 	
 if ii = 2 and pick == 2 
 	{
+	obj_earth.researchpoints += 2;	
 	obj_moon.millitary += 200;	
 	obj_earth.millitary += 100;	
 	obj_moon.war = 10;
@@ -207,6 +216,7 @@ if ii == 2
 			pick = irandom_range(3,4);
 		break;
 		case 1:
+			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += 100;
 			obj_moon.war = obj_moon.war + irandom(2);
@@ -217,6 +227,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 2:
+			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 100;	
 			obj_earth.millitary += 10;	
 			obj_moon.war = obj_moon + irandom(3);
@@ -239,6 +250,7 @@ if ii == 3
 	switch (pick)
 		{
 		case 3:
+			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += 100;	
 			play_event = false;
@@ -248,6 +260,7 @@ if ii == 3
 			global.play_event = false;
 		break;
 		case 4:
+			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 150;	
 			obj_earth.millitary += 100;
 			obj_moon.war += irandom_range(3,5);
@@ -290,6 +303,7 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
+			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += 10;
 			obj_moon.war = obj_moon.war + irandom(2);
@@ -300,6 +314,7 @@ if ii == 2
 			global.play_event = false;	
 		break;	
 		case 1:
+			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += -80;
 			obj_moon.war = obj_moon.war + irandom(2);
@@ -310,6 +325,7 @@ if ii == 2
 			global.play_event = false;
 		break;	
 		case 2:
+			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += 100;
 			obj_moon.war = obj_moon.war + irandom(2);
@@ -352,6 +368,7 @@ if ii == 2
 		switch(pick)
 		{	
 			case 0:
+				obj_earth.researchpoints += 2;
 				obj_moon.millitary += 200;	
 				obj_earth.millitary += 150;
 				obj_moon.war = 10;
@@ -362,6 +379,7 @@ if ii == 2
 				global.play_event = false;	
 			break;
 			case 1:
+				obj_earth.researchpoints += 2;
 				obj_moon.millitary += 100;	
 				obj_earth.millitary += 120;
 				obj_moon.war += irandom_range(2,4);
@@ -372,6 +390,7 @@ if ii == 2
 				global.play_event = false;	
 			break;
 			case 2:
+				obj_earth.researchpoints += 2;
 				obj_moon.millitary += 200;	
 				obj_earth.millitary -= 150;
 				obj_moon.war = 10;

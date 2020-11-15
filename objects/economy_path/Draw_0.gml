@@ -23,6 +23,7 @@ draw_text(x,y,"With a publicly shared meeting the powers of the Moon and Earth h
 	switch(pick)
 		{
 		case 0:
+			obj_earth.researchpoints += 2;
 			obj_moon.war -= irandom_range(1,3);
 			obj_earth.economy += irandom(2);
 			obj_earth.diplomacy += irandom(2);
@@ -33,6 +34,7 @@ draw_text(x,y,"With a publicly shared meeting the powers of the Moon and Earth h
 			global.play_event = false;
 		break;
 		case 1:
+			obj_earth.researchpoints += 2;
 			obj_moon.war += irandom_range(1,3);
 			play_event = false;
 			ii = 0;
@@ -77,6 +79,7 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
+			obj_earth.researchpoints += 2;
 			obj_moon.war += irandom_range(0,2);
 			obj_earth.economy += irandom(3);
 			play_event = false;
@@ -86,6 +89,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 1:
+			obj_earth.researchpoints += 2;
 			obj_moon.war += irandom_range(0,1);
 			obj_earth.economy += irandom_range(2,4);
 			play_event = false;
@@ -95,6 +99,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 2:
+			obj_earth.researchpoints += 2;
 			obj_earth.economy += irandom_range(2,5);
 			play_event = false;
 			ii = 0;
@@ -103,6 +108,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
+			obj_earth.researchpoints += 2;
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -146,6 +152,7 @@ if ii == 2
 	switch(pick)
 		{
 		case 0:
+			obj_earth.researchpoints += 2;
 			obj_moon.war += irandom_range(0,2);
 			play_event = false;
 			ii = 0;
@@ -154,6 +161,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 1:
+			obj_earth.researchpoints += 2;
 			obj_earth.economy += irandom(3);
 			obj_earth.diplomacy += irandom(2);
 			play_event = false;
@@ -163,6 +171,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 2:
+			obj_earth.researchpoints += 2;
 			obj_earth.economy += irandom_range(2,4);
 			obj_earth.diplomacy += irandom_range(2,4);
 			play_event = false;
@@ -172,6 +181,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
+			obj_earth.researchpoints += 2;
 			obj_moon.war += irandom_range(1,3);
 			obj_earth.diplomacy -= irandom(2);
 			play_event = false;
@@ -214,6 +224,7 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
+			obj_earth.researchpoints += 2;
 			obj_earth.economy += irandom(3);
 			obj_earth.diplomacy -= irandom(2);
 			play_event = false;
@@ -223,6 +234,7 @@ if ii == 2
 			global.play_event = false;
 		break;	
 		case 1:
+			obj_earth.researchpoints += 2;
 			obj_earth.economy += irandom_range(3,6);
 			obj_earth.diplomacy -= irandom(2);
 			play_event = false;
@@ -232,6 +244,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 2:
+			obj_earth.researchpoints += 2;
 			obj_moon.war += irandom_range(2,4);
 			obj_earth.economy -= irandom(2);
 			obj_earth.diplomacy -= irandom(2);
@@ -242,6 +255,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
+			obj_earth.researchpoints += 2;
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -282,6 +296,7 @@ if ii == 3
 	switch(pick)
 		{
 		case 0:
+			obj_earth.researchpoints += 2;
 			obj_earth.economy += irandom(3);
 			obj_earth.diplomacy += irandom(2);
 			play_event = false;
@@ -291,6 +306,7 @@ if ii == 3
 			global.play_event = false;
 		break;
 		case 1:
+			obj_earth.researchpoints += 2;
 			obj_earth.economy += irandom(3);
 			obj_earth.diplomacy += irandom(2);
 			play_event = false;
@@ -300,6 +316,7 @@ if ii == 3
 			global.play_event = false;
 		break;
 		case 2:
+			obj_earth.researchpoints += 2;
 			obj_earth.millitary -= irandom_range(40,100);
 			play_event = false;
 			ii = 0;
@@ -308,6 +325,7 @@ if ii == 3
 			global.play_event = false;
 		break;
 		case 3:
+			obj_earth.researchpoints += 2;
 			obj_moon.war += irandom(2);
 			obj_earth.diplomacy -= irandom(2);
 			play_event = false;
@@ -352,6 +370,7 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
+			obj_earth.researchpoints += 2;
 			obj_earth.economy += irandom(2);
 			obj_earth.diplomacy += irandom(2);
 			play_event = false;
@@ -361,6 +380,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 1:
+			obj_earth.researchpoints += 2;
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -368,6 +388,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 2:
+			obj_earth.researchpoints += 2;
 			obj_moon.war += irandom_range(1,3);
 			obj_earth.economy -= irandom(2);
 			obj_earth.diplomacy -= irandom(2);
@@ -378,6 +399,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
+			obj_earth.researchpoints += 2;
 			obj_moon.war = 10;
 			obj_earth.economy -= irandom(2);
 			obj_earth.diplomacy -= irandom_range(2,6);
@@ -398,6 +420,73 @@ draw_text(x,y,"After many years of working on sharing a robust economy, The Luni
 if pick == -1
 	{
 	pick = irandom(3);
+	}
+if ii == 1
+	{
+	switch(pick)
+		{
+		case 0:
+			draw_text(x,y + 60, "Lunians display the meeting of mankind as a beginning to a bright future... growing economic trade and interprise exponentially");
+		break;
+		case 1:
+			draw_text(x,y + 60, "Lunians say they feel honored to mentor the human race and fast track us to the future...");
+		break;
+		case 2:
+			draw_text(x,y + 60," They claim that earth has many resources readily accessible, Drasticly helping change lunians every day life...");
+		break;
+		case 3:
+			draw_text(x,y + 60, "The Lunians envy our access to resources.. in the flick of a switch earths leaders are grabbed. Their throats are slit on interstellar live streaming...");
+		break;
+		}
+	}
+if ii == 2
+	{
+	switch (pick)
+		{
+		case 0:
+			obj_earth.researchpoints += 2;
+			obj_earth.economy += irandom_range(3,5);
+			obj_earth.diplomacy += irandom_range(3,5);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over6 = true;
+			global.play_event = false;
+		break;
+		case 1:
+			obj_earth.researchpoints += 2;
+			obj_moon.war += irandom_range(0,1);
+			obj_earth.economy += irandom(2);
+			obj_earth.diplomacy -= irandom(1);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over6 = true;
+			global.play_event = false;
+		break;
+		case 2:
+			obj_earth.researchpoints += 2;
+			obj_earth.economy += irandom_range(2,4);
+			obj_earth.diplomacy += irandom(3);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over6 = true;
+			global.play_event = false;
+		break;
+		case 3:
+			obj_earth.researchpoints += 2;
+			obj_moon.war = 10;
+			obj_earth.economy -= irandom_range(2,6);
+			obj_earth.diplomacy = 0;
+			obj_earth.millitary -= irandom_range(80,150);
+			play_event = false;
+			ii = 0;
+			pick = -1;
+			over6 = true;
+			global.play_event = false;
+		break;
+		}
 	}
 }
 
