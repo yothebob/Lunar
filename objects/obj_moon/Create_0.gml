@@ -1,4 +1,4 @@
 war = 0;
-millitary = 0;
+millitary = 500;
 people = 500;
-shoot = 130;
+shoot = 120;

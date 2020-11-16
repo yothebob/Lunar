@@ -5,11 +5,12 @@ if war >= 10
 		shoot -= 1; 
 			if shoot <= 0
 				{
-				shoot = 130;
-				with (instance_create_depth(x+60,y,-10000,obj_missile))
+				shoot = irandom_range(100,140);
+				with (instance_create_depth(x-60,irandom_range(280,550),-10000,obj_missile))
 					{
 					moon = true;
-					speed = 3;
+					image_xscale = -1;
+					speed = irandom_range(1,2.5);
 					direction = 180;
 					}
 				}

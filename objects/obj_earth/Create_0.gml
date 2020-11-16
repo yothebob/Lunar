@@ -5,10 +5,9 @@ millitary = 0;
 millitaryresearch = 0;
 diplomacy = 0;
 diplomacyresearch = 0;
-controlled = 100;
-destroyed = 0;
 people = 100;
 researchpoints = 20;
+money = 500;
 
 global.diplomacy = 0;
 global.millitary = 0;

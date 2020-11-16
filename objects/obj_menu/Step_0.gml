@@ -1,4 +1,6 @@
-if keyboard_check_pressed(vk_escape)and menuopen == false
+
+
+if keyboard_check_pressed(vk_escape) and menuopen == false 
 {
 global.pause = true;
 menuopen = true;
@@ -24,6 +26,7 @@ with(instance_create_depth(x,y+90,-10000,obj_buttonup))
 	}
 }
 }
+
 else if keyboard_check_pressed(vk_escape) and menuopen == true
 {
 	global.pause = false;

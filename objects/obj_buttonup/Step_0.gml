@@ -4,7 +4,7 @@ if obj_earth.researchpoints >= 1
 	{
 	obj_earth.researchpoints -= 1;
 	obj_earth.economyresearch += 1;
-	obj_earth.economy += 10;
+	obj_earth.economy += 25;
 	}
 	
 }

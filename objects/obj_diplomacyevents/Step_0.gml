@@ -5,7 +5,7 @@ tick += 1;
 
 if tick == 110
 {
-pick = irandom(100/obj_earth.diplomacy);
+pick = irandom(100/obj_earth.diplomacyresearch);
 tick = 0;
 }
 

@@ -1,7 +1,7 @@
 draw_set_halign(fa_center);
 if global.millitary == 1 and play_event == true 
 {
-draw_text(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have the Aliens Noticed?..")
+draw_text_ext(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have the Aliens Noticed?..",20,500)
 	if ii == 0 and pick == -1
 	{
 	pick = irandom(1);
@@ -9,11 +9,11 @@ draw_text(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have
 	
 	if pick == 0 and ii == 1 
 		{
-		draw_text(x,y + 60," The Aliens have noticed");
+		draw_text_ext(x,y + 60," The Aliens have noticed",20,500);
 		}
 	else if pick == 1 and ii == 1
 		{
-		draw_text(x,y + 60,"The Aliens have not noticed");
+		draw_text_ext(x,y + 60,"The Aliens have not noticed",20,500);
 		}
 		
 	if ii == 2 and pick == 0
@@ -45,8 +45,8 @@ draw_text(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have
 
 if global.millitary == 2 and play_event == true
 {
-draw_text(x,y, "Research on a super weapon capable of flying to the moon with precision has started..."
- + " We try to hide the research under grounds in remote locations, Are the Aliens Watching?...")
+draw_text_ext(x,y, "Research on a super weapon capable of flying to the moon with precision has started..."
+ + " We try to hide the research under grounds in remote locations, Are the Aliens Watching?...",20,500)
 
 	if ii == 0 and pick == -1
 	{
@@ -55,21 +55,21 @@ draw_text(x,y, "Research on a super weapon capable of flying to the moon with pr
 
 if ii == 1 and pick == 0 
 	{
-	draw_text(x, y + 60, "The Aliens are completely clueless, if we have any luck we can actually get away with this!!");
+	draw_text_ext(x, y + 60, "The Aliens are completely clueless, if we have any luck we can actually get away with this!!",20,500);
 	}
 if ii == 1 and pick == 1 
 	{
-	draw_text(x,y + 60, "The Aliens see abnormal amounts of radioactive materials moving, the president asures them"
-	 + "\n we are just transfering over to nucular energy sources. They seem to buy it...");
+	draw_text_ext(x,y + 60, "The Aliens see abnormal amounts of radioactive materials moving, the president asures them"
+	 + "\n we are just transfering over to nucular energy sources. They seem to buy it...",20,500);
 	}
 if ii == 1 and pick == 2
 	{
-draw_text(x,y+ 60, "The aliens sense the earth prepping for a fight, They prepp too...")
+draw_text_ext(x,y+ 60, "The aliens sense the earth prepping for a fight, They prepp too...",20,500)
 	}
 if ii = 1 and pick == 3
 	{
-	draw_text(x,y+ 60, " The Aliens sense the Earth feels Threatened.. They schedule a meeting with the President to glaze things over.."
-	 + " If they only knew we have no intension of sharing this galaxy...");
+	draw_text_ext(x,y+ 60, " The Aliens sense the Earth feels Threatened.. They schedule a meeting with the President to glaze things over.."
+	 + " If they only knew we have no intension of sharing this galaxy...",20,500);
 	}
 	
 if ii == 2 and pick == 0
@@ -124,8 +124,8 @@ if ii == 2 and pick == 3
 	
 if global.millitary == 3 and play_event == true
 {
-draw_text(x,y,"Advances in small arms and defences have been made.. companies all across earth are manufactoring " 
- + "millitary goods");
+draw_text_ext(x,y,"Advances in small arms and defences have been made.. companies all across earth are manufactoring " 
+ + "millitary goods",20,500);
 
 if ii == 0 and pick == -1
 	{
@@ -134,16 +134,16 @@ if ii == 0 and pick == -1
 	
 if ii == 1 and pick == 0
 	{
-	draw_text(x,y + 60, "We can almost see the movement on the moon from earth.. The Aliens refuse to return communication..");
+	draw_text_ext(x,y + 60, "We can almost see the movement on the moon from earth.. The Aliens refuse to return communication..",20,500);
 	}
 if ii == 1 and pick == 1
 	{
-	draw_text(x,y + 60, "With close montioring and use od descretion, The earth is allowed to covertly create "
-	 + "\n effective weapons and armor")
+	draw_text_ext(x,y + 60, "With close montioring and use od descretion, The earth is allowed to covertly create "
+	 + "\n effective weapons and armor",20,500)
 	}
 if ii == 1 and pick == 2 
 	{
-	draw_text(x,y+ 60, " We pick up oncoming ships, Prepare for war..  " )
+	draw_text_ext(x,y+ 60, " We pick up oncoming ships, Prepare for war..  ",20,500 )
 	}
 	
 if ii == 2 and pick == 0 
@@ -188,7 +188,7 @@ if ii = 2 and pick == 2
 	
 if global.millitary == 4 and play_event == true
 {
-draw_text(x,y,"We have the technology now to create Nucular arms that will destroy all tageted moon cities.. We need to start building them now...")
+draw_text_ext(x,y,"We have the technology now to create Nucular arms that will destroy all tageted moon cities.. We need to start building them now...",20,500)
 if pick == -1
 	{
 	pick = irandom(2);
@@ -198,13 +198,13 @@ if ii == 1
 	switch (pick)
 		{
 		case 0:
-			draw_text(x,y + 60, " The Leader of the Aliens are requesting a meeting with the UN right away...");
+			draw_text_ext(x,y + 60, " The Leader of the Aliens are requesting a meeting with the UN right away...",20,500);
 		break;
 		case 1:
-			draw_text(x,y + 60, " Production is easy and smooth... We are one step closer...");
+			draw_text_ext(x,y + 60, " Production is easy and smooth... We are one step closer...",20,500);
 		break;
 		case 2:
-			draw_text(x,y + 60, " Workers around the world question the ethics of the war, and are refusing to show up to work around the world to prepare for an emminent ending...");
+			draw_text_ext(x,y + 60, " Workers around the world question the ethics of the war, and are refusing to show up to work around the world to prepare for an emminent ending...",20,500);
 		break;
 		}
 	}
@@ -219,7 +219,7 @@ if ii == 2
 			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += 100;
-			obj_moon.war = obj_moon.war + irandom(2);
+			obj_moon.war += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -230,7 +230,7 @@ if ii == 2
 			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 100;	
 			obj_earth.millitary += 10;	
-			obj_moon.war = obj_moon + irandom(3);
+			obj_moon.war += irandom(3);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -238,10 +238,10 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
-			draw_text(x,y + 120,"The Leader wishes to work out a deal of interstellar citizenship");
+			draw_text_ext(x,y + 120,"The Leader wishes to work out a deal of interstellar citizenship",20,500);
 		break;
 		case 4:
-			draw_text(x,y + 120, "The Leader is demanding anwsers, showing captured intel.. The UN assures nothing is out of the normal.. I dont know if they will but it...");
+			draw_text_ext(x,y + 120, "The Leader is demanding anwsers, showing captured intel.. The UN assures nothing is out of the normal.. I dont know if they will but it...",20,500);
 		break;
 		}
 	}
@@ -276,7 +276,7 @@ if ii == 3
 	
 if global.millitary == 5 and play_event == true
 {
-draw_text(x,y,"Missiles are being created and need to be transported.. and guarded for their use...")
+draw_text_ext(x,y,"Missiles are being created and need to be transported.. and guarded for their use...",20,500)
 
 if pick == -1
 	{
@@ -288,13 +288,13 @@ if ii == 1
 	switch(pick)
 		{
 		case 0:
-			draw_text(x,y + 60,"Countries are refusing to store missiles, they do not want to be targeted if a potential war breaks out...");
+			draw_text_ext(x,y + 60,"Countries are refusing to store missiles, they do not want to be targeted if a potential war breaks out...",20,500);
 		break;
 		case 1:
-			draw_text(x,y + 60, " While Transporting Missiles on cargo boats, one sinks leaving hundreds of missiles unaccounted for ...");
+			draw_text_ext(x,y + 60, " While Transporting Missiles on cargo boats, one sinks leaving hundreds of missiles unaccounted for ...",20,500);
 		break;
 		case 2:
-			draw_text(x,y + 60, "All nations have strategicly placed missils for maximium effectiveness...")
+			draw_text_ext(x,y + 60, "All nations have strategicly placed missils for maximium effectiveness...",20,500);
 		break
 		}
 	}
@@ -306,7 +306,7 @@ if ii == 2
 			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += 10;
-			obj_moon.war = obj_moon.war + irandom(2);
+			obj_moon.war += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -317,7 +317,7 @@ if ii == 2
 			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += -80;
-			obj_moon.war = obj_moon.war + irandom(2);
+			obj_moon.war += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -328,7 +328,8 @@ if ii == 2
 			obj_earth.researchpoints += 2;
 			obj_moon.millitary += 30;	
 			obj_earth.millitary += 100;
-			obj_moon.war = obj_moon.war + irandom(2);
+			obj_moon.war +=
+			irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -341,7 +342,7 @@ if ii == 2
 	
 if global.millitary == 6 and play_event == true
 {
-draw_text(x,y," Everything is coming together, The Aliens have called for a confrence...")
+draw_text_ext(x,y," Everything is coming together, The Aliens have called for a confrence...",20,500);
 
 if pick == -1
 	{
@@ -353,13 +354,13 @@ if ii == 1
 		switch (pick)
 		{
 			case 0:
-				draw_text(x,y + 60, "They Lay everything on the table, The war has started...");
+				draw_text_ext(x,y + 60, "They Lay everything on the table, The war has started...",20,500);
 			break;	
 			case 1:
-				draw_text(x,y + 60, "They Bring up major concerns of potential war.. They look for a de-esculation plan...");
+				draw_text_ext(x,y + 60, "They Bring up major concerns of potential war.. They look for a de-esculation plan...",20,500);
 			break;
 			case 2:
-				draw_text(x,y+60, "The confrence was a setup, all of our leaders were killed.. prepare for vengance!");
+				draw_text_ext(x,y+60, "The confrence was a setup, all of our leaders were killed.. prepare for vengance!",20,500);
 			break;
 		}
 	}
