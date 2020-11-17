@@ -6,7 +6,7 @@ if war >= 10
 			if shoot <= 0
 				{
 				shoot = irandom_range(100,140);
-				with (instance_create_depth(x-60,irandom_range(280,550),-10000,obj_missile))
+				with (instance_create_depth(x-60,irandom_range(380,650),-10000,obj_missile))
 					{
 					moon = true;
 					image_xscale = -1;

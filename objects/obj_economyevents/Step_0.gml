@@ -1,4 +1,4 @@
-if global.play_event == false and global.pause == false
+if global.play_event == false and global.pause == false and obj_moon.war < 10
 {
 tick += 1;
 }
