@@ -16,3 +16,5 @@ global.play_event = false;
 
 play_event = false;
 shoot = 120;
+
+audio_play_sound(sng_lofi,1,true);

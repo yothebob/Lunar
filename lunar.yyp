@@ -16,6 +16,7 @@
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":2,},
     {"id":{"name":"obj_warbar","path":"objects/obj_warbar/obj_warbar.yy",},"order":16,},
     {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},"order":15,},
+    {"id":{"name":"sng_lofi","path":"sounds/sng_lofi/sng_lofi.yy",},"order":0,},
     {"id":{"name":"spr_warbar","path":"sprites/spr_warbar/spr_warbar.yy",},"order":11,},
     {"id":{"name":"obj_missile","path":"objects/obj_missile/obj_missile.yy",},"order":15,},
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":19,},
