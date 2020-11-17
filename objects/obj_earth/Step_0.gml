@@ -142,13 +142,6 @@ switch(global.diplomacy)
 		global.play_event = true;
 		}
 	break;
-	case 7:
-	if diplomacy_path.play_event != true and diplomacy_path.over7 == false and global.play_event == false
-		{
-		diplomacy_path.play_event = true;
-		global.play_event = true;
-		}
-	break;
 	
 	}
 

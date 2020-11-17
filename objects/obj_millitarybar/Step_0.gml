@@ -1,0 +1,21 @@
+switch(global.millitary)
+{
+case 1:
+	c[1] = c_red;
+break;
+case 2:
+	c[2] = c_red;
+break;
+case 3:
+	c[3] = c_red;
+break;
+case 4:
+	c[4] = c_red;
+break;
+case 5:
+	c[5] = c_red;
+break;
+case 6:
+	c[6] = c_red;
+break;
+}

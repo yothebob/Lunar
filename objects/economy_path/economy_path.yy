@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "paths",
+    "path": "folders/Objects/paths.yy",
   },
   "resourceVersion": "1.0",
   "name": "economy_path",

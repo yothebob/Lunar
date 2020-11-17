@@ -1,6 +1,6 @@
 {
   "resources": [
-    {"id":{"name":"economy_path","path":"objects/economy_path/economy_path.yy",},"order":13,},
+    {"id":{"name":"economy_path","path":"objects/economy_path/economy_path.yy",},"order":1,},
     {"id":{"name":"stars","path":"objects/stars/stars.yy",},"order":17,},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
     {"id":{"name":"obj_buttonup","path":"objects/obj_buttonup/obj_buttonup.yy",},"order":4,},
@@ -11,7 +11,7 @@
     {"id":{"name":"obj_diplomacyevents","path":"objects/obj_diplomacyevents/obj_diplomacyevents.yy",},"order":0,},
     {"id":{"name":"spr_moon","path":"sprites/spr_moon/spr_moon.yy",},"order":14,},
     {"id":{"name":"obj_moon","path":"objects/obj_moon/obj_moon.yy",},"order":0,},
-    {"id":{"name":"millitary_path","path":"objects/millitary_path/millitary_path.yy",},"order":12,},
+    {"id":{"name":"millitary_path","path":"objects/millitary_path/millitary_path.yy",},"order":2,},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":2,},
     {"id":{"name":"obj_warbar","path":"objects/obj_warbar/obj_warbar.yy",},"order":16,},
     {"id":{"name":"spr_explosion","path":"sprites/spr_explosion/spr_explosion.yy",},"order":15,},
@@ -22,7 +22,9 @@
     {"id":{"name":"obj_earth","path":"objects/obj_earth/obj_earth.yy",},"order":1,},
     {"id":{"name":"spr_buttomup","path":"sprites/spr_buttomup/spr_buttomup.yy",},"order":3,},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},"order":2,},
+    {"id":{"name":"obj_millitarybar","path":"objects/obj_millitarybar/obj_millitarybar.yy",},"order":1,},
     {"id":{"name":"obj_randomevents","path":"objects/obj_randomevents/obj_randomevents.yy",},"order":3,},
+    {"id":{"name":"spr_pathbar","path":"sprites/spr_pathbar/spr_pathbar.yy",},"order":16,},
     {"id":{"name":"obj_millitaryevents","path":"objects/obj_millitaryevents/obj_millitaryevents.yy",},"order":2,},
     {"id":{"name":"spr_millitaryicon","path":"sprites/spr_millitaryicon/spr_millitaryicon.yy",},"order":8,},
     {"id":{"name":"spr_diplomacyicon","path":"sprites/spr_diplomacyicon/spr_diplomacyicon.yy",},"order":10,},
@@ -31,7 +33,9 @@
     {"id":{"name":"obj_economyevents","path":"objects/obj_economyevents/obj_economyevents.yy",},"order":1,},
     {"id":{"name":"spr_economyicon","path":"sprites/spr_economyicon/spr_economyicon.yy",},"order":9,},
     {"id":{"name":"spr_gui","path":"sprites/spr_gui/spr_gui.yy",},"order":7,},
-    {"id":{"name":"diplomacy_path","path":"objects/diplomacy_path/diplomacy_path.yy",},"order":18,},
+    {"id":{"name":"diplomacy_path","path":"objects/diplomacy_path/diplomacy_path.yy",},"order":0,},
+    {"id":{"name":"obj_diplomacybar","path":"objects/obj_diplomacybar/obj_diplomacybar.yy",},"order":2,},
+    {"id":{"name":"obj_economybar","path":"objects/obj_economybar/obj_economybar.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -39,6 +43,7 @@
     {"name":"macOS","path":"options/mac/options_mac.yy",},
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
+    {"name":"HTML5","path":"options/html5/options_html5.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -59,6 +64,8 @@
     {"folderPath":"folders/Objects.yy","order":9,"resourceVersion":"1.0","name":"Objects","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Rooms.yy","order":10,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/RNG engines.yy","order":11,"resourceVersion":"1.0","name":"RNG engines","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/paths.yy","order":21,"resourceVersion":"1.0","name":"paths","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/path_bars.yy","order":23,"resourceVersion":"1.0","name":"path_bars","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -66,7 +73,9 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":153157610357391598,"filePath":"datafiles","resourceVersion":"1.0","name":"Goldman-Regular.ttf","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2.3.0.529",
   },
