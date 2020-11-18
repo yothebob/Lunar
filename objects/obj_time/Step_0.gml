@@ -5,7 +5,7 @@ if tick == 120
 	{
 	obj_earth.money += obj_earth.economy;
 	if obj_earth.money >= 0
-		{obj_earth.money -= (100 + (obj_earth.millitary/5));}
+		{obj_earth.money -= (obj_earth.millitary);}
 	else
 		{obj_earth.millitary -= 100 }
 	month += 1;
