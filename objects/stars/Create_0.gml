@@ -5,37 +5,53 @@ part_over = part_system_create();
 part_system_depth(part_over,-1);
 
 star = part_type_create();
-part_type_shape(star,pt_shape_pixel);
-part_type_size(star,.1,4,0,0);
+part_type_sprite(star,spr_star,false,false,false);
+part_type_size(star,.08,.2,0,0);
 part_type_color1(star,c_white);
-part_type_alpha2(star,0,1);
+part_type_alpha3(star,0,1,0);
 part_type_direction(star,0,180,0,0);
-part_type_life(star,100,1200);
+part_type_life(star,500,1200);
 
 shooting_star = part_type_create();
-part_type_shape(shooting_star,pt_shape_disk);
-part_type_size(shooting_star,.01,.1,0,0);
-part_type_speed(shooting_star,0,5,0,0);
+part_type_sprite(shooting_star,spr_star,false,false,false);
+part_type_size(shooting_star,.1,.2,0,0);
+part_type_speed(shooting_star,0,5,.001,0);
 part_type_color1(shooting_star,c_white);
-part_type_alpha2(shooting_star,0,1);
+part_type_alpha3(shooting_star,0,1,0);
 part_type_direction(shooting_star,0,180,0,0);
-part_type_life(shooting_star,100,1200);
+part_type_life(shooting_star,200,1200);
 
 
 flares = part_type_create();
-part_type_shape(flares,pt_shape_spark);
-part_type_size(flares,.05,.2,0,0);
-part_type_color1(flares,c_white);
-part_type_alpha2(flares,0,1);
-part_type_life(flares,100,1200);
+part_type_shape(flares,pt_shape_cloud);
+part_type_size(flares,2,5,-.001,.01);
+part_type_scale(flares,5,3);
+part_type_blend(flares,true);
+part_type_color_rgb(flares,0,200,0,0,0,200);
+part_type_alpha3(flares,0,.15,0);
+part_type_speed(flares,0,.05,.0005,0);
+part_type_direction(flares,0,180,0,0);
+part_type_life(flares,400,1200);
+
+flares1 = part_type_create();
+part_type_shape(flares1,pt_shape_cloud);
+part_type_size(flares1,2,5,-.001,.01);
+part_type_scale(flares1,5,3);
+part_type_blend(flares1,true);
+part_type_color_rgb(flares1,0,100,0,150,0,80);
+part_type_alpha3(flares1,0,.15,0);
+part_type_speed(flares1,0,.05,.0005,0);
+part_type_direction(flares1,0,180,0,0);
+part_type_life(flares1,400,1200);
+
 
 
 pt_emit = part_emitter_create(part_star);
 pt_emit_over = part_emitter_create(part_over);
 part_emitter_region(part_star,pt_emit, 0,room_width,0,room_height,ps_shape_rectangle,ps_distr_linear);
-part_emitter_region(part_over,pt_emit_over, 0,room_width,0,room_height,ps_shape_rectangle,ps_distr_linear);
+part_emitter_region(part_over,pt_emit_over, 0,room_width,0,room_height,ps_shape_rectangle,ps_distr_invgaussian);
 
 
-alarm[0] = 60;
-alarm[1] = irandom_range(40,80);
+alarm[0] = 1;
+alarm[1] = 1;
 

@@ -1,9 +1,6 @@
-//draw_sprite_ext(spr_earth,0,x,y,.33,.33,0,c_white,1);
+
 draw_self();
 
-draw_text(300,300,string(global.economy));
-draw_text(300,330,string(global.millitary));
-draw_text(300,360,string(global.diplomacy));
 
 draw_sprite(spr_gui,0,70,15);
 draw_sprite(spr_millitaryicon,0,90,15);

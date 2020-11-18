@@ -1,3 +1,4 @@
+#region check branches
 switch(global.millitary)
 	{
 	case 1:
@@ -144,6 +145,8 @@ switch(global.diplomacy)
 	break;
 	
 	}
+
+#endregion
 
 if keyboard_check_pressed(ord("R"))
 {game_restart();}

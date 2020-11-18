@@ -18,8 +18,5 @@ break;
 case 6:
 	c[6] = c_green;
 break;
-case 7:
-	c[7] = c_green;
-break;
 
 }

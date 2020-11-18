@@ -2,6 +2,9 @@ draw_set_halign(fa_center);
 
 if global.economy == 1 and play_event == true 
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 draw_text_ext(x,y,"With a publicly shared meeting the powers of the Moon and Earth have agreed to start trade talks!",20,600)
 	if pick == -1
 	{
@@ -52,6 +55,9 @@ draw_text_ext(x,y,"With a publicly shared meeting the powers of the Moon and Ear
 
 else if global.economy == 2 and play_event == true
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 draw_text_ext(x,y, " The goverments need to set up a way for people to travel back and forth if we want any chance of this working...",20,600 );
 
 	if pick == -1
@@ -129,6 +135,9 @@ if ii == 2
 	
 else if global.economy == 3 and play_event == true
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 draw_text_ext(x,y,"There is disparage about the Value of Earth currency... A conference is held to figure out a solution",20,600)
 
 if pick == -1
@@ -207,6 +216,9 @@ if ii == 2
 }
 else if global.economy == 4 and play_event == true
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 draw_text_ext(x,y,"People are finding it difficult traveling back and forth for business.. We need to Find a solution...",20,600);	
 if pick == -1
 	{
@@ -284,6 +296,9 @@ if ii == 2
 
 else if global.economy == 5 and play_event == true
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 	draw_text_ext(x,y,"The Aliens are requesting a steady supply of oil, Earths leaders gather to discuss what to do.",20,600);
 if pick == -1
 	{
@@ -362,6 +377,8 @@ if ii == 2
 else if global.economy == 6 and play_event == true
 {
 
+draw_sprite(spr_textbox,0,x,y);
+
 draw_text_ext(x,y,"The Aliens are complaining about certian countries reverse engineering and undercutting Lunar businesses.. They want solutions now...",20,600);
 
 if pick == -1
@@ -438,84 +455,4 @@ if ii == 2
 	}
 }
 
-if global.economy == 7 and play_event == true
-{
-draw_text_ext(x,y,"After many years of working on sharing a robust economy, The Lunians call for a interstellar meeting..",20,600);
-
-if pick == -1
-	{
-	pick = irandom(3);
-	}
-if ii == 1
-	{
-	switch(pick)
-		{
-		case 0:
-			draw_text_ext(x,y + 90, "Lunians display the meeting of mankind as a beginning to a bright future... growing economic trade and interprise exponentially",20,600);
-		break;
-		case 1:
-			draw_text_ext(x,y + 90, "Lunians say they feel honored to mentor the human race and fast track us to the future...",20,600);
-		break;
-		case 2:
-			draw_text_ext(x,y + 90," They claim that earth has many resources readily accessible, Drasticly helping change lunians every day life...",20,600);
-		break;
-		case 3:
-			draw_text_ext(x,y + 90, "The Lunians envy our access to resources.. in the flick of a switch earths leaders are grabbed. Their throats are slit on interstellar live streaming...",20,600);
-		break;
-		}
-	}
-if ii == 2
-	{
-	switch (pick)
-		{
-		case 0:
-			obj_earth.money += 3000;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(3,5);
-			obj_earth.diplomacy += irandom_range(3,5);
-			play_event = false;
-			ii = 0;
-			pick = -1;
-			over7 = true;
-			global.play_event = false;
-		break;
-		case 1:
-			obj_earth.money += 2000;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(0,1);
-			obj_earth.economy += irandom(2);
-			obj_earth.diplomacy -= irandom(1);
-			play_event = false;
-			ii = 0;
-			pick = -1;
-			over7 = true;
-			global.play_event = false;
-		break;
-		case 2:
-			obj_earth.money += 1000;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(2,4);
-			obj_earth.diplomacy += irandom(3);
-			play_event = false;
-			ii = 0;
-			pick = -1;
-			over7 = true;
-			global.play_event = false;
-		break;
-		case 3:
-			obj_earth.money -= 6000;		
-			obj_earth.researchpoints += 2;
-			obj_moon.war = 10;
-			obj_earth.economy -= irandom_range(2,6);
-			obj_earth.diplomacy = 0;
-			obj_earth.millitary -= irandom_range(80,150);
-			play_event = false;
-			ii = 0;
-			pick = -1;
-			over7 = true;
-			global.play_event = false;
-		break;
-		}
-	}
-}
 

@@ -18,3 +18,4 @@ play_event = false;
 shoot = 120;
 
 audio_play_sound(sng_lofi,1,true);
+alarm[1] = 60;

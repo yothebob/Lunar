@@ -2,6 +2,9 @@ draw_set_halign(fa_center);
 
 if global.diplomacy == 1 and play_event == true 
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 draw_text_ext(x,y,"Earths Leaders need to study Lunar political regions, regions and cultures for a good relation..",20,600);
 	if pick == -1
 	{
@@ -50,6 +53,9 @@ draw_text_ext(x,y,"Earths Leaders need to study Lunar political regions, regions
 
 else if global.diplomacy == 2 and play_event == true
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 draw_text_ext(x,y, "Lunians want to send groups of researchers to study earth species and enviroments..",20,600);
 
 	if pick == -1
@@ -126,6 +132,9 @@ if ii == 2
 	
 else if global.diplomacy == 3 and play_event == true
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 draw_text_ext(x,y,"The worlds governments talk about a interstellar student exchange program...",20,600);
 
 if pick == -1
@@ -202,6 +211,9 @@ if ii == 2
 }
 else if global.diplomacy == 4 and play_event == true
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 draw_text_ext(x,y,"Hollywood is asking permission to make movies showing and depicting Lunians and historical stories.",20,600);	
 if pick == -1
 	{
@@ -278,6 +290,9 @@ if ii == 2
 
 else if global.diplomacy == 5 and play_event == true
 {
+	
+draw_sprite(spr_textbox,0,x,y);	
+	
 	draw_text_ext(x,y,"human internet culture has been slowly introduced to the Lunians.",20,600);
 if pick == -1
 	{
@@ -352,7 +367,9 @@ if ii == 2
 else if global.diplomacy == 6 and play_event == true
 {
 
-draw_text_ext(x,y,"The Aliens are complaining about certian countries reverse engineering and undercutting Lunar businesses.. They want solutions now...",20,600);
+draw_sprite(spr_textbox,0,x,y);
+
+draw_text_ext(x,y,"After many years of working on our interstellar relation, The Lunians call for a meeting..",20,600);
 
 if pick == -1
 	{
@@ -360,64 +377,71 @@ if pick == -1
 	}
 if ii == 1
 	{
-	switch (pick)
+	switch(pick)
 		{
 		case 0:
-			draw_text_ext(x,y + 60, "immediate action is taken.. The companies will charged to the fullest extent of the law. The Aliens approve..",20,600);
+			draw_text_ext(x,y + 90, "Lunians display the meeting of mankind as a beginning to a bright future... The moon and earth will share a great relation.",20,600);
 		break;
 		case 1:
-			draw_text_ext(x,y + 60, "bureaucracy clutters the investigations.. Finding the counterfitters takes time... ",20,600);
+			draw_text_ext(x,y + 90, "Lunians say they feel honored to mentor the human race and fast track us to the future...",20,600);
 		break;
 		case 2:
-			draw_text_ext(x,y + 60, "after along investigation, the companies have disbanded and we ran out of leads.. ",20,600);
+			draw_text_ext(x,y + 90," They claim that earth has many resources readily accessible, Drasticly helping change lunians every day life...",20,600);
 		break;
 		case 3:
-			draw_text_ext(x,y + 60, "The Aliens were not happy with our time frame, missiles stike in a chinese industrial area, wiping out the counterfitters and innocent citizens.. war has been declared..",20,600);
+			draw_text_ext(x,y + 90, "The Lunians envy our access to resources.. in the flick of a switch earths leaders are grabbed. Their throats are slit on interstellar live streaming...",20,600);
 		break;
 		}
 	}
-if ii == 2 
+if ii == 2
 	{
 	switch (pick)
 		{
 		case 0:
+			obj_earth.money += 3000;
 			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom(2);
-			obj_earth.diplomacy += irandom(2);
+			obj_earth.economy += irandom_range(3,5);
+			obj_earth.diplomacy += irandom_range(3,5);
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over6 = true;
+			over7 = true;
 			global.play_event = false;
 		break;
 		case 1:
+			obj_earth.money += 2000;
 			obj_earth.researchpoints += 2;
+			obj_moon.war += irandom_range(0,1);
+			obj_earth.economy += irandom(2);
+			obj_earth.diplomacy -= irandom(1);
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over6 = true;
+			over7 = true;
 			global.play_event = false;
 		break;
 		case 2:
+			obj_earth.money += 1000;
 			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(1,3);
-			obj_earth.economy -= irandom(2);
-			obj_earth.diplomacy -= irandom(2);
+			obj_earth.economy += irandom_range(2,4);
+			obj_earth.diplomacy += irandom(3);
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over6 = true;
+			over7 = true;
 			global.play_event = false;
 		break;
 		case 3:
+			obj_earth.money -= 6000;		
 			obj_earth.researchpoints += 2;
 			obj_moon.war = 10;
-			obj_earth.economy -= irandom(2);
-			obj_earth.diplomacy -= irandom_range(2,6);
+			obj_earth.economy -= irandom_range(2,6);
+			obj_earth.diplomacy = 0;
+			obj_earth.millitary -= irandom_range(80,150);
 			play_event = false;
 			ii = 0;
 			pick = -1;
-			over6 = true;
+			over7 = true;
 			global.play_event = false;
 		break;
 		}
