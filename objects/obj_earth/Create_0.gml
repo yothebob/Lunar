@@ -20,4 +20,4 @@ threat = 0;
 
 play_event = false;
 
-audio_play_sound(sng_lofi,1,true);
+//audio_play_sound(sng_lofi,1,true);

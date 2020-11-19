@@ -28,11 +28,7 @@ draw_text_ext(x,y,"With a publicly shared meeting the powers of the Moon and Ear
 	switch(pick)
 		{
 		case 0:
-			obj_earth.researchpoints += 2;
-			obj_moon.war -= irandom_range(1,3);
-			obj_earth.economy += irandom(2);
-			obj_earth.diplomacy += irandom(2);
-			obj_earth.money += 100;
+			obj_moon.relation -= irandom_range(1,3);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -40,9 +36,7 @@ draw_text_ext(x,y,"With a publicly shared meeting the powers of the Moon and Ear
 			global.play_event = false;
 		break;
 		case 1:
-			obj_earth.money -= 600;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(1,3);
+			obj_moon.relation += irandom_range(1,3);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -89,10 +83,7 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
-			obj_earth.money -= 600;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(0,2);
-			obj_earth.economy += irandom(3);
+			obj_moon.relation += irandom_range(0,2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -100,10 +91,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 1:
-			obj_earth.money -= 200;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(0,1);
-			obj_earth.economy += irandom_range(2,4);
+			obj_moon.relation += irandom_range(0,1);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -111,9 +99,6 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 2:
-			obj_earth.money -= 600;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(2,5);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -121,8 +106,6 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
-			obj_earth.money -= 900;
-			obj_earth.researchpoints += 2;
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -169,9 +152,7 @@ if ii == 2
 	switch(pick)
 		{
 		case 0:
-			obj_earth.money -= 1000;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(0,2);
+			obj_moon.relation += irandom_range(0,2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -179,10 +160,6 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 1:
-			obj_earth.money += 300;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom(3);
-			obj_earth.diplomacy += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -201,10 +178,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
-			obj_earth.money -= 1000;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(1,3);
-			obj_earth.diplomacy -= irandom(2);
+			obj_moon.relation += irandom_range(1,3);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -248,10 +222,6 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
-			obj_earth.money += 300;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom(3);
-			obj_earth.diplomacy -= irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -259,10 +229,6 @@ if ii == 2
 			global.play_event = false;
 		break;	
 		case 1:
-			obj_earth.money += 2000;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(3,6);
-			obj_earth.diplomacy -= irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -270,11 +236,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 2:
-			obj_earth.money -= 5000;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(2,4);
-			obj_earth.economy -= irandom(2);
-			obj_earth.diplomacy -= irandom(2);
+			obj_moon.relation += irandom_range(2,4);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -282,8 +244,6 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
-			obj_earth.money -= 2000;
-			obj_earth.researchpoints += 2;
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -327,10 +287,6 @@ if ii == 2
 	switch(pick)
 		{
 		case 0:
-			obj_earth.money += 3000;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom(3);
-			obj_earth.diplomacy += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -338,10 +294,6 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 1:
-			obj_earth.money += 2000;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom(3);
-			obj_earth.diplomacy += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -349,9 +301,6 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 2:
-			obj_earth.money -= 2000;
-			obj_earth.researchpoints += 2;
-			obj_earth.millitary -= irandom_range(40,100);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -359,10 +308,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
-			obj_earth.money -= 3000;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom(2);
-			obj_earth.diplomacy -= irandom(2);
+			obj_moon.relation += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -408,10 +354,6 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
-			obj_earth.money += 300;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom(2);
-			obj_earth.diplomacy += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -419,8 +361,6 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 1:
-			obj_earth.money -= 300;
-			obj_earth.researchpoints += 2;
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -428,11 +368,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 2:
-			obj_earth.money -= 900;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(1,3);
-			obj_earth.economy -= irandom(2);
-			obj_earth.diplomacy -= irandom(2);
+			obj_moon.relation += irandom_range(1,3);
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -440,11 +376,7 @@ if ii == 2
 			global.play_event = false;
 		break;
 		case 3:
-			obj_earth.money -= 1000;
-			obj_earth.researchpoints += 2;
-			obj_moon.war = 10;
-			obj_earth.economy -= irandom(2);
-			obj_earth.diplomacy -= irandom_range(2,6);
+			obj_moon.relation = 10;
 			play_event = false;
 			ii = 0;
 			pick = -1;

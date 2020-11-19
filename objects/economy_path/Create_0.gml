@@ -10,3 +10,4 @@ over4 = false;
 over5 = false;
 over6 = false;
 over7 = false;
+global.economy = 0;

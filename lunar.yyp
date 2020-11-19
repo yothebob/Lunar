@@ -22,6 +22,7 @@
     {"id":{"name":"obj_missile","path":"objects/obj_missile/obj_missile.yy",},"order":1,},
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":0,},
     {"id":{"name":"obj_rotate","path":"objects/obj_rotate/obj_rotate.yy",},"order":1,},
+    {"id":{"name":"Sprite19","path":"sprites/Sprite19/Sprite19.yy",},"order":23,},
     {"id":{"name":"obj_time","path":"objects/obj_time/obj_time.yy",},"order":4,},
     {"id":{"name":"obj_earth","path":"objects/obj_earth/obj_earth.yy",},"order":1,},
     {"id":{"name":"spr_buttomup","path":"sprites/spr_buttomup/spr_buttomup.yy",},"order":3,},

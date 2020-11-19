@@ -11,3 +11,4 @@ draw_sprite(spr_diplomacyicon,0,300,15);
 draw_text(330,20,string(diplomacy));
 draw_text(370,20,string(money));
 draw_text(230,50,"Research Points: " + string(researchpoints));
+draw_text(200,200,string(missile));
