@@ -1,9 +1,6 @@
 part_star = part_system_create();
 part_system_depth(part_star,1);
 
-part_over = part_system_create();
-part_system_depth(part_over,-1);
-
 star = part_type_create();
 part_type_sprite(star,spr_star,false,false,false);
 part_type_size(star,.08,.2,0,0);
@@ -45,9 +42,7 @@ part_type_life(flares1,400,1200);
 
 
 pt_emit = part_emitter_create(part_star);
-pt_emit_over = part_emitter_create(part_over);
 part_emitter_region(part_star,pt_emit, 0,room_width,0,room_height,ps_shape_rectangle,ps_distr_linear);
-part_emitter_region(part_over,pt_emit_over, 0,room_width,0,room_height,ps_shape_rectangle,ps_distr_invgaussian);
 
 
 alarm[0] = 1;
