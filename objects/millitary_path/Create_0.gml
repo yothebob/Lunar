@@ -12,3 +12,4 @@ over6 = false;
 over7 = false;
 over8 = false;
 over9 = false;
+global.millitary = 0;

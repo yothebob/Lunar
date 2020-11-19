@@ -1,4 +1,4 @@
-switch(global.economy)
+switch(obj_earth.economy)
 {
 case 1:
 	c[1] = c_green;

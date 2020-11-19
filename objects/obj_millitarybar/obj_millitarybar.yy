@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "path_bars",
-    "path": "folders/Objects/path_bars.yy",
+    "path": "folders/Objects/obsolete/path_bars.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_millitarybar",

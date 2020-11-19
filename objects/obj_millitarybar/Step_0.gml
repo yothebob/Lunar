@@ -1,4 +1,4 @@
-switch(global.millitary)
+switch(obj_earth.millitary)
 {
 case 1:
 	c[1] = c_red;

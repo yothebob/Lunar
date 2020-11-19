@@ -1,21 +1,23 @@
 randomize();
 economy = 0;
-economyresearch = 0;
 millitary = 0;
-millitaryresearch = 0;
 diplomacy = 0;
-diplomacyresearch = 0;
-people = 100;
-researchpoints = 20;
-money = 500;
+researchpoints = 10;
+money = 0;
 
-global.diplomacy = 0;
-global.millitary = 0;
-global.economy = 0;
-global.play_event = false;
+missile = 0;
+spy = 0;
+ship = 0;
+destroyer = 0;
+
+trade = 0;
+discover = 0;
+
+policy = 0;
+resolve = 0;
+threat = 0;
+
 
 play_event = false;
-shoot = 120;
 
 audio_play_sound(sng_lofi,1,true);
-alarm[1] = 60;

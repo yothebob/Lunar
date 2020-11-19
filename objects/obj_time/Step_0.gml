@@ -3,16 +3,17 @@ if global.pause == false
 
 if tick == 120
 	{
-	obj_earth.money += obj_earth.economy;
-	if obj_earth.money >= 0
-		{obj_earth.money -= (obj_earth.millitary);}
-	else
-		{obj_earth.millitary -= 100 }
-	month += 1;
+	global.month += 1;
 	tick = 0;
+	obj_earth.money += obj_earth.economy;
+	obj_moon.money += obj_moon.economy;
+	obj_earth.money -= obj_earth.millitary;
+	obj_moon.money -= obj_moon.millitary;
 	}
-if month == 13
+if global.month == 13
 	{
-	month = 1;
-	year += 1;
+	obj_earth.researchpoints += 1;
+	obj_moon.researchpoints += 1;
+	global.month = 1;
+	global.year += 1;
 	}

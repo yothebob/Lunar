@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "RNG engines",
-    "path": "folders/Objects/RNG engines.yy",
+    "path": "folders/Objects/obsolete/RNG engines.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_randomevents",

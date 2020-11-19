@@ -1,18 +1,20 @@
-if war >= 10
+if researchpoints > 0
 	{
-		if millitary > 0
+	var pick = irandom(2);
+	switch(pick)
 		{
-		shoot -= 1; 
-			if shoot <= 0
-				{
-				shoot = irandom_range(100,140);
-				with (instance_create_depth(x-60,irandom_range(380,650),-10000,obj_missile))
-					{
-					moon = true;
-					image_xscale = -1;
-					speed = irandom_range(1,2.5);
-					direction = 180;
-					}
-				}
+		case 0:
+			millitary += 1;
+			researchpoints -= 1;
+		break;
+		case 1:
+			economy += 1;
+			researchpoints -= 1;
+		break;
+		case 2:
+			diplomacy += 1;
+			researchpoints -= 1;
+		break;
 		}
 	}
+	

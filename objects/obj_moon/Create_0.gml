@@ -1,4 +1,6 @@
-war = 0;
-millitary = 500;
-people = 500;
-shoot = 120;
+money = 0;
+millitary = 0;
+economy = 0;
+diplomacy = 0;
+researchpoints = 5;
+relation = 0;

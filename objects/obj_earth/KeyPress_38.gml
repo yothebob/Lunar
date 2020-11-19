@@ -1,1 +1,0 @@
-obj_moon.war = 10;

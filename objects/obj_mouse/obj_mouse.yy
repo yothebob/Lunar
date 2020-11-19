@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Mechanics",
+    "path": "folders/Objects/Mechanics.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_mouse",

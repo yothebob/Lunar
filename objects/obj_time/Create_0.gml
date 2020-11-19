@@ -1,4 +1,4 @@
 tick = 0;
-month = 1;
-year = 1;
+global.month = 1;
+global.year = 1;
 global.pause = true;

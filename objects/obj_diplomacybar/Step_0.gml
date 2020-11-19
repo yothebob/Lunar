@@ -1,4 +1,4 @@
-switch(global.diplomacy)
+switch(obj_earth.diplomacy)
 {
 case 1:
 	c[1] = c_blue;
