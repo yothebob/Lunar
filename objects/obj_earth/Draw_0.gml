@@ -2,13 +2,18 @@
 draw_self();
 
 
-draw_sprite(spr_gui,0,70,15);
-draw_sprite(spr_millitaryicon,0,90,15);
-draw_text(140,20,string(millitary));
-draw_sprite(spr_economyicon,0,190,15);
-draw_text(240,20,string(economy));
-draw_sprite(spr_diplomacyicon,0,300,15);
-draw_text(330,20,string(diplomacy));
-draw_text(370,20,string(money));
-draw_text(230,50,"Research Points: " + string(researchpoints));
-draw_text(200,200,string(missile));
+draw_sprite_ext(spr_gui,0,70,15,2,1,0,c_white,1);
+draw_text(160,20,string(citizen));
+draw_text(160,40,"people");
+
+draw_text(300,20,string(money));
+draw_text(300,40,"Money");
+
+draw_text(440,20,string(approval));
+draw_text(440,40,"Approval");
+
+draw_text(580,20,string(conditions));
+draw_text(580,40,"conditons");
+
+draw_text(760,20,"Research Points: " + string(researchpoints));
+draw_text(300,200,string(missile));

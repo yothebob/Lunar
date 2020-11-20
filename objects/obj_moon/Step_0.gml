@@ -15,13 +15,18 @@ if researchpoints > 0
 			researchpoints -= 1;
 		break;
 		case 2:
-			diplomacy += 1;
-			researchpoints -= 1;
+			if friendly == true
+				{
+					diplomacy += 1;
+					researchpoints -= 1;
+				}
+			else
+			{pick = irandom(1);}
 		break;
 		}
 	}
 	
-if relation >= 10
+if relation >= 50
 	{
 	tick -= 1
 	if tick <= 0
@@ -40,3 +45,4 @@ if relation >= 10
 			tick = 30;
 		}
 	}
+	

@@ -4,7 +4,9 @@ millitary = 0;
 diplomacy = 0;
 researchpoints = 10;
 money = 0;
-
+citizen = 2000;
+approval = .5;
+conditions = .5;
 missile = 0;
 spy = 0;
 ship = 0;

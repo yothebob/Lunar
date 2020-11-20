@@ -1,7 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
-draw_self();
-draw_text(x,y+40, string(cooldown));
-draw_text(x,y -40, string(que));
+var clicked = place_meeting(x,y,obj_mouse) and mouse_check_button_pressed(mb_left);
+var rightclicked = place_meeting(x,y,obj_mouse) and mouse_check_button_pressed(mb_right);
 
- 
+draw_self();
+draw_text(x + 40,y, string(cooldown));
+draw_text(x - 40,y, string(que));
+
