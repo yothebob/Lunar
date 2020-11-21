@@ -6,19 +6,19 @@ global.pause = true;
 menuopen = true;
 if make_buttons <= 3
 {
-with(instance_create_depth(x+yy,y+30,-10000,obj_buttonup))
+with(instance_create_depth(x+yy,y,-10000,obj_buttonup))
 	{
 	skill = 1;
 	other.make_buttons += 1;
 	}
 	
-with(instance_create_depth(x+yy,y+60,-10000,obj_buttonup))
+with(instance_create_depth(x+yy,y+32,-10000,obj_buttonup))
 	{
 	skill = 2;
 	other.make_buttons += 1;
 	}
 	
-with(instance_create_depth(x+yy,y+90,-10000,obj_buttonup))
+with(instance_create_depth(x+yy,y+64,-10000,obj_buttonup))
 	{
 	skill = 3;
 	other.make_buttons += 1;

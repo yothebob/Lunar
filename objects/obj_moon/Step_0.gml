@@ -1,6 +1,11 @@
 var moontop = 380;
 var moonbot = 650;
 
+if citizen < 0
+	{
+	game_restart();
+	}
+
 if researchpoints > 0
 	{
 	var pick = irandom(2);
@@ -46,3 +51,30 @@ if relation >= 50
 		}
 	}
 	
+if money > 15
+	{
+		
+	var buy = choose(1,2,3);
+		if hostile == true or relation > 0
+		{
+			if buy == 1
+				{
+				money -= 15;
+				missile += 3;
+				}
+			else if buy == 2
+				{
+				money -= 10;
+				ship += 1;
+				}
+			else if buy == 3
+				{
+				money -= 15;
+				destroyer += 1;
+				}
+		}
+	else
+		{
+		money -= 10;
+		}
+	}

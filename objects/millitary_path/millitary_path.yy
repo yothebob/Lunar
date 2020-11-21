@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "paths",
-    "path": "folders/Objects/obsolete/paths.yy",
+    "path": "folders/Objects/Mechanics/paths.yy",
   },
   "resourceVersion": "1.0",
   "name": "millitary_path",

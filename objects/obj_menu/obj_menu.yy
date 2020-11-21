@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_textbox",
-    "path": "sprites/spr_textbox/spr_textbox.yy",
+    "name": "spr_9box",
+    "path": "sprites/spr_9box/spr_9box.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "menu",
-    "path": "folders/Objects/menu.yy",
+    "path": "folders/Objects/Mechanics/menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_menu",

@@ -12,8 +12,7 @@ draw_text(300,40,"Money");
 draw_text(440,20,string(approval));
 draw_text(440,40,"Approval");
 
-draw_text(580,20,string(conditions));
-draw_text(580,40,"conditons");
 
 draw_text(760,20,"Research Points: " + string(researchpoints));
 draw_text(300,200,string(missile));
+

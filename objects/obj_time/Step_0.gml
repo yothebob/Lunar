@@ -1,12 +1,12 @@
 if global.pause == false
 {tick += 1;}
 
-if tick == 120
+if tick == 20
 	{
 	global.month += 1;
 	tick = 0;
-	obj_earth.money += obj_earth.economy;
-	obj_moon.money += obj_moon.economy * 2;
+	obj_earth.money += obj_earth.economy * obj_earth.approval;
+	obj_moon.money += obj_moon.economy * irandom_range(1,2);
 	obj_earth.money -= obj_earth.millitary;
 	obj_moon.money -= obj_moon.millitary;
 	}

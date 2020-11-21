@@ -4,9 +4,8 @@ millitary = 0;
 diplomacy = 0;
 researchpoints = 10;
 money = 0;
-citizen = 2000;
-approval = .5;
-conditions = .5;
+citizen = 1500;
+approval = 1;
 missile = 0;
 spy = 0;
 ship = 0;
@@ -23,3 +22,8 @@ threat = 0;
 play_event = false;
 
 //audio_play_sound(sng_lofi,1,true);
+
+spying = 0;
+spymission = 120;
+sabotaging = 0;
+sabotagemission = 120;

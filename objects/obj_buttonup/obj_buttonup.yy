@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "menu",
-    "path": "folders/Objects/menu.yy",
+    "path": "folders/Objects/Mechanics/menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_buttonup",

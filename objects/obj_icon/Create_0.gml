@@ -9,4 +9,6 @@ enum icon{
 missile,
 ship,
 destroyer,
+spy,
+sabotage,
 }
