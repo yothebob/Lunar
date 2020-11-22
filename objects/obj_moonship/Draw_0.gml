@@ -15,7 +15,8 @@ if shooting == true
 	{
 		if other.guncooldown < 0
 			{
-			draw_line_color(other.x,other.y,x,y,c_red,c_red);
+			var rx = irandom(30);	
+			draw_line_color(other.x,other.y,x +rx,y + rx,c_red,c_red);
 			other.guncooldown = 30;
 			id.citizen -= irandom(5);
 			
@@ -37,3 +38,9 @@ if place_meeting(x,y,obj_explosion)
 	{
 	hp -= 2;
 	}
+	
+if place_meeting(x,y,obj_explosion3)
+	{
+	hp -= 5;
+	}
+	

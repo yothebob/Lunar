@@ -24,7 +24,7 @@ switch (type)
 			if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money >10
 			{
 			id.que -= 1;
-			obj_earth.money -= 5;	
+			obj_earth.money -= 10;	
 			obj_earth.missile += 1;
 			event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
@@ -54,7 +54,7 @@ switch (type)
 		if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 20
 			{
 				id.que -= 1;
-				obj_earth.money -= 10;
+				obj_earth.money -= 20;
 				obj_earth.ship += 1;
 				event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
@@ -80,10 +80,10 @@ switch (type)
 			{
 				id.que += 1;
 			}
-		if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 15
+		if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 200
 			{
 			id.que -= 1;
-			obj_earth.money -= 15;
+			obj_earth.money -= 200;
 			obj_earth.destroyer += 1;
 			event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
@@ -94,6 +94,14 @@ switch (type)
 			return_cooldown(obj_earth.millitary);
 			event = -1;
 			}
+		if rightclicked and obj_earth.destroyer > 0
+			{
+			obj_earth.destroyer -= 1;	
+			with(instance_create_depth(obj_earth.x,irandom_range(380,650),-10000,obj_earthdestroyer))
+				{
+				direction = 0;
+				}
+			}	
 	break;
 	case icon.spy:
 		image_index = 3;

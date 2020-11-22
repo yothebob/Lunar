@@ -11,7 +11,7 @@ economy = 0;
 diplomacy = 0;
 researchpoints = 5;
 relation = 0;
-citizen = 1500;
+citizen = 4000;
 
 missile = 0;
 ship  = 0;

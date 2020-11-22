@@ -15,7 +15,8 @@ if shooting == true
 	{
 		if other.guncooldown < 0
 			{
-			draw_line_color(other.x,other.y,x,y,c_blue,c_blue);
+			var rx = irandom(30);	
+			draw_line_color(other.x,other.y,x + rx,y + rx,c_blue,c_blue);
 			other.guncooldown = 30;
 			id.citizen -= irandom(5);
 			if obj_moon.relation < 50

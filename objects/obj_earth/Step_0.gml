@@ -6,7 +6,6 @@ if keyboard_check_pressed(ord("R"))
 
 
 
-
 if spying > 0
 	{
 	spymission -= 1;

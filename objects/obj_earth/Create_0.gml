@@ -4,12 +4,12 @@ millitary = 0;
 diplomacy = 0;
 researchpoints = 10;
 money = 0;
-citizen = 1500;
+citizen = 4000;
 approval = 1;
 missile = 0;
 spy = 0;
 ship = 0;
-destroyer = 0;
+destroyer = 20;
 
 trade = 0;
 discover = 0;
