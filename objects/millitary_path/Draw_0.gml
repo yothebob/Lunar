@@ -1,7 +1,7 @@
 draw_set_halign(fa_center);
-if global.millitary == 1 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true
+if global.millitary == 1 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
-	
+	global.pause = true;
 	draw_nine_splice(spr_9box,340,385,940,585);
 draw_text_ext(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have the Lunians Noticed?..",20,600)
 	if ii == 0 and pick == -1
@@ -25,6 +25,7 @@ draw_text_ext(x,y,"Earths greatest millitarys have been collaborating..." + "\n 
 	ii = 0;
 	pick = -1;
 	over1 = true;
+	global.pause = false;
 	}
 	
 	if ii == 2 and pick == 1
@@ -34,11 +35,13 @@ draw_text_ext(x,y,"Earths greatest millitarys have been collaborating..." + "\n 
 	ii = 0;
 	pick = -1;
 	over1 = true;
+	global.pause = false;
 	}
 }
 
-if global.millitary == 2 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true
+if global.millitary == 2 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
+global.pause = true;	
 draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y, "Research on a super weapon capable of flying to the moon with precision has started... We try to hide the research under grounds in remote locations...",20,600)
@@ -80,6 +83,7 @@ if ii == 2 and pick == 0
 	ii = 0;
 	pick = -1;
 	over2 = true;
+	global.pause = false;
 	}
 	
 if ii == 2 and pick == 1
@@ -89,6 +93,7 @@ if ii == 2 and pick == 1
 	ii = 0;
 	pick = -1;
 	over2 = true;
+	global.pause = false;
 	}
 	
 if ii == 2 and pick == 2
@@ -98,6 +103,7 @@ if ii == 2 and pick == 2
 	ii = 0;
 	pick = -1;
 	over2 = true;
+	global.pause = false;
 	}
 	
 if ii == 2 and pick == 3 
@@ -114,12 +120,13 @@ if ii == 2 and pick == 3
 	ii = 0;
 	pick = -1;
 	over2 = true;
+	global.pause = false;
 	}
 }
 	
-if global.millitary == 3 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true
+if global.millitary == 3 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
-
+global.pause = true;
 draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y,"Advances in small arms and defences have been made.. companies all across earth are manufactoring weapons, ships and armor. ",20,600);
@@ -150,6 +157,7 @@ if ii == 2 and pick == 0
 	ii = 0;
 	pick = -1;
 	over3 = true;
+	global.pause = false;
 	}
 	
 if ii == 2 and pick == 1
@@ -160,6 +168,7 @@ if ii == 2 and pick == 1
 	ii = 0;
 	pick = -1;
 	over3 = true;
+	global.pause = false;
 	}
 	
 if ii = 2 and pick == 2 
@@ -172,12 +181,13 @@ if ii = 2 and pick == 2
 	ii = 0;
 	pick = -1;
 	over3 = true;
+	global.pause = false;
 	}
 }
 	
-if global.millitary == 4 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true
+if global.millitary == 4 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
-
+global.pause = true;
 draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y,"New space ships are being created for more agility and more firepower...",20,600)
@@ -213,6 +223,7 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over4 = true;
+			global.pause = false;
 		break;
 		case 1:
 			obj_moon.relation += irandom_range(5,10);
@@ -222,7 +233,7 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over4 = true;
-		
+			global.pause = false;
 		break;
 		case 2:	
 			obj_earth.approval -= .2;
@@ -231,15 +242,15 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over4 = true;
-		
+			global.pause = false;
 		break;
 		}
 	}
 }
 	
-if global.millitary == 5 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true
+if global.millitary == 5 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
-
+global.pause = true;
 draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y," All the newly created missiles need to be transported and guarded for their use...",20,600)
@@ -276,7 +287,7 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			
+			global.pause = false;
 		break;	
 		case 1:
 			obj_earth.approval -= .5;
@@ -286,7 +297,7 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			
+			global.pause = false;
 		break;	
 		case 2:
 			obj_earth.approval += .4;
@@ -296,14 +307,15 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			
+			global.pause = false;
 		break;
 		}
 	}
 }
 	
-if global.millitary == 6 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true
+if global.millitary == 6 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
+global.pause = true;
 
 draw_nine_splice(spr_9box,340,385,940,585);
 	
@@ -340,7 +352,7 @@ if ii == 2
 				ii = 0;
 				pick = -1;
 				over6 = true;
-				
+				global.pause = false;
 			break;
 			case 1:
 				obj_earth.approval -= .2;
@@ -349,7 +361,7 @@ if ii == 2
 				ii = 0;
 				pick = -1;
 				over6 = true;
-					
+				global.pause = false;	
 			break;
 			case 2:
 				obj_earth.approval -= .8;
@@ -358,6 +370,7 @@ if ii == 2
 				ii = 0;
 				pick = -1;
 				over6 = true;
+				global.pause = false;
 			break;
 			}
 	}

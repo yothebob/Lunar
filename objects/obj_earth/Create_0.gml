@@ -26,4 +26,4 @@ play_event = false;
 spying = 0;
 spymission = 120;
 sabotaging = 0;
-sabotagemission = 120;
+sabotagemission = 240;

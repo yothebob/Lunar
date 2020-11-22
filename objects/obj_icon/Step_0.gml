@@ -66,6 +66,14 @@ switch (type)
 			return_cooldown(obj_earth.millitary);
 			event = -1;
 			}
+		if rightclicked and obj_earth.ship > 0
+			{
+			obj_earth.ship -= 1;	
+			with(instance_create_depth(obj_earth.x,irandom_range(380,650),-10000,obj_earthship))
+				{
+				direction = 0;
+				}
+			}
 	break;
 	case icon.destroyer:
 		image_index = 2;
@@ -109,12 +117,12 @@ switch (type)
 		}
 	if obj_earth.sabotagemission <= 0
 		{
-		var failcheck = irandom(10);
+		var failcheck = irandom(5);
 		if failcheck == 5
 			{
-			obj_moon.relation += irandom_range(10,20);
+			obj_moon.relation += irandom_range(25,40);
 			}
-		obj_moon.missile -= irandom_range(5,20);	
+		obj_moon.missile -= obj_moon.missile/10;
 		obj_earth.sabotaging -= 1;	
 		obj_earth.sabotagemission = 120;
 		}
@@ -139,13 +147,13 @@ switch (type)
 			{
 			obj_moon.relation -= irandom(obj_earth.diplomacy);
 			}
-		if obj_moon.relation < 0 or obj_earth.diplomacy > 5
+		if obj_moon.relation < 0
 			{
-			obj_earth.approval += .1;
+			obj_earth.approval += .05;
 			}
 			else 
 			{
-			obj_earth.approval -= .1;
+			obj_earth.approval -= .05;
 			}
 		id.que -= 1;
 		event = irandom(5);
@@ -175,13 +183,13 @@ switch (type)
 		obj_earth.money -= 20;	
 		if obj_moon.relation >= 0 
 			{
-			obj_earth.approval += .1;
+			obj_earth.approval += .05;
 			obj_moon.relation += 1;
 			}
 			else 
 			{
 			obj_moon.relation += 1;
-			obj_earth.approval -= .1;
+			obj_earth.approval -= .05;
 			}
 		id.que -= 1;
 		event = irandom(5);

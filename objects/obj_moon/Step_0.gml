@@ -31,7 +31,7 @@ if researchpoints > 0
 		}
 	}
 	
-if relation >= 50
+if relation >= 50 and global.pause = false
 	{
 	tick -= 1
 	if tick <= 0
@@ -47,6 +47,14 @@ if relation >= 50
 					moon = true;
 					}	
 			}
+		if ship > 0
+			{
+			ship -= 1;
+				with(instance_create_depth(x + irandom(60),irandom_range(moontop,moonbot),-10000,obj_moonship))
+					{
+					image_xscale = -1;
+					}	
+			}	
 			tick = 30;
 		}
 	}

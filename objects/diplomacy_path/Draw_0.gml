@@ -1,8 +1,8 @@
 draw_set_halign(fa_center);
 
-if global.diplomacy == 1 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
+if global.diplomacy == 1 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
-	
+global.pause = true;
 draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y,"Earths Leaders need to study Lunar political regions, regions and cultures for a good relation..",20,600);
@@ -33,22 +33,22 @@ draw_text_ext(x,y,"Earths Leaders need to study Lunar political regions, regions
 			ii = 0;
 			pick = -1;
 			over1 = true;
-			
+			global.pause = false;
 		break;
 		case 1:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over1 = true;
-			
+			global.pause = false;
 		break;
 		}	
 	}
 }
 
-else if global.diplomacy == 2 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
+else if global.diplomacy == 2 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
-	
+	global.pause = true;
 draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y, "Lunians want to send groups of researchers to study earth species and enviroments..",20,600);
@@ -86,32 +86,36 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over2 = true;
+			global.pause = false;
 		break;
 		case 1:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over2 = true;
+			global.pause = false;
 		break;
 		case 2:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over2 = true;
+			global.pause = false;
 		break;
 		case 3:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over2 = true;
+			global.pause = false;
 		break;
 		}
 	}	
 }
 	
-else if global.diplomacy == 3 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
+else if global.diplomacy == 3 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
-
+global.pause = true;
 draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y,"The worlds governments talk about a interstellar student exchange program...",20,600);
@@ -149,31 +153,35 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over3 = true;
+			global.pause = false;
 		break;
 		case 1:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over3 = true;
+			global.pause = false;
 		break;
 		case 2:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over3 = true;
+			global.pause = false;
 		break;
 		case 3:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over3 = true;
+			global.pause = false;
 		break;
 		}
 	}
-}
-else if global.diplomacy == 4 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
+} 
+else if global.diplomacy == 4 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
-
+global.pause = true;
 draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y,"Hollywood is asking permission to make movies showing and depicting Lunians and historical stories.",20,600);	
@@ -209,36 +217,36 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over4 = true;
-			
+			global.pause = false;
 		break;	
 		case 1:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over4 = true;
-			
+			global.pause = false;
 		break;
 		case 2:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over4 = true;
-		
+		global.pause = false;
 		break;
 		case 3:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over4 = true;
-			
+			global.pause = false;
 		break;
 		}
 	}
 }
 
-else if global.diplomacy == 5 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
+else if global.diplomacy == 5 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
-	
+global.pause = true;	
 draw_nine_splice(spr_9box,340,385,940,585);
 	
 	draw_text_ext(x,y,"human internet culture has been slowly introduced to the Lunians.",20,600);
@@ -273,21 +281,21 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			
+			global.pause = false;
 		break;
 		case 1:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			
+			global.pause = false;
 		break;
 		case 2:
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			
+			global.pause = false;
 		break;
 		case 3:
 			obj_earth.researchpoints += 2;
@@ -295,14 +303,16 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over5 = true;
+			global.pause = false;
 		break;
 		}
 	}
 	
 }
 
-else if global.diplomacy == 6 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
+else if global.diplomacy == 6 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 { 
+global.pause = true;
 
 draw_nine_splice(spr_9box,340,385,940,585);
 
@@ -339,16 +349,18 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over7 = true;
-			
+			global.pause = false;
 		break;
 		case 1:
 			play_event = false;
+			global.pause = false;
 			ii = 0;
 			pick = -1;
 			over7 = true;
 	
 		break;
 		case 2:
+			global.pause = false;
 			play_event = false;
 			ii = 0;
 			pick = -1;
@@ -356,6 +368,7 @@ if ii == 2
 			
 		break;
 		case 3:
+			global.pause = false;
 			play_event = false;
 			ii = 0;
 			pick = -1;
