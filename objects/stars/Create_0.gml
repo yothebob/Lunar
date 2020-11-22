@@ -15,20 +15,20 @@ part_type_shape(flares,pt_shape_cloud);
 part_type_size(flares,2,5,-.001,.01);
 part_type_scale(flares,3,2);
 part_type_color_rgb(flares,0,200,0,0,0,200);
-part_type_alpha3(flares,0,.15,0);
+part_type_alpha3(flares,0,.25,0);
 part_type_speed(flares,0,.05,.0005,0);
 part_type_direction(flares,0,180,0,0);
-part_type_life(flares,400,1200);
+part_type_life(flares,600,1200);
 
 flares1 = part_type_create();
 part_type_shape(flares1,pt_shape_cloud);
 part_type_size(flares1,2,5,-.001,.01);
 part_type_scale(flares1,3,2);
 part_type_color_rgb(flares1,0,100,0,150,0,80);
-part_type_alpha3(flares1,0,.15,0);
+part_type_alpha3(flares1,0,.25,0);
 part_type_speed(flares1,0,.05,.0005,0);
 part_type_direction(flares1,0,180,0,0);
-part_type_life(flares1,400,1200);
+part_type_life(flares1,600,1200);
 
 
 

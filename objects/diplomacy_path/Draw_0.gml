@@ -1,9 +1,9 @@
 draw_set_halign(fa_center);
 
-if global.diplomacy == 1 and play_event == true 
+if global.diplomacy == 1 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
 {
 	
-draw_sprite(spr_textbox,0,x,y);	
+draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y,"Earths Leaders need to study Lunar political regions, regions and cultures for a good relation..",20,600);
 	if pick == -1
@@ -28,33 +28,28 @@ draw_text_ext(x,y,"Earths Leaders need to study Lunar political regions, regions
 	switch(pick)
 		{
 		case 0:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom(2);
-			obj_earth.diplomacy += irandom(2);
+			obj_earth.researchpoints += 1;
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over1 = true;
-			global.play_event = false;
+			
 		break;
 		case 1:
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(1,2);
-			obj_earth.diplomacy -= irandom(1);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over1 = true;
-			global.play_event = false;
+			
 		break;
 		}	
 	}
 }
 
-else if global.diplomacy == 2 and play_event == true
+else if global.diplomacy == 2 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
 {
 	
-draw_sprite(spr_textbox,0,x,y);	
+draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y, "Lunians want to send groups of researchers to study earth species and enviroments..",20,600);
 
@@ -87,53 +82,37 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
-			obj_earth.researchpoints += 2;
-			obj_earth.diplomacy += 2;
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over2 = true;
-			global.play_event = false;
 		break;
 		case 1:
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(3,6);
-			obj_earth.economy -= irandom_range(2,4);
-			obj_earth.diplomacy -= irandom_range(4,8);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over2 = true;
-			global.play_event = false;
 		break;
 		case 2:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(2,5);
-			obj_earth.diplomacy += irandom_range(3,6);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over2 = true;
-			global.play_event = false;
 		break;
 		case 3:
-			obj_earth.researchpoints += 2;
-			obj_earth.diplomacy -= irandom(3);
-			obj_moon.war += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over2 = true;
-			global.play_event = false;
 		break;
 		}
 	}	
 }
 	
-else if global.diplomacy == 3 and play_event == true
+else if global.diplomacy == 3 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
 {
-	
-draw_sprite(spr_textbox,0,x,y);	
+
+draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y,"The worlds governments talk about a interstellar student exchange program...",20,600);
 
@@ -166,53 +145,36 @@ if ii == 2
 	switch(pick)
 		{
 		case 0:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom(10);
-			obj_earth.diplomacy += irandom(5);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over3 = true;
-			global.play_event = false;
 		break;
 		case 1:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy -= irandom(10);
-			obj_earth.diplomacy -= irandom(5);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over3 = true;
-			global.play_event = false;
 		break;
 		case 2:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy -= irandom_range(15,20);
-			obj_earth.diplomacy -= irandom_range(4,10);
-			obj_moon.war += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over3 = true;
-			global.play_event = false;
 		break;
 		case 3:
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(2,5);
-			obj_earth.diplomacy -= irandom(20);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over3 = true;
-			global.play_event = false;
 		break;
 		}
 	}
 }
-else if global.diplomacy == 4 and play_event == true
+else if global.diplomacy == 4 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
 {
-	
-draw_sprite(spr_textbox,0,x,y);	
+
+draw_nine_splice(spr_9box,340,385,940,585);
 	
 draw_text_ext(x,y,"Hollywood is asking permission to make movies showing and depicting Lunians and historical stories.",20,600);	
 if pick == -1
@@ -243,55 +205,41 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(10,20);
-			obj_earth.diplomacy += irandom(5);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over4 = true;
-			global.play_event = false;
+			
 		break;	
 		case 1:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(3,6);
-			obj_earth.diplomacy += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over4 = true;
-			global.play_event = false;
+			
 		break;
 		case 2:
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(2,4);
-			obj_earth.economy -= irandom_range(5,15);
-			obj_earth.diplomacy -= irandom(4);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over4 = true;
-			global.play_event = false;
+		
 		break;
 		case 3:
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(3,4);
-			obj_earth.economy -= irandom_range(5,15);
-			obj_earth.diplomacy -= irandom(4);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over4 = true;
-			global.play_event = false;
+			
 		break;
 		}
 	}
 }
 
-else if global.diplomacy == 5 and play_event == true
+else if global.diplomacy == 5 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
 {
 	
-draw_sprite(spr_textbox,0,x,y);	
+draw_nine_splice(spr_9box,340,385,940,585);
 	
 	draw_text_ext(x,y,"human internet culture has been slowly introduced to the Lunians.",20,600);
 if pick == -1
@@ -321,35 +269,25 @@ if ii == 2
 	switch(pick)
 		{
 		case 0:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom(3);
-			obj_earth.diplomacy += irandom(2);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			global.play_event = false;
+			
 		break;
 		case 1:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy -= irandom(15);
-			obj_earth.diplomacy -= irandom(5);
-			obj_moon.war -= irandom(3);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			global.play_event = false;
+			
 		break;
 		case 2:
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(10,20);
-			obj_earth.diplomacy += irandom(10);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			global.play_event = false;
+			
 		break;
 		case 3:
 			obj_earth.researchpoints += 2;
@@ -357,17 +295,16 @@ if ii == 2
 			ii = 0;
 			pick = -1;
 			over5 = true;
-			global.play_event = false;
 		break;
 		}
 	}
 	
 }
 
-else if global.diplomacy == 6 and play_event == true
-{
+else if global.diplomacy == 6 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true
+{ 
 
-draw_sprite(spr_textbox,0,x,y);
+draw_nine_splice(spr_9box,340,385,940,585);
 
 draw_text_ext(x,y,"After many years of working on our interstellar relation, The Lunians call for a meeting..",20,600);
 
@@ -398,51 +335,31 @@ if ii == 2
 	switch (pick)
 		{
 		case 0:
-			obj_earth.money += 3000;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(3,5);
-			obj_earth.diplomacy += irandom_range(3,5);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over7 = true;
-			global.play_event = false;
+			
 		break;
 		case 1:
-			obj_earth.money += 2000;
-			obj_earth.researchpoints += 2;
-			obj_moon.war += irandom_range(0,1);
-			obj_earth.economy += irandom(2);
-			obj_earth.diplomacy -= irandom(1);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over7 = true;
-			global.play_event = false;
+	
 		break;
 		case 2:
-			obj_earth.money += 1000;
-			obj_earth.researchpoints += 2;
-			obj_earth.economy += irandom_range(2,4);
-			obj_earth.diplomacy += irandom(3);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over7 = true;
-			global.play_event = false;
+			
 		break;
 		case 3:
-			obj_earth.money -= 6000;		
-			obj_earth.researchpoints += 2;
-			obj_moon.war = 10;
-			obj_earth.economy -= irandom_range(2,6);
-			obj_earth.diplomacy = 0;
-			obj_earth.millitary -= irandom_range(80,150);
 			play_event = false;
 			ii = 0;
 			pick = -1;
 			over7 = true;
-			global.play_event = false;
 		break;
 		}
 	}

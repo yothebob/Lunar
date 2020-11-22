@@ -11,4 +11,6 @@ ship,
 destroyer,
 spy,
 sabotage,
+policy, 
+propaganda,
 }

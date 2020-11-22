@@ -1,0 +1,1 @@
+spawntype = 1;

@@ -11,6 +11,7 @@ if id.cooldown > 0 {id.cooldown -= 1;}
 else if obj_millitarytab.tab == "close"
 	{y = yc;}
  
+
 switch (type)
 	{
 	
@@ -116,6 +117,81 @@ switch (type)
 		obj_moon.missile -= irandom_range(5,20);	
 		obj_earth.sabotaging -= 1;	
 		obj_earth.sabotagemission = 120;
+		}
+	break;
+	case icon.policy:
+	image_index = 5;
+	
+	  if obj_diplomacytab.tab == "open"
+		{y = yo}
+	else if obj_diplomacytab.tab == "close"
+		{y = yc;}
+	
+	if clicked 
+		{
+			
+		id.que += 1;
+		}
+	if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 20
+		{
+		obj_earth.money -= 20;	
+		if obj_moon.friendly == true or obj_earth.diplomacy > 5
+			{
+			obj_moon.relation -= irandom(obj_earth.diplomacy);
+			}
+		if obj_moon.relation < 0 or obj_earth.diplomacy > 5
+			{
+			obj_earth.approval += .1;
+			}
+			else 
+			{
+			obj_earth.approval -= .1;
+			}
+		id.que -= 1;
+		event = irandom(5);
+			if event == 2 and diplomacy_path.play_event == false
+				{
+				global.diplomacy += 1;
+				diplomacy_path.play_event = true;
+				}
+			return_cooldown(obj_earth.diplomacy);
+			event = -1;
+		}
+	break;
+	case icon.propaganda:
+	image_index = 6;
+	
+	  if obj_diplomacytab.tab == "open"
+		{y = yo}
+	else if obj_diplomacytab.tab == "close"
+		{y = yc;}
+	
+	if clicked 
+		{
+		id.que += 1;
+		}
+	if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 20
+		{
+		obj_earth.money -= 20;	
+		if obj_moon.relation >= 0 
+			{
+			obj_earth.approval += .1;
+			obj_moon.relation += 1;
+			}
+			else 
+			{
+			obj_moon.relation += 1;
+			obj_earth.approval -= .1;
+			}
+		id.que -= 1;
+		event = irandom(5);
+			if event == 2 and diplomacy_path.play_event == false
+				{
+				global.diplomacy += 1;
+				diplomacy_path.play_event = true;
+				}
+			return_cooldown(obj_earth.diplomacy);
+			event = -1;
 		}
 	break;
 	}
