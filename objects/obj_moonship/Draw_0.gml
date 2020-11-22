@@ -1,8 +1,7 @@
 draw_self();
-draw_text(x + 10,y,string(guncooldown));
 if shooting == true
 {
-	with( collision_circle(x,y,radius + 2,obj_missile,false,false))
+	with( collision_circle(x,y,radius + 5,obj_earthmissile,false,false))
 	{
 		if other.guncooldown < 0
 			{
@@ -12,7 +11,7 @@ if shooting == true
 			}
 	}
 	
-	with( collision_circle(x,y,radius + 2,obj_earth,false,false))
+	with( collision_circle(x,y,radius +5 ,obj_earth,false,false))
 	{
 		if other.guncooldown < 0
 			{
@@ -22,4 +21,19 @@ if shooting == true
 			
 			}
 	}
+	
+	with( collision_circle(x,y,radius +5 ,obj_earthship,false,false))
+	{
+		if other.guncooldown < 0
+			{
+			draw_line_color(other.x,other.y,x,y,c_red,c_red);
+			other.guncooldown = 30;
+			hp -= 1;
+			}
+	}
 }
+
+if place_meeting(x,y,obj_explosion)
+	{
+	hp -= 2;
+	}

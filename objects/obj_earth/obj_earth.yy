@@ -33,6 +33,8 @@
   },
   "resourceVersion": "1.0",
   "name": "obj_earth",
-  "tags": [],
+  "tags": [
+    "earth",
+  ],
   "resourceType": "GMObject",
 }

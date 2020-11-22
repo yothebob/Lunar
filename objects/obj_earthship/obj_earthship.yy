@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_ship",
-    "path": "sprites/spr_ship/spr_ship.yy",
+    "name": "spr_ship2",
+    "path": "sprites/spr_ship2/spr_ship2.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,15 +24,18 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_earthship","path":"objects/obj_earthship/obj_earthship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_earthship","path":"objects/obj_earthship/obj_earthship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_earthship","path":"objects/obj_earthship/obj_earthship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"parent":{"name":"obj_earthship","path":"objects/obj_earthship/obj_earthship.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "weapons",
+    "path": "folders/Objects/weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_earthship",
-  "tags": [],
+  "tags": [
+    "earth",
+  ],
   "resourceType": "GMObject",
 }

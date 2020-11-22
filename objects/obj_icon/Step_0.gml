@@ -21,13 +21,13 @@ switch (type)
 			{
 				id.que += 1;
 			}
-			if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 5
+			if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money >10
 			{
 			id.que -= 1;
 			obj_earth.money -= 5;	
 			obj_earth.missile += 1;
 			event = irandom(5);
-			if event == 2 and millitary_path.play_event == false
+			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
 				{
 				global.millitary += 1;
 				millitary_path.play_event = true;
@@ -38,27 +38,26 @@ switch (type)
 		if rightclicked and obj_earth.missile > 0
 			{
 			obj_earth.missile -= 1;	
-			with(instance_create_depth(obj_earth.x,irandom_range(380,650),-10000,obj_missile))
+			with(instance_create_depth(obj_earth.x,irandom_range(380,650),-10000,obj_earthmissile))
 				{
 				direction = 0;
 				speed = irandom_range(1,3);
-				earth = true;
 				}
 			}
 	break;
 	case icon.ship:
 		image_index = 1;
-		if clicked 
+		if clicked and obj_earth.millitary >= 10
 			{
 				id.que += 1;
 			}
-		if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 10
+		if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 20
 			{
 				id.que -= 1;
 				obj_earth.money -= 10;
 				obj_earth.ship += 1;
 				event = irandom(5);
-			if event == 2 and millitary_path.play_event == false
+			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
 				{
 				global.millitary += 1;
 				millitary_path.play_event = true;
@@ -77,7 +76,7 @@ switch (type)
 	break;
 	case icon.destroyer:
 		image_index = 2;
-		if clicked 
+		if clicked and obj_earth.millitary >= 20
 			{
 				id.que += 1;
 			}
@@ -87,7 +86,7 @@ switch (type)
 			obj_earth.money -= 15;
 			obj_earth.destroyer += 1;
 			event = irandom(5);
-			if event == 2 and millitary_path.play_event == false
+			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
 				{
 				global.millitary += 1;
 				millitary_path.play_event = true;
@@ -127,6 +126,7 @@ switch (type)
 		obj_earth.sabotagemission = 120;
 		}
 	break;
+	
 	case icon.policy:
 	image_index = 5;
 	
@@ -157,7 +157,7 @@ switch (type)
 			}
 		id.que -= 1;
 		event = irandom(5);
-			if event == 2 and diplomacy_path.play_event == false
+			if event == 2 and diplomacy_path.play_event == false and millitary_path.play_event == false
 				{
 				global.diplomacy += 1;
 				diplomacy_path.play_event = true;
@@ -193,7 +193,7 @@ switch (type)
 			}
 		id.que -= 1;
 		event = irandom(5);
-			if event == 2 and diplomacy_path.play_event == false
+			if event == 2 and diplomacy_path.play_event == false and millitary_path.play_event == false
 				{
 				global.diplomacy += 1;
 				diplomacy_path.play_event = true;

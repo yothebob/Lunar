@@ -1,38 +1,19 @@
 guncooldown -= 1;
  
- switch (state)
-	{
-	case moonship.move:
-		shooting = false;
-		if place_meeting(x + radius,y,obj_earth)
-			{
-			state = moonship.attack;
-			}
-		else if distance_to_object(obj_missile) > radius 
-			{
-			x -= 1;
-			}	
-		else if distance_to_object(obj_earthship) <= radius
-			{
-			state = moonship.attack;
-			}	
-		else if distance_to_object(obj_missile) <= radius
-			{
-			state = moonship.attack;
-			}
-	 
-	break;	
-	case moonship.attack:
-		shooting = true;
-		if distance_to_object(obj_missile) > radius
-			{
-			state = moonship.move;
-			}	
-			
-	break;
-}
 
-if place_meeting(x,y,obj_missile)
+	if collision_circle(x,y,radius,obj_earthship,false,false)
+		{shooting = true;}
+	else if collision_circle(x,y,radius,obj_earthmissile,false,false)
+		{shooting = true;}
+	else if collision_circle(x,y,radius,obj_earth,false,false)
+		{shooting = true;}	
+	else {x = x -1; shooting = false;}	
+	
+
+if place_meeting(x,y,obj_earthmissile)
+	{instance_destroy();}
+
+if hp <= 0
 	{
 	instance_destroy();
 	}

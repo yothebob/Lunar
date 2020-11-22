@@ -28,11 +28,13 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_missile",
-    "path": "folders/Objects/obj_missile.yy",
+    "name": "weapons",
+    "path": "folders/Objects/weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_missile",
-  "tags": [],
+  "tags": [
+    "earth",
+  ],
   "resourceType": "GMObject",
 }

@@ -1,10 +1,5 @@
 radius = 50;
 guncooldown = 30;
 shooting = false;
-enum moonship
-{
-attack,
-move,
-}
-
-state = moonship.move;
+image_xscale = -1;
+hp = 5;

@@ -8,7 +8,10 @@ if citizen < 0
 
 if researchpoints > 0
 	{
-	var pick = irandom(2);
+	if money < -200
+		{var pick = 1;}
+	else	
+	{var pick = irandom(2);}
 	switch(pick)
 		{
 		case 0:
@@ -31,7 +34,7 @@ if researchpoints > 0
 		}
 	}
 	
-if relation >= 50 and global.pause = false
+if relation >= 50 and global.pause == false
 	{
 	tick -= 1
 	if tick <= 0
@@ -39,12 +42,11 @@ if relation >= 50 and global.pause = false
 		if missile > 0
 			{
 			missile -= 1;
-				with(instance_create_depth(x + irandom(60),irandom_range(moontop,moonbot),-10000,obj_missile))
+				with(instance_create_depth(x + irandom(60),irandom_range(moontop,moonbot),-10000,obj_moonmissile))
 					{
 					image_xscale = -1;
 					direction = 180;
 					speed = irandom_range(1,3);
-					moon = true;
 					}	
 			}
 		if ship > 0
@@ -59,7 +61,7 @@ if relation >= 50 and global.pause = false
 		}
 	}
 	
-if money > 15
+if money > 20
 	{
 		
 	var buy = choose(1,2,3);
@@ -67,17 +69,17 @@ if money > 15
 		{
 			if buy == 1
 				{
-				money -= 15;
-				missile += 3;
+				money -= 20;
+				missile += 2;
 				}
 			else if buy == 2
 				{
-				money -= 10;
+				money -= 20;
 				ship += 1;
 				}
 			else if buy == 3
 				{
-				money -= 15;
+				money -= 20;
 				destroyer += 1;
 				}
 		}
