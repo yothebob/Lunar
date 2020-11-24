@@ -19,3 +19,8 @@ if place_meeting(x,y,obj_moonship)
 	{	
 	instance_destroy(self);
 	}
+
+if place_meeting(x,y,obj_moonbomb)
+	{
+	hp -= 5;
+	}

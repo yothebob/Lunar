@@ -56,12 +56,20 @@ if relation >= 50 and global.pause == false
 					{
 					image_xscale = -1;
 					}	
+			}
+		if destroyer > 0
+			{
+			destroyer -= 1;
+				with(instance_create_depth(x + irandom(60),irandom_range(moontop,moonbot),-10000,obj_moondestroyer))
+					{
+					image_xscale = -1;
+					}	
 			}	
-			tick = 30;
+			tick = 30;	
 		}
 	}
 	
-if money > 20
+if money > 40
 	{
 		
 	var buy = choose(1,2,3);
@@ -69,22 +77,22 @@ if money > 20
 		{
 			if buy == 1
 				{
-				money -= 20;
-				missile += 2;
+				money -= 40;
+				missile += 4;
 				}
 			else if buy == 2
 				{
-				money -= 20;
-				ship += 1;
+				money -= 40;
+				ship += 2;
 				}
 			else if buy == 3
 				{
-				money -= 20;
+				money -= 200;
 				destroyer += 1;
 				}
 		}
 	else
 		{
-		money -= 10;
+		money -= 20;
 		}
 	}

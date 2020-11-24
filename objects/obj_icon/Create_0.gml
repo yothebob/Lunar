@@ -1,3 +1,4 @@
+randomize();
 que = 0;
 cooldown = 0;
 type = -1;
@@ -13,4 +14,5 @@ spy,
 sabotage,
 policy, 
 propaganda,
+resolve,
 }

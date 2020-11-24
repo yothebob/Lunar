@@ -6,6 +6,9 @@ else if collision_circle(x,y,radius,obj_moonship,false,false)
 	{shooting = true;}
 else if collision_circle(x,y,radius,obj_moon,false,false)
 	{shooting = true}
+else if collision_circle(x,y,radius,obj_moondestroyer,false,false)
+	{shooting = true}
+		
 else {x += 1;
 	}
 if place_meeting(x,y,obj_moonmissile)

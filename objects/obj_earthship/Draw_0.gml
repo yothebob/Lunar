@@ -35,4 +35,14 @@ if shooting == true
 			hp -= 1;
 			}
 	}
+	
+	with( collision_circle(x,y,radius + 2,obj_moondestroyer,false,false))
+	{
+		if other.guncooldown < 0
+			{
+			draw_line_color(other.x,other.y,x,y,c_blue,c_blue);
+			other.guncooldown = 30;
+			hp -= 1;
+			}
+	}
 }

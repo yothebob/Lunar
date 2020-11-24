@@ -29,6 +29,7 @@ switch (type)
 			event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
 				{
+				event = -1;	
 				global.millitary += 1;
 				millitary_path.play_event = true;
 				}
@@ -59,9 +60,10 @@ switch (type)
 				event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
 				{
+					event = -1;
 				global.millitary += 1;
 				millitary_path.play_event = true;
-				}
+				}	
 			return_cooldown(obj_earth.millitary);
 			event = -1;
 			}
@@ -88,9 +90,10 @@ switch (type)
 			event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
 				{
+				event = -1;	
 				global.millitary += 1;
 				millitary_path.play_event = true;
-				}
+				}	
 			return_cooldown(obj_earth.millitary);
 			event = -1;
 			}
@@ -169,7 +172,9 @@ switch (type)
 				{
 				global.diplomacy += 1;
 				diplomacy_path.play_event = true;
+				event = -1;
 				}
+				
 			return_cooldown(obj_earth.diplomacy);
 			event = -1;
 		}
@@ -210,4 +215,25 @@ switch (type)
 			event = -1;
 		}
 	break;
+	
+	case icon.resolve:
+		image_index = 7;
+	
+	  if obj_diplomacytab.tab == "open"
+		{y = yo}
+	else if obj_diplomacytab.tab == "close"
+		{y = yc;}
+		
+		if clicked and global.pause == false and obj_earth.diplomacy >= 15 and obj_earth.money >= 500
+			{
+			obj_earth.money -= 500;
+			obj_moon.relation = 0;
+			instance_destroy(obj_earthmissile);
+			instance_destroy(obj_moonmissile);
+			instance_destroy(obj_earthship);
+			instance_destroy(obj_moonship);
+			instance_destroy(obj_earthdestroyer);
+			instance_destroy(obj_moondestroyer);
+			
+			}
 	}

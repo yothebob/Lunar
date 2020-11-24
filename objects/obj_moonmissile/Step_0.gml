@@ -16,7 +16,7 @@ if place_meeting(x,y,obj_earthship)
 	instance_destroy(self);
 	}
 
-if place_meeting(x,y,obj_explosion3)
+if place_meeting(x,y,obj_earthbomb)
 	{
 	hp -= 5;
 	}
