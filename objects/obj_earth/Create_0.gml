@@ -6,9 +6,9 @@ researchpoints = 10;
 money = 0;
 citizen = 4000;
 approval = 1;
-missile = 0;
+missile = 20;
 spy = 0;
-ship = 0;
+ship = 20;
 destroyer = 20;
 
 trade = 0;

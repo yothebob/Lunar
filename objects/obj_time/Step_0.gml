@@ -1,7 +1,16 @@
 if global.pause == false
 {tick += 1;}
 
-if tick == 60
+
+if keyboard_check_pressed(ord("1"))
+	{global.ticks = 20;}
+if keyboard_check_pressed(ord("2"))
+	{global.ticks = 40;}
+if keyboard_check_pressed(ord("3"))
+	{global.ticks = 60;}
+	
+
+if tick >= global.ticks
 	{
 	global.month += 1;
 	tick = 0;

@@ -3,7 +3,8 @@ draw_set_halign(fa_center);
 if global.diplomacy == 1 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
 global.pause = true;
-draw_nine_splice(spr_9box,340,385,940,585);
+
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 draw_text_ext(x,y,"Earths Leaders need to study Lunar political regions, regions and cultures for a good relation..",20,600);
 	if pick == -1
@@ -49,7 +50,7 @@ draw_text_ext(x,y,"Earths Leaders need to study Lunar political regions, regions
 else if global.diplomacy == 2 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
 	global.pause = true;
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 draw_text_ext(x,y, "Lunians want to send groups of researchers to study earth species and enviroments..",20,600);
 
@@ -116,7 +117,7 @@ if ii == 2
 else if global.diplomacy == 3 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
 global.pause = true;
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 draw_text_ext(x,y,"The worlds governments talk about a interstellar student exchange program...",20,600);
 
@@ -182,7 +183,7 @@ if ii == 2
 else if global.diplomacy == 4 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
 global.pause = true;
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 draw_text_ext(x,y,"Hollywood is asking permission to make movies showing and depicting Lunians and historical stories.",20,600);	
 if pick == -1
@@ -247,7 +248,7 @@ if ii == 2
 else if global.diplomacy == 5 and play_event == true and economy_path.play_event != true and millitary_path.play_event != true and obj_moon.relation < 50
 {
 global.pause = true;	
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 	draw_text_ext(x,y,"human internet culture has been slowly introduced to the Lunians.",20,600);
 if pick == -1
@@ -314,7 +315,7 @@ else if global.diplomacy == 6 and play_event == true and economy_path.play_event
 { 
 global.pause = true;
 
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 
 draw_text_ext(x,y,"After many years of working on our interstellar relation, The Lunians call for a meeting..",20,600);
 

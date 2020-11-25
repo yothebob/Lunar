@@ -13,7 +13,7 @@ researchpoints = 5;
 relation = 0;
 citizen = 4000;
 
-missile = 0;
-ship  = 0;
-destroyer = 0;
+missile = 10;
+ship  = 10;
+destroyer = 10;
 tick = 30;

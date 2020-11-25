@@ -2,7 +2,7 @@ draw_set_halign(fa_center);
 if global.millitary == 1 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
 	global.pause = true;
-	draw_nine_splice(spr_9box,340,385,940,585);
+	draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 draw_text_ext(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have the Lunians Noticed?..",20,600)
 	if ii == 0 and pick == -1
 	{
@@ -42,7 +42,7 @@ draw_text_ext(x,y,"Earths greatest millitarys have been collaborating..." + "\n 
 if global.millitary == 2 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
 global.pause = true;	
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 draw_text_ext(x,y, "Research on a super weapon capable of flying to the moon with precision has started... We try to hide the research under grounds in remote locations...",20,600)
 
@@ -127,7 +127,7 @@ if ii == 2 and pick == 3
 if global.millitary == 3 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
 global.pause = true;
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 draw_text_ext(x,y,"Advances in small arms and defences have been made.. companies all across earth are manufactoring weapons, ships and armor. ",20,600);
 
@@ -188,7 +188,7 @@ if ii = 2 and pick == 2
 if global.millitary == 4 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
 global.pause = true;
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 draw_text_ext(x,y,"New space ships are being created for more agility and more firepower...",20,600)
 if pick == -1
@@ -251,7 +251,7 @@ if ii == 2
 if global.millitary == 5 and play_event == true and economy_path.play_event != true and diplomacy_path.play_event != true and obj_moon.relation < 50
 {
 global.pause = true;
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 draw_text_ext(x,y," All the newly created missiles need to be transported and guarded for their use...",20,600)
 
@@ -317,7 +317,7 @@ if global.millitary == 6 and play_event == true and economy_path.play_event != t
 {
 global.pause = true;
 
-draw_nine_splice(spr_9box,340,385,940,585);
+draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
 draw_text_ext(x,y," Everything is coming together, The Aliens have called for a confrence...",20,600);
 

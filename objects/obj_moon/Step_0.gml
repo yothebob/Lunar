@@ -1,5 +1,5 @@
-var moontop = 380;
-var moonbot = 650;
+var moontop = 280;
+var moonbot = 555;
 
 if citizen < 0
 	{
