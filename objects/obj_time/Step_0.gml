@@ -1,7 +1,7 @@
 if global.pause == false
 {tick += 1;}
 
-if tick == 20
+if tick == 60
 	{
 	global.month += 1;
 	tick = 0;

@@ -153,16 +153,14 @@ switch (type)
 	if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 20
 		{
 		obj_earth.money -= 20;	
-		if obj_moon.friendly == true or obj_earth.diplomacy > 5
+		if obj_moon.relation <= 0
 			{
-			obj_moon.relation -= irandom(obj_earth.diplomacy);
-			}
-		if obj_moon.relation < 0
-			{
+			obj_moon.relation -= 1;	
 			obj_earth.approval += .05;
 			}
 			else 
 			{
+			obj_moon.relation -= 1;	
 			obj_earth.approval -= .05;
 			}
 		id.que -= 1;
@@ -223,10 +221,10 @@ switch (type)
 	else if obj_diplomacytab.tab == "close"
 		{y = yc;}
 		
-		if clicked and global.pause == false and obj_earth.diplomacy >= 15 and obj_earth.money >= 500
+		if clicked and global.pause == false and obj_earth.diplomacy >= 10 and obj_earth.money >= 500
 			{
 			obj_earth.money -= 500;
-			obj_moon.relation = 0;
+			obj_moon.relation = 25;
 			instance_destroy(obj_earthmissile);
 			instance_destroy(obj_moonmissile);
 			instance_destroy(obj_earthship);
