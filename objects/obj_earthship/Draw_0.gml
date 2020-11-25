@@ -1,5 +1,5 @@
 draw_self();
-if shooting == true
+if shooting == true and global.pause == false
 {
 	with( collision_circle(x,y,radius + 2,obj_moonmissile,false,false))
 	{

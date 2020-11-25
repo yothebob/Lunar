@@ -42,7 +42,6 @@ switch (type)
 			with(instance_create_depth(obj_earth.x,irandom_range(380,650),-10000,obj_earthmissile))
 				{
 				direction = 0;
-				speed = irandom_range(1,3);
 				}
 			}
 	break;

@@ -1,3 +1,12 @@
+if global.pause == true
+	{
+	speed = 0;
+	}
+	else
+	{
+	speed = spd;
+	}
+
 if place_meeting(x - xx,y,obj_moon)
 	{
 	if obj_moon.relation < 50

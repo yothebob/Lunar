@@ -1,5 +1,5 @@
 draw_self();
-if shooting == true
+if shooting == true and global.pause == false
 {
 	with( collision_circle(x,y,radius + 5,obj_earthmissile,false,false))
 	{
@@ -34,13 +34,3 @@ if shooting == true
 	}
 }
 
-if place_meeting(x,y,obj_explosion)
-	{
-	hp -= 2;
-	}
-	
-if place_meeting(x,y,obj_explosion3)
-	{
-	hp -= 5;
-	}
-	

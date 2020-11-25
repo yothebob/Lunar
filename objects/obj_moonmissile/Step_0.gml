@@ -1,3 +1,12 @@
+if global.pause == false
+	{
+	speed = spd;
+	}
+	else
+	{
+	speed = 0;
+	}
+
 
 if place_meeting(x + xx ,y,obj_earth)
 	{
