@@ -11,8 +11,11 @@ draw_text(300,40,"Money");
 
 draw_text(440,20,string(approval));
 draw_text(440,40,"Approval");
-draw_text(500,40,string(missile));
 
-draw_text(760,20,"Research Points: " + string(researchpoints));
+draw_text(550,20,string(missile));
+draw_text(600,20,string(ship));
+draw_text(650,20,string(destroyer));
+
+draw_text(760,20,"Research Points: \n" + string(researchpoints));
 
 

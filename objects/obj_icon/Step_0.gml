@@ -1,15 +1,10 @@
 var clicked = place_meeting(x,y,obj_mouse) and mouse_check_button_pressed(mb_left);
 var rightclicked = place_meeting(x,y,obj_mouse) and mouse_check_button_pressed(mb_right);
  
- var yc = 800;
- var yo = 650;
+ var moontop = 280;
+ var moonbot = 555;
  
 if id.cooldown > 0 {id.cooldown -= 1;}
- 
- if obj_millitarytab.tab == "open"
-	{y = yo}
-else if obj_millitarytab.tab == "close"
-	{y = yc;}
  
 
 switch (type)
@@ -39,7 +34,7 @@ switch (type)
 		if rightclicked and obj_earth.missile > 0
 			{
 			obj_earth.missile -= 1;	
-			with(instance_create_depth(obj_earth.x,irandom_range(380,650),-10000,obj_earthmissile))
+			with(instance_create_depth(obj_earth.x,irandom_range(moontop,moonbot),-10000,obj_earthmissile))
 				{
 				direction = 0;
 				}
@@ -69,7 +64,7 @@ switch (type)
 		if rightclicked and obj_earth.ship > 0
 			{
 			obj_earth.ship -= 1;	
-			with(instance_create_depth(obj_earth.x,irandom_range(380,650),-10000,obj_earthship))
+			with(instance_create_depth(obj_earth.x,irandom_range(moontop,moonbot),-10000,obj_earthship))
 				{
 				direction = 0;
 				}
@@ -99,7 +94,7 @@ switch (type)
 		if rightclicked and obj_earth.destroyer > 0
 			{
 			obj_earth.destroyer -= 1;	
-			with(instance_create_depth(obj_earth.x,irandom_range(380,650),-10000,obj_earthdestroyer))
+			with(instance_create_depth(obj_earth.x,irandom_range(moontop,moonbot),-10000,obj_earthdestroyer))
 				{
 				direction = 0;
 				}
@@ -110,7 +105,18 @@ switch (type)
 		if clicked and obj_earth.money > 10
 			{
 			obj_earth.spying += 1;
+			cooldown = 240;
 			obj_earth.money -= 10;
+			
+			if cooldown <= 0
+				{
+				obj_earth.spying -= 1;	
+				var failcheck = irandom(5);
+				if failcheck == 5
+					{
+					obj_moon.relation += irandom_range(25,40);
+					}
+				}
 			}
 	break;
 	case icon.sabotage:
@@ -118,32 +124,24 @@ switch (type)
 	
 	if clicked and obj_earth.money > 10
 		{
+		obj_earth.money -= 10;	
 		obj_earth.sabotaging += 1;
-		}
-	if obj_earth.sabotaging > 0
-		{
-		obj_earth.sabotagemission -= 1;
-		}
-	if obj_earth.sabotagemission <= 0
-		{
-		var failcheck = irandom(5);
-		if failcheck == 5
+		cooldown = 240;
+		if cooldown <= 0
 			{
-			obj_moon.relation += irandom_range(25,40);
+			var failcheck = irandom(5);
+			if failcheck == 5
+				{
+				obj_moon.relation += irandom_range(25,40);
+				}
+			obj_moon.missile -= obj_moon.missile/10;
+			obj_earth.sabotaging -= 1;	
 			}
-		obj_moon.missile -= obj_moon.missile/10;
-		obj_earth.sabotaging -= 1;	
-		obj_earth.sabotagemission = 120;
 		}
 	break;
 	
 	case icon.policy:
 	image_index = 5;
-	
-	  if obj_diplomacytab.tab == "open"
-		{y = yo}
-	else if obj_diplomacytab.tab == "close"
-		{y = yc;}
 	
 	if clicked 
 		{
@@ -179,11 +177,6 @@ switch (type)
 	case icon.propaganda:
 	image_index = 6;
 	
-	  if obj_diplomacytab.tab == "open"
-		{y = yo}
-	else if obj_diplomacytab.tab == "close"
-		{y = yc;}
-	
 	if clicked 
 		{
 		id.que += 1;
@@ -215,11 +208,6 @@ switch (type)
 	
 	case icon.resolve:
 		image_index = 7;
-	
-	  if obj_diplomacytab.tab == "open"
-		{y = yo}
-	else if obj_diplomacytab.tab == "close"
-		{y = yc;}
 		
 		if clicked and global.pause == false and obj_earth.diplomacy >= 10 and obj_earth.money >= 500
 			{
