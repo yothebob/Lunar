@@ -105,10 +105,10 @@ switch (type)
 		if clicked and obj_earth.money > 10
 			{
 			obj_earth.spying += 1;
-			cooldown = 240;
+			id.cooldown = 240;
 			obj_earth.money -= 10;
-			
-			if cooldown <= 0
+			}
+			if id.cooldown <= 0 and obj_earth.spying > 0
 				{
 				obj_earth.spying -= 1;	
 				var failcheck = irandom(5);
@@ -116,7 +116,6 @@ switch (type)
 					{
 					obj_moon.relation += irandom_range(25,40);
 					}
-				}
 			}
 	break;
 	case icon.sabotage:

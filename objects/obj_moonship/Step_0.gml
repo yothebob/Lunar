@@ -10,6 +10,8 @@ if global.pause == false
 			{shooting = true;}
 		else if collision_circle(x,y,radius,obj_earth,false,false)
 			{shooting = true;}	
+		else if collision_circle(x,y,radius,obj_earthdestroyer,false,false)
+			{shooting = true;}		
 		else {x = x -1; shooting = false;}	
 	
 
