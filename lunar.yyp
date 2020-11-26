@@ -32,6 +32,7 @@
     {"id":{"name":"spr_9box","path":"sprites/spr_9box/spr_9box.yy",},"order":25,},
     {"id":{"name":"obj_iconspawn","path":"objects/obj_iconspawn/obj_iconspawn.yy",},"order":1,},
     {"id":{"name":"Sprite19","path":"sprites/Sprite19/Sprite19.yy",},"order":23,},
+    {"id":{"name":"spr_destroyer2","path":"sprites/spr_destroyer2/spr_destroyer2.yy",},"order":32,},
     {"id":{"name":"obj_time","path":"objects/obj_time/obj_time.yy",},"order":3,},
     {"id":{"name":"obj_moondestroyer","path":"objects/obj_moondestroyer/obj_moondestroyer.yy",},"order":8,},
     {"id":{"name":"spr_explosion3","path":"sprites/spr_explosion3/spr_explosion3.yy",},"order":30,},
