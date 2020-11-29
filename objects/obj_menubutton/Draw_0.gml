@@ -48,4 +48,9 @@ switch(text)
 		draw_self();
 		draw_text(x,y,"Quit");	
 	break;
+	
+	case 7:
+		draw_self();
+		draw_text(x,y,"Menu");	
+	break;
 	}

@@ -71,4 +71,22 @@ switch (text)
 		image_yscale = 1;
 		}
 	break;
+	
+		case 7:
+			audio_stop_all();
+		if place_meeting(x,y,obj_mouse)
+		{
+		image_xscale = 1.1;
+		image_yscale = 1.1;
+			if mouse_check_button_pressed(mb_left)
+			{
+			room_goto(rm_menu);
+			}		
+		}
+		else
+		{
+		image_xscale = 1;
+		image_yscale = 1;
+		}
+	break;
 	}
