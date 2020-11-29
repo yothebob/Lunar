@@ -1,6 +1,6 @@
 var moontop = 280;
 var moonbot = 555;
-
+	
 if citizen < 0
 	{
 	game_restart();

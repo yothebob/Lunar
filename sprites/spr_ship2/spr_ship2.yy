@@ -72,8 +72,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"92bf0c71-a811-40b0-b55b-1cad397e00b9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "weapons",
+    "path": "folders/Sprites/weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ship2",

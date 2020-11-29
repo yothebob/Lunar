@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mechanics",
-    "path": "folders/Objects/Mechanics.yy",
+    "name": "icons",
+    "path": "folders/Objects/Mechanics/icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_iconspawn",

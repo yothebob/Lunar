@@ -9,11 +9,11 @@ money = 0;
 millitary = 0;
 economy = 0;
 diplomacy = 0;
-researchpoints = 5;
+researchpoints = 8;
 relation = 0;
 citizen = 4000;
 
-missile = 10;
-ship  = 10;
-destroyer = 10;
+missile = 0;
+ship  = 0;
+destroyer = 0;
 tick = 30;

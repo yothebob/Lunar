@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_economyicon",
-    "path": "sprites/spr_economyicon/spr_economyicon.yy",
+    "name": "spr_money",
+    "path": "sprites/spr_money/spr_money.yy",
   },
   "solid": false,
   "visible": true,

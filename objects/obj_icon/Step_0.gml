@@ -4,8 +4,12 @@ var rightclicked = place_meeting(x,y,obj_mouse) and mouse_check_button_pressed(m
  var moontop = 280;
  var moonbot = 555;
  
-if id.cooldown > 0 {id.cooldown -= 1;}
+if id.cooldown > 0 and global.pause == false {id.cooldown -= (8-(global.ticks/10));}
  
+ if id.cooldown < 0
+	{
+	id.cooldown = 0;
+	}
 
 switch (type)
 	{
@@ -16,7 +20,7 @@ switch (type)
 			{
 				id.que += 1;
 			}
-			if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money >10
+			if id.que > 0 and cooldown <= 0 and global.pause == false and obj_earth.money >10
 			{
 			id.que -= 1;
 			obj_earth.money -= 10;	
@@ -28,7 +32,7 @@ switch (type)
 				global.millitary += 1;
 				millitary_path.play_event = true;
 				}
-			return_cooldown(obj_earth.millitary);
+			return_cooldown(obj_earth.millitary) ;
 			event = -1;
 			}
 		if rightclicked and obj_earth.missile > 0
@@ -46,10 +50,10 @@ switch (type)
 			{
 				id.que += 1;
 			}
-		if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 20
+		if id.que > 0 and cooldown <= 0 and global.pause == false and obj_earth.money > 100
 			{
 				id.que -= 1;
-				obj_earth.money -= 20;
+				obj_earth.money -= 100;
 				obj_earth.ship += 1;
 				event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
@@ -76,7 +80,7 @@ switch (type)
 			{
 				id.que += 1;
 			}
-		if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 200
+		if id.que > 0 and cooldown <= 0 and global.pause == false and obj_earth.money > 200
 			{
 			id.que -= 1;
 			obj_earth.money -= 200;
@@ -105,7 +109,7 @@ switch (type)
 		if clicked and obj_earth.money > 10
 			{
 			obj_earth.spying += 1;
-			id.cooldown = 240;
+			id.cooldown = 200;
 			obj_earth.money -= 10;
 			}
 			if id.cooldown <= 0 and obj_earth.spying > 0
@@ -121,12 +125,13 @@ switch (type)
 	case icon.sabotage:
 	image_index = 4;
 	
-	if clicked and obj_earth.money > 10
+	if clicked and obj_earth.money > 50 and obj_earth.millitary >= 10
 		{
-		obj_earth.money -= 10;	
+		obj_earth.money -= 50;	
 		obj_earth.sabotaging += 1;
-		cooldown = 240;
-		if cooldown <= 0
+		id.cooldown = 300;
+		}
+		if id.cooldown <= 0 and obj_earth.sabotaging > 0
 			{
 			var failcheck = irandom(5);
 			if failcheck == 5
@@ -134,9 +139,9 @@ switch (type)
 				obj_moon.relation += irandom_range(25,40);
 				}
 			obj_moon.missile -= obj_moon.missile/10;
+			obj_moon.ship -= obj_moon.ship/10;
 			obj_earth.sabotaging -= 1;	
 			}
-		}
 	break;
 	
 	case icon.policy:
@@ -147,7 +152,7 @@ switch (type)
 			
 		id.que += 1;
 		}
-	if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 20
+	if id.que > 0 and cooldown <= 0 and global.pause == false and obj_earth.money > 20
 		{
 		obj_earth.money -= 20;	
 		if obj_moon.relation <= 0
@@ -180,7 +185,7 @@ switch (type)
 		{
 		id.que += 1;
 		}
-	if id.que > 0 and cooldown == 0 and global.pause == false and obj_earth.money > 20
+	if id.que > 0 and cooldown <= 0 and global.pause == false and obj_earth.money > 20
 		{
 		obj_earth.money -= 20;	
 		if obj_moon.relation >= 0 

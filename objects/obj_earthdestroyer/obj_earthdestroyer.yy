@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_destroyer",
-    "path": "sprites/spr_destroyer/spr_destroyer.yy",
+    "name": "spr_destroyer2",
+    "path": "sprites/spr_destroyer2/spr_destroyer2.yy",
   },
   "solid": false,
   "visible": true,

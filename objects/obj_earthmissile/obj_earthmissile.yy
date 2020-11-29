@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_missile",
-    "path": "sprites/spr_missile/spr_missile.yy",
+    "name": "spr_missile2",
+    "path": "sprites/spr_missile2/spr_missile2.yy",
   },
   "solid": false,
   "visible": true,

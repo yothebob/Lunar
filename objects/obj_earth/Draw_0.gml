@@ -2,20 +2,29 @@
 draw_self();
 
 
-draw_sprite_ext(spr_gui,0,70,15,2,1,0,c_white,1);
-draw_text(160,20,string(citizen));
-draw_text(160,40,"people");
+draw_sprite_ext(spr_gui,0,60,4,1,.5,0,c_dkgray,1);
+draw_sprite_ext(spr_gui,0,62,2,1,.5,0,c_ltgray,1);
+draw_sprite_ext(spr_gui,0,64,0,1,.5,0,c_white,1);
 
-draw_text(300,20,string(money));
-draw_text(300,40,"Money");
+draw_text(650,5,string(citizen));
+draw_sprite_ext(spr_people,0,695,15,1,1,0,c_white,1);
 
-draw_text(440,20,string(approval));
-draw_text(440,40,"Approval");
+draw_text(530,5,string(money));
+draw_sprite_ext(spr_money,0,570,15,1,1,0,c_white,1);
 
-draw_text(550,20,string(missile));
-draw_text(600,20,string(ship));
-draw_text(650,20,string(destroyer));
+draw_text(400,5,string(approval));
+draw_sprite_ext(spr_approval,0,440,15,1,1,0,c_white,1);
 
-draw_text(760,20,"Research Points: \n" + string(researchpoints));
+draw_text(135,5,string(missile));
+draw_sprite_ext(spr_missile2,0,95,15,1,1,0,c_white,1);
+
+draw_text(230,5,string(ship));
+draw_sprite_ext(spr_ship,0,205,15,1,1,0,c_white,1);
+
+draw_text(330,5,string(destroyer));
+draw_sprite_ext(spr_destroyer2,0,305,15,.75,.75,0,c_white,1);
+
+draw_text(765,5,string(researchpoints));
+draw_sprite_ext(spr_research,0,840,15,1,1,0,c_white,1);
 
 

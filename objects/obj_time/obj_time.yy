@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mechanics",
-    "path": "folders/Objects/Mechanics.yy",
+    "name": "time",
+    "path": "folders/Objects/Mechanics/time.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_time",

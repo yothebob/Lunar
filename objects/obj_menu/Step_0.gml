@@ -1,6 +1,6 @@
 var yy = 150;
 
-if keyboard_check_pressed(vk_escape) and menuopen == false 
+if keyboard_check_pressed(vk_space) and menuopen == false 
 {
 global.pause = true;
 menuopen = true;
@@ -26,7 +26,7 @@ with(instance_create_depth(x+yy,y+64,-10000,obj_buttonup))
 }
 }
 
-else if keyboard_check_pressed(vk_escape) and menuopen == true
+else if keyboard_check_pressed(vk_space) and menuopen == true
 {
 	global.pause = false;
 instance_destroy(obj_buttonup);

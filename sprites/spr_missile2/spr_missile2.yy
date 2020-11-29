@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6e1e3f7d-78bf-437f-9035-b7603ae89003","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "weapons",
+    "path": "folders/Sprites/weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_missile2",

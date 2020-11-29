@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6a3b86c5-2611-4b28-afe5-5687aebab66d","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "icons_or_buttons",
+    "path": "folders/Sprites/icons_or_buttons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_buttomup",

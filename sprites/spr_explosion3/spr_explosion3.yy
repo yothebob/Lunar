@@ -100,8 +100,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c31d9ac4-899b-4393-8e95-04e398813489","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "weapons",
+    "path": "folders/Sprites/weapons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_explosion3",

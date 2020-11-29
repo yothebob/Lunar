@@ -29,7 +29,7 @@ if global.pause == false
 	}
 	
 if place_meeting(x,y,obj_earthbomb)
-	{
+	{ 
 	hp -= 5;
 	}
 		

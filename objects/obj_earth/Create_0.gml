@@ -6,24 +6,25 @@ researchpoints = 10;
 money = 0;
 citizen = 4000;
 approval = 1;
-missile = 20;
+missile = 0;
 spy = 0;
-ship = 20;
-destroyer = 20;
-
-trade = 0;
-discover = 0;
-
+ship = 0;
+destroyer = 0;
 policy = 0;
 resolve = 0;
-threat = 0;
-
+global.gain = .5;
 
 play_event = false;
 
-//audio_play_sound(sng_lofi,1,true);
+i = 0;
+
+music[0] = sng_lofi;
+music[1] = snd_lofi2;
+music[2] = snd_lofi3;
+
+
+audio_play_sound(music[i],1000,false);
+
 
 spying = 0;
-spymission = 120;
 sabotaging = 0;
-sabotagemission = 240;

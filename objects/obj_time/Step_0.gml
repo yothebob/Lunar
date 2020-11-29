@@ -1,14 +1,9 @@
 if global.pause == false
 {tick += 1;}
 
+//if place_meeting(x,y,obj_mouse) and mouse_check_button(mb_left)
 
-if keyboard_check_pressed(ord("1"))
-	{global.ticks = 20;}
-if keyboard_check_pressed(ord("2"))
-	{global.ticks = 40;}
-if keyboard_check_pressed(ord("3"))
-	{global.ticks = 60;}
-	
+
 
 if tick >= global.ticks
 	{
