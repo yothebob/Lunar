@@ -8,7 +8,7 @@ switch (text)
 		image_yscale = 1.1;
 			if mouse_check_button_pressed(mb_left)
 			{
-			room_goto(rm_game);
+			room_goto(rm_tutorial);
 			}		
 		}
 		else
@@ -45,6 +45,24 @@ switch (text)
 			if mouse_check_button_pressed(mb_left)
 			{
 			room_goto(rm_menu);
+			}		
+		}
+		else
+		{
+		image_xscale = 1;
+		image_yscale = 1;
+		}
+	break;
+	
+	case 6:
+			
+		if place_meeting(x,y,obj_mouse)
+		{
+		image_xscale = 1.1;
+		image_yscale = 1.1;
+			if mouse_check_button_pressed(mb_left)
+			{
+			game_end();
 			}		
 		}
 		else

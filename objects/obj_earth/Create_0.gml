@@ -12,8 +12,9 @@ ship = 20;
 destroyer = 20;
 policy = 0;
 resolve = 0;
-global.gain = .5;
-
+fade = false;
+fadeout = 0;
+endingroom = rm_menu;
 play_event = false;
 
 i = 0;

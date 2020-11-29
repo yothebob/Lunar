@@ -30,13 +30,11 @@ switch(text)
 	break;
 		case 3:
 		draw_self();
-		//draw_roundrect_color_ext()
 		draw_text(x+20,y,"Options");
 		
 	break;
 	case 4:
 		draw_self();
-		//draw_roundrect_color_ext()
 		draw_text(x,y,"Menu");
 		
 	break;
@@ -44,4 +42,10 @@ switch(text)
 	case 5:
 		draw_text(x,y,"Made By: Yothebob (Brandon)");
 		draw_text(x,y-30,"Music by Ecrett Music");
+	break;
+	
+	case 6:
+		draw_self();
+		draw_text(x,y,"Quit");	
+	break;
 	}

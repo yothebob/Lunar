@@ -1,6 +1,14 @@
+if leave > 0 
+	{
+	draw_text(40,10,"Quitting..");
+	}
 
 draw_self();
 
+if fade == true
+	{
+	draw_sprite_ext(spr_white,0,display_get_gui_width()/2,display_get_gui_height()/2,3,3,0,c_white,fadeout);
+	}
 
 draw_sprite_ext(spr_gui,0,60,4,1,.5,0,c_dkgray,1);
 draw_sprite_ext(spr_gui,0,62,2,1,.5,0,c_ltgray,1);
