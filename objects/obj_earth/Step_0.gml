@@ -13,7 +13,7 @@ if obj_moon.relation < -50
 audio_master_gain(global.gain);
 if  !audio_is_playing(music[i])
 	{
-	if i < 1
+	if i < 2
 		{i += 1;}
 	else
 		{i = 0;}

@@ -3,7 +3,7 @@ if global.millitary == 1 and play_event == true and economy_path.play_event != t
 {
 	global.pause = true;
 	draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
-draw_text_ext(x,y,"Earths greatest millitarys have been collaborating..." + "\n Have the Lunians Noticed?..",20,600)
+draw_text_ext(x,y,"Earths greatest millitaries have been collaborating..." + "\n Have the Lunarians Noticed?..",20,600)
 	if ii == 0 and pick == -1
 	{
 	pick = irandom(1);
@@ -11,16 +11,16 @@ draw_text_ext(x,y,"Earths greatest millitarys have been collaborating..." + "\n 
 	
 	if pick == 0 and ii == 1 
 		{
-		draw_text_ext(x,y + 60," The Lunians have noticed",20,600);
+		draw_text_ext(x,y + 60," The Lunarians have noticed" + "\n\n + War ",20,600);
 		}
 	else if pick == 1 and ii == 1
 		{
-		draw_text_ext(x,y + 60,"The Lunians have not noticed",20,600);
+		draw_text_ext(x,y + 60,"The Lunarians have not noticed" + "\n\n + Peace ",20,600);
 		}
 		
 	if ii == 2 and pick == 0
 	{
-	obj_moon.relation += irandom_range(5,10);
+	obj_moon.relation += 5;
 	play_event = false;
 	ii = 0;
 	pick = -1;
@@ -30,7 +30,7 @@ draw_text_ext(x,y,"Earths greatest millitarys have been collaborating..." + "\n 
 	
 	if ii == 2 and pick == 1
 	{
-	obj_moon.relation -= irandom_range(2,4);
+	obj_moon.relation -= 5;
 	play_event = false;
 	ii = 0;
 	pick = -1;
@@ -53,19 +53,19 @@ draw_text_ext(x,y, "Research on a super weapon capable of flying to the moon wit
 
 if ii == 1 and pick == 0 
 	{
-	draw_text_ext(x, y + 60, "The Lunians are completely clueless, if we have any luck we can actually get away with this!!",20,600);
+	draw_text_ext(x, y + 60, "The Lunarians are completely clueless, if we have any luck we can actually get away with this!!" + "\n\n + Missiles | Approval change",20,600);
 	}
 if ii == 1 and pick == 1 
 	{
-	draw_text_ext(x,y + 60, "The Lunians see abnormal amounts of radioactive materials moving, the president asures them we are just transfering over to nucular energy sources. They seem to buy it...",20,600);
+	draw_text_ext(x,y + 60, "The Lunarians see abnormal amounts of radioactive materials moving, the president assures them we are just transferring over to nuclear energy sources. They seem to buy it..." + "\n\n + War ",20,600);
 	}
 if ii == 1 and pick == 2
 	{
-draw_text_ext(x,y+ 60, "The Lunians sense the earth prepping for a fight, They prepp too...",20,600)
+draw_text_ext(x,y+ 60, "The Lunarians sense the earth prepping for a fight, They prepp too..." + "\n\n +++ War ",20,600)
 	}
 if ii = 1 and pick == 3
 	{
-	draw_text_ext(x,y+ 60, " The Lunians sense the Earth feels Threatened.. They schedule a meeting with the President to glaze things over.. If they only knew we have no intension of sharing this galaxy...",20,600);
+	draw_text_ext(x,y+ 60, "The Lunarians sense the Earth feels Threatened.. They schedule a meeting with the President to glaze things over.. If they only knew we have no intention of sharing this galaxy…" + "\n\n  Approval Change ",20,600);
 	}
 	
 if ii == 2 and pick == 0
@@ -129,7 +129,7 @@ if global.millitary == 3 and play_event == true and economy_path.play_event != t
 global.pause = true;
 draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
-draw_text_ext(x,y,"Advances in small arms and defences have been made.. companies all across earth are manufactoring weapons, ships and armor. ",20,600);
+draw_text_ext(x,y,"Advances in small arms and defences have been made.. companies all across earth are manufacturing weapons, ships and armor. ",20,600);
 
 if ii == 0 and pick == -1
 	{
@@ -138,21 +138,21 @@ if ii == 0 and pick == -1
 	
 if ii == 1 and pick == 0
 	{
-	draw_text_ext(x,y + 60, "Lunians have seen earths progress in weaponary, The Lunians build more missiles in response..",20,600);
+	draw_text_ext(x,y + 60, "Lunarians have seen earth's progress in weaponry, The Lunarians build more missiles in response.." + "\n\n  - Approval | ++ War  ",20,600);
 	}
 if ii == 1 and pick == 1
 	{
-	draw_text_ext(x,y + 60, "With close montioring and use of descretion, The earth is allowed to covertly create effective weapons and armor",20,600)
+	draw_text_ext(x,y + 60, "With close monitoring and use of discretion, The earth is allowed to covertly create effective weapons and armor." + "\n\n  + Approval | + Peace  ",20,600)
 	}
 if ii == 1 and pick == 2 
 	{
-	draw_text_ext(x,y+ 60, "Lunians have been watching us closely.  Airstrikes spread across earth destroing several weapon factories.. The war starts now...",20,600 )
+	draw_text_ext(x,y+ 60, "Lunarians have been watching us closely.  Airstrikes spread across earth destroying several weapon factories.. The war starts now..." + "\n\n  --- Approval | - Missiles | - Ships | War Starts ",20,600 )
 	}
 	
 if ii == 2 and pick == 0 
 	{
 	obj_earth.approval -= .2;
-	obj_moon.relation -= irandom_range(4,8);
+	obj_moon.relation += irandom_range(4,8);
 	play_event = false;
 	ii = 0;
 	pick = -1;
@@ -200,13 +200,13 @@ if ii == 1
 	switch (pick)
 		{
 		case 0:
-			draw_text_ext(x,y + 60, "Many seem to not function properly, they are scrapped and parts will be reused..",20,600);
+			draw_text_ext(x,y + 60, "Many seem to not function properly, they are scrapped and parts will be reused.." + "\n\n - Approval | ++ War | -- Ships ",20,600);
 		break;
 		case 1:
-			draw_text_ext(x,y + 60, " Production is easy and smooth... We are one step closer...",20,600);
+			draw_text_ext(x,y + 60, " Production is easy and smooth... We are one step closer..." + "\n\n + Approval | ++ War | + Ships ",20,600);
 		break;
 		case 2:
-			draw_text_ext(x,y + 60, " Workers around the world question the ethics of the war, and are refusing to show up to work around the world to prepare for an emminent ending...",20,600);
+			draw_text_ext(x,y + 60, " Workers around the world question the ethics of the war, and are refusing to show up to work around the world to prepare for an imminent ending..."+ "\n\n - Approval | ++ War  ",20,600);
 		break;
 		}
 	}
@@ -265,13 +265,13 @@ if ii == 1
 	switch(pick)
 		{
 		case 0:
-			draw_text_ext(x,y + 60,"Countries are refusing to store missiles, they do not want to be targeted if a potential war breaks out...",20,600);
+			draw_text_ext(x,y + 60,"Countries are refusing to store missiles, they do not want to be targeted if a potential war breaks out..." + "\n\n + - Approval | ++ War | - Missiles ",20,600);
 		break;
 		case 1:
-			draw_text_ext(x,y + 60, " While Transporting Missiles on cargo boats, one sinks leaving many of the missiles unaccounted for ...",20,600);
+			draw_text_ext(x,y + 60, " While Transporting Missiles on cargo boats, one sinks leaving many of the missiles unaccounted for ..." + "\n\n + -- Approval | ++ War | -- Missiles ",20,600);
 		break;
 		case 2:
-			draw_text_ext(x,y + 60, "All nations have strategicly placed missiles for maximium effectiveness...",20,600);
+			draw_text_ext(x,y + 60, "All nations have strategically placed missiles for maximum effectiveness..." + "\n\n + ++ Approval | ++ War | + Missiles ",20,600);
 		break
 		}
 	}
@@ -319,7 +319,7 @@ global.pause = true;
 
 draw_roundrect_color_ext(340,385,940,585,16,16,c_dkgray,c_dkgray,false);
 	
-draw_text_ext(x,y," Everything is coming together, The Aliens have called for a confrence...",20,600);
+draw_text_ext(x,y," Everything's coming together, The Aliens have called for a conference...",20,600);
 
 if pick == -1
 	{
@@ -331,13 +331,13 @@ if ii == 1
 		switch (pick)
 		{
 			case 0:
-				draw_text_ext(x,y + 60, "Heated political talks leave tensions higher then ever...",20,600);
+				draw_text_ext(x,y + 60, "Heated political talks leave tensions higher than ever..." + "\n\n + - Approval | ++ War  ",20,600);
 			break;	
 			case 1:
-				draw_text_ext(x,y + 60, "They Bring up major concerns of potential war.. They look for a de-esculation plan...",20,600);
+				draw_text_ext(x,y + 60, "They Bring up major concerns of potential war.. They look for a de-escalation plan..." + "\n\n + - Approval | ++ Peace ",20,600);
 			break;
 			case 2:
-				draw_text_ext(x,y+60, "The confrence was a setup, all of our leaders were killed.. prepare for vengance!",20,600);
+				draw_text_ext(x,y+60, "The conference was a setup, all of our leaders were killed.. prepare for vengeance!" + "\n\n + --- Approval | War Starts  ",20,600);
 			break;
 		}
 	}
