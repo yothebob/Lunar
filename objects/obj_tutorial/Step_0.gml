@@ -2,6 +2,11 @@ if mouse_check_button(mb_left)
 	{
 	tick += 1;
 	}
+	else 
+	{
+		if tick > 0
+			{tick -= 1;}
+	}
 	
 reminder += 1;	
 

@@ -40,6 +40,7 @@
     {"id":{"name":"adjustmentbar","path":"objects/adjustmentbar/adjustmentbar.yy",},"order":0,},
     {"id":{"name":"rm_ally","path":"rooms/rm_ally/rm_ally.yy",},"order":4,},
     {"id":{"name":"obj_earthmissile","path":"objects/obj_earthmissile/obj_earthmissile.yy",},"order":1,},
+    {"id":{"name":"spr_ring","path":"sprites/spr_ring/spr_ring.yy",},"order":48,},
     {"id":{"name":"obj_fastforward","path":"objects/obj_fastforward/obj_fastforward.yy",},"order":1,},
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":0,},
     {"id":{"name":"spr_9box","path":"sprites/spr_9box/spr_9box.yy",},"order":25,},
