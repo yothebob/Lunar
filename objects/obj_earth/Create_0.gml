@@ -1,8 +1,9 @@
 randomize();
-economy = 0;
-millitary = 0;
-diplomacy = 0;
-researchpoints = 10;
+
+time = 5;
+
+
+
 money = 0;
 citizen = 4000;
 approval = 1;

@@ -1,4 +1,4 @@
-draw_sprite_ext(spr_star,0,mouse_x,mouse_y,(tick/60)*4,(tick/60)*4,0,c_white,1);
+draw_sprite_ext(spr_ring,0,mouse_x,mouse_y,(tick/120)*2,(tick/120)*2,0,c_white,1);
 
 
 if reminder > 250
