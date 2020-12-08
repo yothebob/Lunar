@@ -1,7 +1,10 @@
 randomize();
 
 time = 5;
-
+researchpoints = 10;
+diplomacy = 0;
+economy = 0;
+millitary = 0;
 
 
 money = 0;

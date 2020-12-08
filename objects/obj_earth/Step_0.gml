@@ -1,4 +1,35 @@
-if citizen < 0
+ var moontop = 280;
+ var moonbot = 555;
+
+if keyboard_check_pressed(ord("1")) and missile > 0
+	{
+	obj_earth.missile -= 1;	
+		with(instance_create_depth(obj_earth.x,irandom_range(moontop,moonbot),-10000,obj_earthmissile))
+			{
+			direction = 0;
+			}
+	}
+ 
+if keyboard_check_pressed(ord("2")) and ship > 0
+	{
+	obj_earth.ship -= 1;	
+		with(instance_create_depth(obj_earth.x,irandom_range(moontop,moonbot),-10000,obj_earthmissile))
+			{
+			direction = 0;
+			}
+	}
+  
+ if keyboard_check_pressed(ord("3")) and destroyer > 0
+	{
+	obj_earth.destroyer -= 1;	
+		with(instance_create_depth(obj_earth.x,irandom_range(moontop,moonbot),-10000,obj_earthmissile))
+			{
+			direction = 0;
+			}
+	}
+ 
+ 
+ if citizen < 0
 	{
 	fade = true;
 	endingroom = rm_extinct;	

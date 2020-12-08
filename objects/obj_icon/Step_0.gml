@@ -1,8 +1,6 @@
 var clicked = place_meeting(x,y,obj_mouse) and mouse_check_button_pressed(mb_left);
 var rightclicked = place_meeting(x,y,obj_mouse) and mouse_check_button_pressed(mb_right);
  
- var moontop = 280;
- var moonbot = 555;
  
 if id.cooldown > 0 and global.pause == false {id.cooldown -= (8-(global.ticks/10));}
  
@@ -37,12 +35,6 @@ switch (type)
 			}
 		if rightclicked and id.que = 1
 			{
-			/*
-			obj_earth.missile -= 1;	
-			with(instance_create_depth(obj_earth.x,irandom_range(moontop,moonbot),-10000,obj_earthmissile))
-				{
-				direction = 0;
-				*/
 				id.que = 0;
 				obj_earth.citizen += 100;
 			}
