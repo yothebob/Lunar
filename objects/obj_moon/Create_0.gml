@@ -12,7 +12,7 @@ diplomacy = 0;
 researchpoints = 8;
 relation = 0;
 citizen = 4000;
-
+approval = 1.5;
 missile = 0;
 ship  = 0;
 destroyer = 0;

@@ -1,19 +1,12 @@
 if global.pause == false
 {tick += 1;}
 
-//if place_meeting(x,y,obj_mouse) and mouse_check_button(mb_left)
-
-
-
 if tick >= global.ticks
 	{
 	global.month += 1;
 	tick = 0;
-	obj_earth.money += obj_earth.economy * obj_earth.approval;
-	obj_moon.money += obj_moon.economy * irandom_range(1,2);
-	obj_earth.money -= obj_earth.millitary;
-	obj_moon.money -= obj_moon.millitary;
-
+	pay_resources(obj_earth);
+	pay_resources(obj_moon);
 	}
 if global.month == 13
 	{

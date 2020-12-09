@@ -27,8 +27,8 @@ if keyboard_check_pressed(ord("2")) and ship > 0
 			direction = 0;
 			}
 	}
- 
- 
+
+
  if citizen < 0
 	{
 	fade = true;
