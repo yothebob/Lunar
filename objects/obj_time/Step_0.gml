@@ -10,6 +10,15 @@ if tick >= global.ticks
 	}
 if global.month == 13
 	{
+	if obj_earth.food < obj_earth.citizen
+		{
+		obj_earth.food = 0
+		obj_earth.citizen = obj_earth.citizen - (obj_earth.citizen/10);
+		}	
+	else
+		{
+		obj_earth.food = obj_earth.food - obj_earth.citizen;
+		}
 	obj_earth.researchpoints += 1;
 	obj_moon.researchpoints += 1;
 	global.month = 1;

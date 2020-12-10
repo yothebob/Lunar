@@ -19,7 +19,7 @@ propaganda,
 resolve,
 create_farms,
 subsidize_family,
-subsidize_industry,
+create_factories,
 subsidize_millitary,
 subsidize_economy,
 }

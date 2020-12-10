@@ -15,10 +15,9 @@ switch (type)
 			{
 			id.que += 1;
 			obj_earth.citizen -= 100;
-			obj_earth.money -= 10;
 			}
 			
-			if id.que > 0 and cooldown <= 0 and global.pause == false and obj_earth.money >10
+		if id.que > 0 and cooldown <= 0 and global.pause == false and obj_earth.money >10
 			{ 		
 			obj_earth.missile += 1;
 			event = irandom(5);
@@ -208,12 +207,12 @@ switch (type)
 			event = -1;
 			}
 		
-			if rightclicked
-				{
-				id.que = 0;
-				obj_earth.citizen += id.people_used;
-				id.people_used = 0;
-				}
+		if rightclicked
+			{
+			id.que = 0;
+			obj_earth.citizen += id.people_used;
+			id.people_used = 0;
+			}
 	break;
 	
 	case icon.resolve:
@@ -235,21 +234,20 @@ switch (type)
 	
 	case icon.create_farms:
 		image_index = 8;
-		var farm_cost = 5;
+		var farm_cost = .5;
 		
-		if clicked and global.pause == false and id.que < 1
+		if clicked and global.pause == false and id.que == 0
 			{
 			id.que = 1;
 			return_cooldown(obj_earth.economy);
 			id.people_used = get_integer("how many people do you want to farm? ",0);
 			obj_earth.citizen -= id.people_used;
-			obj_earth.money -= farm_cost * id.people_used;
 			}
 			
-		if id.que == 1 and global.pause == false and obj_earth.money >= 5 and id.cooldown <= 0
+		if id.que == 1 and global.pause == false and id.cooldown <= 0
 			{
-			
-			return_resource(food,people_used,2,obj_earth);
+			obj_earth.money -= farm_cost * id.people_used;
+			obj_earth.food += return_resource(obj_earth.food,people_used,2,obj_earth.approval);
 			return_cooldown(obj_earth.economy)
 			}
 		if rightclicked and global.pause == false and id.que == 1
@@ -258,5 +256,35 @@ switch (type)
 			obj_earth.citizen += id.people_used;
 			id.people_used = 0;
 			}
+			
+	break;
+	
+	case icon.create_factories:
+		image_index = 9;
+		var fact_cost = .5;
+		
+		if clicked and global.pause == false and id.que == 0
+			{
+			id.que = 1;
+			return_cooldown(obj_earth.economy);
+			id.people_used = get_integer("how many people do you want to work factories?", 0);
+			obj_earth.citizen -= id.people_used;
+			}
+			
+		if id.que == 1 and global.pause == false and id.cooldown <= 0 
+			{
+			obj_earth.money -= fact_cost * id.people_used;
+			obj_earth.money += return_resource(obj_earth.money,people_used,2,obj_earth.approval);
+			return_cooldown(obj_earth.economy);
+			}
+		
+		if rightclicked and global.pause == false and id.que == 1
+			{
+			id.que = 0;
+			obj_earth.citizen += id.people_used;
+			id.people_used = 0;
+			}
+			
+	break;		
 	}
 

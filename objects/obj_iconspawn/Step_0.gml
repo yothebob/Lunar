@@ -25,6 +25,11 @@ var yy = 34;
 			{
 			other.total -= 1;
 			id.type = icon.sabotage;
+			}	
+			with(instance_create_depth(x+ (total * yy),y,-10000,obj_icon))
+			{
+			other.total -= 1;
+			id.type = icon.create_farms;
 			}		
 		}
 

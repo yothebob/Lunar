@@ -5,7 +5,7 @@ researchpoints = 10;
 diplomacy = 0;
 economy = 0;
 millitary = 0;
-food = 100;
+food = 6000;
 
 money = 0;
 citizen = 4000;
