@@ -13,13 +13,14 @@ switch (type)
 		
 		if clicked and id.que = 0
 			{
-			id.que += 1;
-			obj_earth.citizen -= 100;
+			id.que = 1;
+			id.people_used = get_integer("how many people do you want working on this?", 0);
 			}
 			
-		if id.que > 0 and cooldown <= 0 and global.pause == false and obj_earth.money >10
-			{ 		
-			obj_earth.missile += 1;
+		if id.que == 1 and cooldown <= 0 and global.pause == false 
+			{
+			obj_earth.missile += return_resource(obj_earth.missile,.01,id.people_used,obj_earth.approval);
+			obj_earth.money -= -return_resource(obj_earth.missile,1,id.people_used,obj_earth.approval);
 			event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
 				{
@@ -34,7 +35,6 @@ switch (type)
 		if rightclicked and id.que = 1
 			{
 			id.que = 0;
-			obj_earth.citizen += 100;
 			}
 			
 	break;
@@ -42,16 +42,17 @@ switch (type)
 	case icon.ship:
 		image_index = 1;
 		
-		if clicked and obj_earth.millitary >= 10 and id.que = 0
+		if clicked and id.que = 0
 			{
 			id.que = 1;
-			obj_earth.citizen -= 200;
+			people_used = get_integer("how many people do you want working on this?",0);
+			return_cooldown(obj_earth.economy);
 			}
 			
-		if id.que > 0 and cooldown <= 0 and global.pause == false and obj_earth.money > 100
+		if id.que == 1 and cooldown <= 0 and global.pause == false 
 			{
-			obj_earth.money -= 100;
-			obj_earth.ship += 1;
+			obj_earth.money -= return_resource(obj_earth.money, 1,id.people_used,obj_earth.approval);
+			obj_earth.ship += return_resource(obj_earth.ship,.001,id.people_used,obj_earth.approval);
 			event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
 				{
@@ -66,7 +67,6 @@ switch (type)
 		if rightclicked and id.que = 1
 			{
 			id.que = 0;	
-			obj_earth.citizen += 200;
 			}
 	break;
 	
@@ -190,7 +190,7 @@ switch (type)
 			id.que = 1;
 			return_cooldown(obj_earth.diplomacy);
 			id.people_used = get_integer("how many people do you want to work on this? ", 0);
-			obj_earth.citizen -= id.people_used;
+			//obj_earth.citizen -= id.people_used;
 			}
 		
 		if id.que == 1 and id.cooldown <= 0 and global.pause == false 
@@ -210,7 +210,7 @@ switch (type)
 		if rightclicked
 			{
 			id.que = 0;
-			obj_earth.citizen += id.people_used;
+			//obj_earth.citizen += id.people_used;
 			id.people_used = 0;
 			}
 	break;
@@ -241,7 +241,7 @@ switch (type)
 			id.que = 1;
 			return_cooldown(obj_earth.economy);
 			id.people_used = get_integer("how many people do you want to farm? ",0);
-			obj_earth.citizen -= id.people_used;
+			//obj_earth.citizen -= id.people_used;
 			}
 			
 		if id.que == 1 and global.pause == false and id.cooldown <= 0
@@ -253,7 +253,7 @@ switch (type)
 		if rightclicked and global.pause == false and id.que == 1
 			{
 			id.que = 0;
-			obj_earth.citizen += id.people_used;
+			//obj_earth.citizen += id.people_used;
 			id.people_used = 0;
 			}
 			
@@ -268,7 +268,7 @@ switch (type)
 			id.que = 1;
 			return_cooldown(obj_earth.economy);
 			id.people_used = get_integer("how many people do you want to work factories?", 0);
-			obj_earth.citizen -= id.people_used;
+			//obj_earth.citizen -= id.people_used;
 			}
 			
 		if id.que == 1 and global.pause == false and id.cooldown <= 0 
@@ -281,7 +281,7 @@ switch (type)
 		if rightclicked and global.pause == false and id.que == 1
 			{
 			id.que = 0;
-			obj_earth.citizen += id.people_used;
+			//obj_earth.citizen += id.people_used;
 			id.people_used = 0;
 			}
 			
