@@ -303,10 +303,9 @@ switch (type)
 			
 	break;
 	#endregion
-	#region // factorie
+	#region // factory
 	case icon.create_factories:
 		image_index = 9;
-		var fact_cost = .5;
 		
 		if clicked and global.pause == false and id.que == 0
 			{
@@ -324,7 +323,6 @@ switch (type)
 			
 		if id.que == 1 and global.pause == false and id.cooldown <= 0 
 			{
-			obj_earth.money -= fact_cost * id.people_used;
 			obj_earth.money += return_resource(obj_earth.money,people_used,2,obj_earth.approval);
 			return_cooldown(obj_earth.economy);
 			}
