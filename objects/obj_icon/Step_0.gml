@@ -8,6 +8,7 @@ if id.cooldown > 0 and global.pause == false {id.cooldown -= (8-(global.ticks/10
 
 switch (type)
 	{
+	#region // missile	
 	case icon.missile:
 		image_index = 0;
 		
@@ -15,12 +16,20 @@ switch (type)
 			{
 			id.que = 1;
 			id.people_used = get_integer("how many people do you want working on this?", 0);
+			obj_earth.people_in_use = obj_earth.people_in_use + id.people_used;
+			if obj_earth.people_in_use > obj_earth.citizen
+				{
+				id.que = 0;
+				obj_earth.people_in_use -= id.people_used;
+				id.people_used = 0;
+				}
+			return_cooldown(obj_earth.millitary);
 			}
 			
 		if id.que == 1 and cooldown <= 0 and global.pause == false 
 			{
 			obj_earth.missile += return_resource(obj_earth.missile,.01,id.people_used,obj_earth.approval);
-			obj_earth.money -= -return_resource(obj_earth.missile,1,id.people_used,obj_earth.approval);
+			obj_earth.money -= return_resource(obj_earth.missile,1,id.people_used,obj_earth.approval);
 			event = irandom(5);
 			if event == 2 and millitary_path.play_event == false and diplomacy_path.play_event == false
 				{
@@ -35,10 +44,12 @@ switch (type)
 		if rightclicked and id.que = 1
 			{
 			id.que = 0;
+			obj_earth.people_in_use = obj_earth.people_in_use - id.people_used;
 			}
 			
 	break;
-	
+	#endregion
+	#region // ship
 	case icon.ship:
 		image_index = 1;
 		
@@ -46,6 +57,12 @@ switch (type)
 			{
 			id.que = 1;
 			people_used = get_integer("how many people do you want working on this?",0);
+				if obj_earth.people_in_use > obj_earth.citizen
+				{
+				id.que = 0;
+				obj_earth.people_in_use -= id.people_used;
+				id.people_used = 0;
+				}
 			return_cooldown(obj_earth.economy);
 			}
 			
@@ -69,7 +86,8 @@ switch (type)
 			id.que = 0;	
 			}
 	break;
-	
+	#endregion
+	#region // destroyer
 	case icon.destroyer:
 		image_index = 2;
 		if clicked and id.que = 0
@@ -99,7 +117,8 @@ switch (type)
 			obj_earth.citizen += 300;
 			}	
 	break;
-	
+	#endregion
+	#region // spy
 	case icon.spy:
 		image_index = 3;
 		if clicked and obj_earth.money > 10
@@ -121,7 +140,8 @@ switch (type)
 			else {obj_earth.citizen += 15;}	
 			}
 	break;
-	
+	#endregion
+	#region // sabatoge
 	case icon.sabotage:
 		image_index = 4;
 	
@@ -147,16 +167,24 @@ switch (type)
 			obj_earth.sabotaging -= 1;	
 			}
 	break;
-	
+	#endregion
+	#region // policy
 	case icon.policy:
 		image_index = 5;
 		var policy_cost = 1;
 		if clicked and id.que = 0
 			{
 			id.que = 1;
-				return_cooldown(obj_earth.diplomacy);
-				 id.people_used = get_integer("how many people do you want to work on this? ", 0);
-				obj_earth.citizen -= id.people_used;
+			id.people_used = get_integer("how many people do you want to work on this? ", 0);
+			obj_earth.people_in_use = obj_earth.people_in_use + id.people_used;
+			if obj_earth.people_in_use > obj_earth.citizen
+				{
+				id.que = 0;
+				obj_earth.people_in_use -= id.people_used;
+				id.people_used = 0;
+				exit;
+				}
+			return_cooldown(obj_earth.diplomacy);
 			}
 		
 		if id.que = 1 and id.cooldown <= 0 and global.pause == false
@@ -177,10 +205,11 @@ switch (type)
 		if rightclicked and id.que = 1
 			{
 			id.que = 0;
-			obj_earth.citizen += id.people_used
+			obj_earth.people_in_use = obj_earth.people_in_use - id.people_used;
 			}	
 	break;
-	
+	#endregion
+	#region // propaganda
 	case icon.propaganda:
 		image_index = 6;
 		var propaganda_cost = 1;
@@ -188,9 +217,16 @@ switch (type)
 		if clicked and id.que == 0
 			{
 			id.que = 1;
-			return_cooldown(obj_earth.diplomacy);
 			id.people_used = get_integer("how many people do you want to work on this? ", 0);
-			//obj_earth.citizen -= id.people_used;
+			obj_earth.people_in_use = obj_earth.people_in_use + id.people_used;
+			if obj_earth.people_in_use > obj_earth.citizen
+				{
+				id.que = 0;
+				obj_earth.people_in_use -= id.people_used;
+				id.people_used = 0;
+				exit;
+				}
+			return_cooldown(obj_earth.diplomacy);
 			}
 		
 		if id.que == 1 and id.cooldown <= 0 and global.pause == false 
@@ -207,14 +243,15 @@ switch (type)
 			event = -1;
 			}
 		
-		if rightclicked
-			{
-			id.que = 0;
-			//obj_earth.citizen += id.people_used;
-			id.people_used = 0;
-			}
+			if rightclicked
+				{
+				id.que = 0;
+				obj_earth.people_in_use = obj_earth.people_in_use - id.people_used;
+				id.people_used = 0;
+				}
 	break;
-	
+	#endregion
+	#region resolve
 	case icon.resolve:
 		image_index = 7;
 		
@@ -231,7 +268,8 @@ switch (type)
 			
 			}
 	break;
-	
+	#endregion
+	#region // farm
 	case icon.create_farms:
 		image_index = 8;
 		var farm_cost = .5;
@@ -239,9 +277,15 @@ switch (type)
 		if clicked and global.pause == false and id.que == 0
 			{
 			id.que = 1;
-			return_cooldown(obj_earth.economy);
 			id.people_used = get_integer("how many people do you want to farm? ",0);
-			//obj_earth.citizen -= id.people_used;
+			obj_earth.people_in_use = obj_earth.people_in_use + id.people_used;
+			if obj_earth.people_in_use > obj_earth.citizen
+				{
+				id.que = 0;
+				obj_earth.people_in_use -= id.people_used;
+				id.people_used = 0;
+				}
+			return_cooldown(obj_earth.economy);
 			}
 			
 		if id.que == 1 and global.pause == false and id.cooldown <= 0
@@ -253,12 +297,13 @@ switch (type)
 		if rightclicked and global.pause == false and id.que == 1
 			{
 			id.que = 0;
-			//obj_earth.citizen += id.people_used;
+			obj_earth.people_in_use = obj_earth.people_in_use - id.people_used;
 			id.people_used = 0;
 			}
 			
 	break;
-	
+	#endregion
+	#region // factorie
 	case icon.create_factories:
 		image_index = 9;
 		var fact_cost = .5;
@@ -266,9 +311,15 @@ switch (type)
 		if clicked and global.pause == false and id.que == 0
 			{
 			id.que = 1;
-			return_cooldown(obj_earth.economy);
 			id.people_used = get_integer("how many people do you want to work factories?", 0);
-			//obj_earth.citizen -= id.people_used;
+			obj_earth.people_in_use = obj_earth.people_in_use + id.people_used;
+				if obj_earth.people_in_use > obj_earth.citizen
+				{
+				id.que = 0;
+				obj_earth.people_in_use -= id.people_used;
+				id.people_used = 0;
+				}
+			return_cooldown(obj_earth.economy);	
 			}
 			
 		if id.que == 1 and global.pause == false and id.cooldown <= 0 
@@ -281,10 +332,11 @@ switch (type)
 		if rightclicked and global.pause == false and id.que == 1
 			{
 			id.que = 0;
-			//obj_earth.citizen += id.people_used;
+			obj_earth.people_in_use = obj_earth.people_in_use - id.people_used;
 			id.people_used = 0;
 			}
 			
-	break;		
+	break;	
+	#endregion
 	}
 

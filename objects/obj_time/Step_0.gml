@@ -14,6 +14,8 @@ if global.month == 13
 		{
 		obj_earth.food = 0
 		obj_earth.citizen = obj_earth.citizen - (obj_earth.citizen/10);
+		obj_earth.people_in_use = obj_earth.people_in_use - (obj_earth.people_in_use/10);
+		obj_icon.people_used = obj_icon.people_used - (obj_icon.people_used/10);
 		}	
 	else
 		{

@@ -1,11 +1,11 @@
 randomize();
 
-time = 5;
+people_in_use = 0;
 researchpoints = 10;
 diplomacy = 0;
 economy = 0;
 millitary = 0;
-food = 6000;
+food = 100;
 
 money = 0;
 citizen = 4000;

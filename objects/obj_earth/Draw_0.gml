@@ -14,11 +14,10 @@ draw_sprite_ext(spr_gui,0,60,4,1,.5,0,c_dkgray,1);
 draw_sprite_ext(spr_gui,0,62,2,1,.5,0,c_ltgray,1);
 draw_sprite_ext(spr_gui,0,64,0,1,.5,0,c_white,1);
 
-
 draw_text(720,35,string(food));
-//draw_sprite_ext(spr_people,0,695,15,1,1,0,c_white,1);
 
 draw_text(650,5,string(citizen));
+draw_text(650,35,string(people_in_use));
 draw_sprite_ext(spr_people,0,695,15,1,1,0,c_white,1);
 
 draw_text(530,5,string(money));
