@@ -8,3 +8,5 @@ if room != rm_game
 	{
 	audio_play_sound(snd_lofi4,1000,true);
 	}
+	
+move_check = 1;	

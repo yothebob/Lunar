@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "icons",
-    "path": "folders/Objects/Mechanics/icons.yy",
+    "name": "obsolete",
+    "path": "folders/Objects/obsolete.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_resourcetext31",

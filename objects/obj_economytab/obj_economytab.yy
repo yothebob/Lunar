@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "tabs",
-    "path": "folders/Objects/Mechanics/tabs.yy",
+    "name": "obsolete",
+    "path": "folders/Objects/obsolete.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_economytab",

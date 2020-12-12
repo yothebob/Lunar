@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mechanics",
-    "path": "folders/Objects/Mechanics.yy",
+    "name": "obsolete",
+    "path": "folders/Objects/obsolete.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_tutorial",

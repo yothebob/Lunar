@@ -8,7 +8,8 @@ switch (text)
 		image_yscale = 1.1;
 			if mouse_check_button_pressed(mb_left)
 			{
-			room_goto(rm_game);
+			audio_stop_all();	
+			room_goto(rm_test);
 			}		
 		}
 		else

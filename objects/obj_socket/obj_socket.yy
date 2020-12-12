@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bar",
-    "path": "sprites/spr_bar/spr_bar.yy",
+    "name": "spr_money",
+    "path": "sprites/spr_money/spr_money.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,17 +21,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_warbar","path":"objects/obj_warbar/obj_warbar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_warbar","path":"objects/obj_warbar/obj_warbar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_socket","path":"objects/obj_socket/obj_socket.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "obsolete",
-    "path": "folders/Objects/obsolete.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_warbar",
+  "name": "obj_socket",
   "tags": [],
   "resourceType": "GMObject",
 }
