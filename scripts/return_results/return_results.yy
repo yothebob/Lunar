@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "obsolete",
-    "path": "folders/Scripts/obsolete.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "return_color",
+  "name": "return_results",
   "tags": [],
   "resourceType": "GMScript",
 }
