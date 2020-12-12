@@ -1,34 +1,96 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function return_text(_Socket,_key_val){
 
 switch (_Socket)
 	{
-	case 1:
+	case "proficiency":
 		switch (_key_val)
 			{
 			case "trade":
-				return "trade 1 to get 2";
+				return "trade/ proficiecy";
 			break;
-			case "research":
-				return "research 1 to get 2";
+			case "reason":
+				return "reason/proficiency";
 			break;
-			}
-	break;
-	case 2:
-		switch (_key_val)
-			{
-			case "trade":
-				return "trade 2 to get 1";
+			case "militant":
+				return "militant/proficiency";
 			break;
-			case "research":
-				return "research 2 to get 1";
+			case "The people":
+				return "the people/ proficiency";
 			break;
 			}
 	break;
 	
+	case "research":
+		switch (_key_val)
+			{
+			case "trade":
+				return "trade/research";
+			break;
+			case "reason":
+				return "reason/research";
+			break;
+			case "militant":
+				return "militant/research";
+			break;
+			case "The people":
+				return "the people/research";
+			break;
+			}
+	break;
 	
+	case "communicate":
+		switch (_key_val)
+			{
+			case "trade":
+				return "trade/ communicate";
+			break;
+			case "reason":
+				return "reason/communicate";
+			break;
+			case "militant":
+				return "militant/communicate";
+			break;
+			case "The people":
+				return "the people/ communicate";
+			break;
+			}
+	break;
 	
+	case "trick":
+		switch (_key_val)
+			{
+			case "trade":
+				return "trade/trick";
+			break;
+			case "reason":
+				return "reason./trick";
+			break;
+			case "militant":
+				return "militant/trick";
+			break;
+			case "The people":
+				return "the people/trick";
+			break;
+			}
+	break;
 	
+	case "covert":
+		switch (_key_val)
+			{
+			case "trade":
+				return "trade/covert";
+			break;
+			case "reason":
+				return "reason/covert";
+			break;
+			case "militant":
+				return "militant/covert";
+			break;
+			case "The people":
+				return "the people/covert";
+			break;
+			}
+	break;
 	}
 }

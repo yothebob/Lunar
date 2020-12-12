@@ -23,17 +23,19 @@ if moving == true and mouse_check_button_released(mb_left)
 		var inst = instance_place(x,y,obj_socket);	
 		x = inst.x;
 		y = inst.y;
-		cooldown = (500);
+		cooldown = 500;
 		locked = true;
 		
-			if cooldown >= 0
-				{
-				}
 		}
 	else
 		{
-		x = previous_x;
-		y = previous_y;
+		return_key_spawner(key_val).key_stack += 1;
+		instance_destroy(self);
 		}
 	
+	}
+	
+if cooldown <= 0 and place_meeting(x,y,obj_socket) and moving == false
+	{
+	instance_destroy(self);	
 	}

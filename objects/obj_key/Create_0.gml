@@ -1,6 +1,11 @@
 key_val = "trade";
+/* key types 
+"trade",
+"reason",
+"militant",
+"The people",
+*/
+
 moving = false;
-previous_x = x;
-previous_y = y;
 cooldown = 0;
 locked = false;

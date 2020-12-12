@@ -1,1 +1,1 @@
-socket = 1;
+socket = "trick";

@@ -1,1 +1,1 @@
-socket = 2;
+socket = "covert";
