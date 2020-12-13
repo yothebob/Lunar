@@ -1,0 +1,73 @@
+keys 
+
+	reason
+	proficiency
+	research
+	communicate
+	deceive
+	(attack)
+
+sockets 
+
+	The market
+	millitary
+	the people
+	relations
+	
+
+trade/proficiency
+	train and subsidize trade deals.
+
+trade/research
+	research best resources to trade.
+ 
+trade/ communicate 
+	level 1: text: Set up inital trade deals with the aliens.
+		 + one money
+	level 2: trades are going well...
+		+ 2 money 
+	level 3: trade relations are better then ever
+		+ 3 money 
+trade/ trick 
+	level 1: allow cheap tricks on the economy. 
+		+ evidence? + one money 
+	level 2: allow more slack, people my get ripped off
+		+ evidence + 2 money 
+	level 3: rip the aliens off.
+		+ evidence + 3 money 
+trade/spy
+	level 1: spy on the aliens companies 
+		+ evidence + chance of spy to not return
+	level 2: spy more on the aliens businesses and stock market.
+		+ evidence + chance of spy to not return
+	level 3: leave no stone unturned. Learn everything you can.
+		+ evidence + chance of spy to not return
+
+
+reason/proficiency
+	train up your reason
+reason/research
+	???
+reason/communicate 
+	level 1: communicate with the aliens with reason.
+		+ chance to find evidence + reason.
+	level 2: communciate more with reason 
+	
+	level 3: befriend with reason
+	
+reason/trick
+	level 1: lie to the aliens
+
+	level 2: lie to the aliens 2 
+	
+	level 3: lie 3
+
+reason/spy
+
+
+
+	
+	
+
+
+
