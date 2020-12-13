@@ -1,9 +1,11 @@
 key_val = "trade"; // default
 /* key types 
-"trade",
 "reason",
-"militant",
-"The people",
+"proficiency",
+research,
+communicate,
+decieve,
+attack
 */
 
 moving = false;

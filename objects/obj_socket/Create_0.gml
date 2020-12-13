@@ -1,8 +1,6 @@
 socket = "";
 /* socket types
-"proficiency",
-"research",
-"communicate",
-"trick",
-"spy",
-
+"the market"
+"millitary"
+"the people "
+"relations"

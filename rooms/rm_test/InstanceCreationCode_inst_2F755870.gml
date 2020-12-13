@@ -1,1 +1,1 @@
-socket = "research";
+socket = "The people";
