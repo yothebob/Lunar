@@ -1,4 +1,4 @@
-key_val = "trade";
+key_val = "trade"; // default
 /* key types 
 "trade",
 "reason",

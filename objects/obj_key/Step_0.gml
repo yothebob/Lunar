@@ -35,7 +35,9 @@ if moving == true and mouse_check_button_released(mb_left)
 	
 	}
 	
-if cooldown <= 0 and place_meeting(x,y,obj_socket) and moving == false
+if cooldown <= 0 and instance_place(x,y,obj_socket) and moving == false
 	{
+	var inst = instance_place(x,y,obj_socket);
+	return_results(inst.socket,self.key_val);
 	instance_destroy(self);	
 	}
