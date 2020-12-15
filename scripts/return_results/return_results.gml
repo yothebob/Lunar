@@ -7,22 +7,22 @@ switch (_Socket)
 		switch (_key_val)
 			{
 			case "reason":
-				return "reason/ the market";
+				return "reason.themarket"
 			break;
 			case "proficiency":
-				return "proficiency/ the market";
+				return "proficiency.themarket";
 			break;
 			case "research":
-				return "research/the market";
+				return "research.themarket";
 			break;
 			case "communicate":
-				return "communicate/the market";
+				return "communicate.themarket";
 			break;
 			case "deceive":
-				return "decieve/ the market";
+				return "decieve.themarket";
 			break;
 			case "attack":
-				return "attack/the market";
+				return "attack.themarket";
 			break;
 			}
 	break;
@@ -31,22 +31,22 @@ switch (_Socket)
 		switch (_key_val)
 			{
 			case "reason":
-				return "reason/ the millitary";
+				return "reason.themillitary";
 			break;
 			case "proficiency":
-				return "proficiency/ the millitary";
+				return "proficiency.themillitary";
 			break;
 			case "research":
-				return "research/ the millitary";
+				return "research.themillitary";
 			break;
 			case "communicate":
-				return "communicate/ the millitary";
+				return "communicate.themillitary";
 			break;
 			case "deceive":
-				return "decieve/ the millitary";
+				return "decieve.themillitary";
 			break;
 			case "attack":
-				return "attack/ the millitary";
+				return "attack.themillitary";
 			break;
 			}
 	break;
@@ -55,22 +55,22 @@ switch (_Socket)
 		switch (_key_val)
 			{
 			case "reason":
-				return "reason/the people ";
+				return "reason.thepeople";
 			break;
 			case "proficiency":
-				return "proficiency/the people";
+				return "proficiency.thepeople";
 			break;
 			case "research":
-				return "research/ the people";
+				return "research.thepeople";
 			break;
 			case "communicate":
-				return "communicate/ the people";
+				return "communicate.thepeople";
 			break;
 			case "deceive":
-				return "deceive/ the people";
+				return "deceive.thepeople";
 			break;
 			case "attack":
-				return "attack/ the people";
+				return "attack.thepeople";
 			break;
 			}
 	break;
@@ -79,22 +79,22 @@ switch (_Socket)
 		switch (_key_val)
 			{
 			case "reason":
-				return "reason/relation";
+				return "reason.relations";
 			break;
 			case "proficiency":
-				return "proficiency/ relations";
+				return "proficiency.relations";
 			break;
 			case "research":
-				return "research/ relations";
+				return "research.relations";
 			break;
 			case "communicate":
-				return "communicate/ relations";
+				return "communicate.relations";
 			break;
 			case "deceive":
-				return "deceive/relations";
+				return "deceive.relations";
 			break;
 			case "attack":
-				return "attack/relations";
+				return "attack.relations";
 			break;
 			}
 	break;

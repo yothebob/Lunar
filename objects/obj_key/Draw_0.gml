@@ -10,4 +10,18 @@ if instance_place(x,y,obj_socket)
 		}
 	}
 	
+if cooldown > 0
+{
 draw_text(x+60,y,string(cooldown/60));	
+}
+
+if cooldown <= 0 and instance_place(x,y,obj_socket) and moving == false and played == false
+	{
+	played = true;	
+	var inst = instance_place(x,y,obj_socket);
+	with(instance_create_depth(x,y,-10000,obj_results))
+		{
+		result = return_results(inst.socket,other.key_val);
+		}
+	instance_destroy(self);	
+	}

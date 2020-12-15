@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_money",
-    "path": "sprites/spr_money/spr_money.yy",
+    "name": "spr_socket",
+    "path": "sprites/spr_socket/spr_socket.yy",
   },
   "solid": false,
   "visible": true,

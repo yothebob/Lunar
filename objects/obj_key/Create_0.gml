@@ -11,3 +11,4 @@ attack
 moving = false;
 cooldown = 0;
 locked = false;
+played = false;
