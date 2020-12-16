@@ -4,3 +4,5 @@ socket = "";
 "The millitary"
 "The people "
 "Relations"
+*/
+taken = false;
