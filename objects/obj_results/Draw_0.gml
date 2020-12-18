@@ -1,44 +1,7 @@
 
 	if result == "reason.themarket"
 	{
-		if outcome = -1
-			{outcome = irandom(2);}
-		if ii == 0
-			{
-			switch(outcome)
-				{
-				case 0:
-					draw_text(x,y,"00000000000000000000000000000000");
-				break;
-				case 1:
-					draw_text(x,y,"1111111111111111111111111111111111");
-				break;
-				case 2:
-					draw_text(x,y,"22222222222222222222222222222222222");
-				break;
-				}
-			}
-		else if ii == 1
-			{
-			switch(outcome)
-				{
-				case 0:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				case 1:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				case 2:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				}
-			}
+	run_normal_result();
 	}		
 	
 	#region //result == "reason.themillitary"
@@ -73,126 +36,124 @@
 	
 	else if result == "reason.relations"
 		{
-		if outcome = -1
-			{outcome = irandom(2);}
-		if ii == 0
-			{
-			switch(outcome)
-				{
-				case 0:
-					draw_text(x,y,"00000000000000000000000000000000");
-				break;
-				case 1:
-					draw_text(x,y,"1111111111111111111111111111111111");
-				break;
-				case 2:
-					draw_text(x,y,"22222222222222222222222222222222222");
-				break;
-				}
-			}
-		else if ii == 1
-			{
-			switch(outcome)
-				{
-				case 0:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				case 1:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				case 2:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				}
-			}
+		run_normal_result();
 		}
 	
 	else if result == "reason.thepeople"
 		{
-		if outcome = -1
-			{outcome = irandom(2);}
-		if ii == 0
-			{
-			switch(outcome)
-				{
-				case 0:
-					draw_text(x,y,"00000000000000000000000000000000");
-				break;
-				case 1:
-					draw_text(x,y,"1111111111111111111111111111111111");
-				break;
-				case 2:
-					draw_text(x,y,"22222222222222222222222222222222222");
-				break;
-				}
-			}
-		else if ii == 1
-			{
-			switch(outcome)
-				{
-				case 0:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				case 1:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				case 2:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				}
-			}
+		run_normal_result();
 		}
+	
+	
+	
 	
 	else if result == "proficiency.themarket"
 		{
-		if outcome = -1
-			{outcome = irandom(2);}
-		if ii == 0
-			{
-			switch(outcome)
-				{
-				case 0:
-					draw_text(x,y,"00000000000000000000000000000000");
-				break;
-				case 1:
-					draw_text(x,y,"1111111111111111111111111111111111");
-				break;
-				case 2:
-					draw_text(x,y,"22222222222222222222222222222222222");
-				break;
-				}
-			}
-		else if ii == 1
-			{
-			switch(outcome)
-				{
-				case 0:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				case 1:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				case 2:
-					reason_spawner.key_stack += 10;
-					instance_place(x,y,obj_socket).taken = false;
-					instance_destroy(self);
-				break;
-				}
-			}
+		run_normal_result();
 		}
+	
+	else if result == "proficiency.themillitary"
+		{
+		run_normal_result();
+		}
+	
+	else if result == "proficiency.relations"
+		{
+		run_normal_result();
+		}
+	
+	else if result == "proficiency.thepeople"
+		{
+		run_normal_result();
+		}
+	
+	
+	
+	
+	else if result == "research.themarket"
+		{
+		run_normal_result();
+		}
+	
+	else if result == "research.themillitary"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "research.relations"	
+		{
+		run_normal_result();
+		}
+		
+	else if result == "research.thepeople"
+		{
+		run_normal_result();
+		}
+		
+		
+		
+		
+	else if result == "communicate.themarket"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "communicate.themillitary"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "communicate.relations"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "communicate.thepeople"
+		{
+		run_normal_result();
+		}
+		
+		
+		
+	else if result == "decieve.themarket"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "decieve.themillitary"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "decieve.relations"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "decieve.thepeople"
+		{
+		run_normal_result();
+		}
+		
+		
+		
+	else if result == "attack.themarket"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "attack.themillitary"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "attack.relations"
+		{
+		run_normal_result();
+		}
+		
+	else if result == "attack.thepeople"
+		{
+		run_normal_result();
+		}	
+		

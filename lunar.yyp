@@ -50,6 +50,7 @@
     {"id":{"name":"return_text","path":"scripts/return_text/return_text.yy",},"order":5,},
     {"id":{"name":"obj_fastforward","path":"objects/obj_fastforward/obj_fastforward.yy",},"order":1,},
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":0,},
+    {"id":{"name":"run_normal_result","path":"scripts/run_normal_result/run_normal_result.yy",},"order":9,},
     {"id":{"name":"spr_9box","path":"sprites/spr_9box/spr_9box.yy",},"order":25,},
     {"id":{"name":"obj_iconspawn","path":"objects/obj_iconspawn/obj_iconspawn.yy",},"order":0,},
     {"id":{"name":"Sprite36","path":"sprites/Sprite36/Sprite36.yy",},"order":46,},
