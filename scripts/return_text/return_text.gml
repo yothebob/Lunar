@@ -31,22 +31,22 @@ switch (_Socket)
 		switch (_key_val)
 			{
 			case "reason":
-				return "reason/ the millitary";
+				return "reason/ the millitary" + "";
 			break;
 			case "proficiency":
-				return "proficiency/ the millitary";
+				return "proficiency/ the millitary" + "\n upgrade your millitary strength";
 			break;
 			case "research":
-				return "research/ the millitary";
+				return "research/ the millitary" + "\n research new millitary weapons";
 			break;
 			case "communicate":
-				return "communicate/ the millitary";
+				return "communicate/ the millitary" + "\n expand millitary posts.";
 			break;
 			case "deceive":
-				return "decieve/ the millitary";
+				return "decieve/ the millitary" + "\n use covert ops on the aliens...";
 			break;
 			case "attack":
-				return "attack/ the millitary";
+				return "attack/ the millitary" + "\n attack with the millitary";
 			break;
 			}
 	break;
@@ -55,22 +55,22 @@ switch (_Socket)
 		switch (_key_val)
 			{
 			case "reason":
-				return "reason/the people ";
+				return "reason/the people " + "\n relate to your citizens...";
 			break;
 			case "proficiency":
-				return "proficiency/the people";
+				return "proficiency/the people" + "\n Master the skill of communicating to your citizens ...";
 			break;
 			case "research":
-				return "research/ the people";
+				return "research/ the people" + "\n Learn what your people like...";
 			break;
 			case "communicate":
-				return "communicate/ the people";
+				return "communicate/ the people" + "\n talk to your citizens...";
 			break;
 			case "deceive":
-				return "deceive/ the people";
+				return "deceive/ the people" + "\n trick your people. its for the greater good...";
 			break;
 			case "attack":
-				return "attack/ the people";
+				return "attack/ the people" + "\n Turn on your own people..." ;
 			break;
 			}
 	break;
@@ -79,22 +79,22 @@ switch (_Socket)
 		switch (_key_val)
 			{
 			case "reason":
-				return "reason/relation";
+				return "reason/relation" + "\n work towards a greater goal..." ;
 			break;
 			case "proficiency":
-				return "proficiency/ relations";
+				return "proficiency/ relations" + "\n upgade your relation rate with the aliens" ;
 			break;
 			case "research":
-				return "research/ relations";
+				return "research/ relations" + "\n research the aliens..." ;
 			break;
 			case "communicate":
-				return "communicate/ relations";
+				return "communicate/ relations" + "\n have open talks with the aliens..." ;
 			break;
 			case "deceive":
-				return "deceive/relations";
+				return "deceive/relations" + "\n trick the aliens..." ;
 			break;
 			case "attack":
-				return "attack/relations";
+				return "attack/relations" + "\n get hostile in talks..." ;
 			break;
 			}
 	break;

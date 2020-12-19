@@ -23,17 +23,17 @@ if outcome = -1
 			switch(outcome)
 				{
 				case 0:
-					reason_spawner.key_stack += 10;
+					spawner.key_stack += 10;
 					instance_place(x,y,obj_socket).taken = false;
 					instance_destroy(self);
 				break;
 				case 1:
-					reason_spawner.key_stack += 10;
+					spawner.key_stack += 10;
 					instance_place(x,y,obj_socket).taken = false;
 					instance_destroy(self);
 				break;
 				case 2:
-					reason_spawner.key_stack += 10;
+					spawner.key_stack += 10;
 					instance_place(x,y,obj_socket).taken = false;
 					instance_destroy(self);
 				break;

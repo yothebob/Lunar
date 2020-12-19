@@ -4,7 +4,6 @@
 	run_normal_result();
 	}		
 	
-	#region //result == "reason.themillitary"
 	else if result == "reason.themillitary"
 		{
 		if ii == 0
@@ -32,7 +31,6 @@
 			instance_destroy(self);
 			}
 		}
-	#endregion
 	
 	else if result == "reason.relations"
 		{

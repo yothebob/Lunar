@@ -4,6 +4,7 @@ if place_meeting(x,y,obj_mouse) and mouse_check_button_pressed(mb_left)	and key_
 		{
 		key_val = other.spawn_type;
 		other.key_stack -= 1;
+		spawner = attack_spawner;
 		}
 	
 	}

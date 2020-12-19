@@ -6,7 +6,7 @@ if instance_place(x,y,obj_socket)
 	if locked == false
 		{
 		draw_roundrect_color(x-180,y+30,x+50,y+90,c_white,c_white,true);
-		draw_text(x-60,y+30,string(return_text(inst.socket,self.key_val)))	
+		draw_text_ext(x-60,y+30,string(return_text(inst.socket,self.key_val)),30,400)	
 		}
 	}
 	
@@ -21,6 +21,7 @@ if cooldown <= 0 and instance_place(x,y,obj_socket) and moving == false and play
 	var inst = instance_place(x,y,obj_socket);
 	with(instance_create_depth(x,y,-10000,obj_results))
 		{
+		spawner = other.spawner;
 		result = return_results(inst.socket,other.key_val);
 		}
 	instance_destroy(self);	
