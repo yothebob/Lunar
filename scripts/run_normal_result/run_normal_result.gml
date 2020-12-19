@@ -1,6 +1,5 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function run_normal_result(){
+
+function run_normal_result(_val){
 if outcome = -1
 			{outcome = irandom(2);}
 		if ii == 0
@@ -8,13 +7,13 @@ if outcome = -1
 			switch(outcome)
 				{
 				case 0:
-					draw_text(x,y,"00000000000000000000000000000000");
+					draw_text(x,y,return_ending_text(result,outcome));
 				break;
 				case 1:
-					draw_text(x,y,"1111111111111111111111111111111111");
+					draw_text(x,y,return_ending_text(result,outcome));
 				break;
 				case 2:
-					draw_text(x,y,"22222222222222222222222222222222222");
+					draw_text(x,y,return_ending_text(result,outcome));
 				break;
 				}
 			}
@@ -23,17 +22,17 @@ if outcome = -1
 			switch(outcome)
 				{
 				case 0:
-					spawner.key_stack += 10;
+					spawner.key_stack += _val;
 					instance_place(x,y,obj_socket).taken = false;
 					instance_destroy(self);
 				break;
 				case 1:
-					spawner.key_stack += 10;
+					spawner.key_stack -= _val;
 					instance_place(x,y,obj_socket).taken = false;
 					instance_destroy(self);
 				break;
 				case 2:
-					spawner.key_stack += 10;
+					//spawner.key_stack += _val;
 					instance_place(x,y,obj_socket).taken = false;
 					instance_destroy(self);
 				break;

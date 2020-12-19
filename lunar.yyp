@@ -54,6 +54,7 @@
     {"id":{"name":"spr_9box","path":"sprites/spr_9box/spr_9box.yy",},"order":25,},
     {"id":{"name":"obj_iconspawn","path":"objects/obj_iconspawn/obj_iconspawn.yy",},"order":0,},
     {"id":{"name":"Sprite36","path":"sprites/Sprite36/Sprite36.yy",},"order":46,},
+    {"id":{"name":"return_ending_text","path":"scripts/return_ending_text/return_ending_text.yy",},"order":10,},
     {"id":{"name":"background","path":"sprites/background/background.yy",},"order":23,},
     {"id":{"name":"spr_destroyer2","path":"sprites/spr_destroyer2/spr_destroyer2.yy",},"order":1,},
     {"id":{"name":"spr_play","path":"sprites/spr_play/spr_play.yy",},"order":5,},

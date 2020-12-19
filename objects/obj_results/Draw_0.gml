@@ -1,7 +1,7 @@
 
 	if result == "reason.themarket"
 	{
-	run_normal_result();
+	run_normal_result(1);
 	}		
 	
 	else if result == "reason.themillitary"
@@ -34,12 +34,12 @@
 	
 	else if result == "reason.relations"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 	
 	else if result == "reason.thepeople"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 	
 	
@@ -47,22 +47,22 @@
 	
 	else if result == "proficiency.themarket"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 	
 	else if result == "proficiency.themillitary"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 	
 	else if result == "proficiency.relations"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 	
 	else if result == "proficiency.thepeople"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 	
 	
@@ -70,22 +70,22 @@
 	
 	else if result == "research.themarket"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 	
 	else if result == "research.themillitary"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 	else if result == "research.relations"	
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 	else if result == "research.thepeople"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 		
@@ -93,65 +93,65 @@
 		
 	else if result == "communicate.themarket"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 	else if result == "communicate.themillitary"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 	else if result == "communicate.relations"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 	else if result == "communicate.thepeople"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 		
 		
-	else if result == "decieve.themarket"
+	else if result == "deceive.themarket"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
-	else if result == "decieve.themillitary"
+	else if result == "deceive.themillitary"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
-	else if result == "decieve.relations"
+	else if result == "deceive.relations"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
-	else if result == "decieve.thepeople"
+	else if result == "deceive.thepeople"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 		
 		
 	else if result == "attack.themarket"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 	else if result == "attack.themillitary"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 	else if result == "attack.relations"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}
 		
 	else if result == "attack.thepeople"
 		{
-		run_normal_result();
+		run_normal_result(1);
 		}	
 		
