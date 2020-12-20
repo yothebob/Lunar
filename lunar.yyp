@@ -63,6 +63,7 @@
     {"id":{"name":"spr_white","path":"sprites/spr_white/spr_white.yy",},"order":44,},
     {"id":{"name":"obj_time","path":"objects/obj_time/obj_time.yy",},"order":0,},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"order":6,},
+    {"id":{"name":"socket_spawner","path":"objects/socket_spawner/socket_spawner.yy",},"order":13,},
     {"id":{"name":"reason_spawner","path":"objects/reason_spawner/reason_spawner.yy",},"order":1,},
     {"id":{"name":"snd_lofi4","path":"sounds/snd_lofi4/snd_lofi4.yy",},"order":3,},
     {"id":{"name":"obj_moondestroyer","path":"objects/obj_moondestroyer/obj_moondestroyer.yy",},"order":8,},

@@ -1,1 +1,0 @@
-socket = "The people";
